@@ -1,0 +1,73 @@
+<!-- <div class="container">
+  <div class="quote">
+    <h1 class="mat-display-1"> na imię mi było Krzysztof,
+      i jeszcze ciało - to tak niewiele.
+    </h1>
+  </div>
+  <div class="portrait">
+    <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">
+  </div>
+</div> -->
+
+<div class="page_container">
+  <div class="animations">
+    <img [src]="butterfly" alt="Motyle" [style]="getButterflyStyles()" class="bg_image">
+  </div>
+
+
+  <div class="mainContainer" fxLayout="row" fxLayoutAlign="center center">
+
+    <div class="container" fxLayout="row" fxLayoutAlign="space-around center">
+
+      <div class="portrait" fxFlex="60">
+        <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">
+      </div>
+      <div class="quote" fxFlex="40">
+        <h1 class="mat-display-1"> na imię mi było Krzysztof,
+          i jeszcze ciało - to tak niewiele.
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+    <h3 class="md-headline">Poznaj Krzysia</h3>
+    <div class=faq_container fxLayoutAlign="center center">
+      <div class="questions" fxLayout="column">
+        <h2 class="md-subhead">Gdzie się urodził i wychował Krzysztof?</h2>
+      </div>
+
+      <div class="answers">
+        <div class="answer">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, magni exercitationem eos iusto iste
+            ratione
+            officia doloremque dolorum. Obcaecati, ipsum.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+
+
+<!-- <mat-accordion>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Lorem ipsum dolor, sit amet consectetur adipisicing?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <mat-panel-description>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit iure sed modi mollitia vero, similique inventore
+      laboriosam ducimus neque unde voluptatibus exercitationem dolorem. Fugit, voluptatibus hic laborum commodi odit
+      ratione
+    </mat-panel-description>
+  </mat-expansion-panel>
+
+
+</mat-accordion> -->

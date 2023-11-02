@@ -22,4 +22,5 @@ export class HomeComponent {
      width: 652px;
     `;
   }
+  
 }

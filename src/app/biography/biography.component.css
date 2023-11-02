@@ -1,0 +1,68 @@
+/* .container {
+  /* position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); */
+  /* background: grey;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  max-width: 500px;
+  min-height: 600px;
+}
+
+/* .smallContainer {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+} */ 
+/* .smallContainer {
+  position: relative;
+} */
+
+/* body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+*/
+
+/* :host {
+
+} */
+
+
+
+.bg_image {
+  position: absolute;
+  right: 0px;
+  top: -30px;
+  z-index: 1;
+}
+
+.mainContainer {
+  max-width: 100vw;
+  height: 100vh;
+  margin-bottom: 40px;
+}
+
+ .container {
+  width: 90%;
+  min-height: 80vh; 
+  border-radius: 20px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.75);
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  
+}
+
+.mat-display-1 {
+  color: white;
+}
+
