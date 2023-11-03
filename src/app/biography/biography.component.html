@@ -30,26 +30,27 @@
     </div>
   </div>
 
-  <div>
+  <!-- <div class="faq_main_container" fxLayout="column" fxLayoutAlign="center center"> -->
 
-    <h3 class="md-headline">Poznaj Krzysia</h3>
-    <div class=faq_container fxLayoutAlign="center center">
-      <div class="questions" fxLayout="column">
-        <h2 class="md-subhead">Gdzie się urodził i wychował Krzysztof?</h2>
+  <!-- <h3 class=".md-display-2">Poznaj Krzysia</h3> -->
+  <div class=faq_container fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="column" fxLayoutGap="20">
+      <div fxFlex="50" class="questions" *ngFor="let question of questions">
+        {{question.text}}
       </div>
-
-      <div class="answers">
-        <div class="answer">
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, magni exercitationem eos iusto iste
-            ratione
-            officia doloremque dolorum. Obcaecati, ipsum.</p>
-        </div>
-      </div>
-
     </div>
 
+
+
+    <div class="answer" fxFlex="50" *ngFor="let answer of answers">
+      {{answer.text}}
+    </div>
+
+
   </div>
+
 </div>
+
 
 
 
