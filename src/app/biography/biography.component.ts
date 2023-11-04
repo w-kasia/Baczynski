@@ -9,6 +9,7 @@ export class BiographyComponent {
 
   motherImage = 'assets/images/mother.png';
   butterfly = 'assets/images/butterfly.png';
+  teenage = 'assets/images/teenage.png';
 
   getPortraitStyles() {
     return `
