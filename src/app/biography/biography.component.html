@@ -55,27 +55,8 @@
     <div fxFlex="50">
       <img [src]="teenage" alt="">
     </div>
-    <div fxFlex="50">
-      <p>W oczach psów można unieść nieba   biały tulipan.
-        Kogo kochasz kochając przydrożne psy,
-        chodząc w ulicach wiatrem spalonych,
-        na szybach zastygając oczami szklanymi jak łzy?
-        Kogo kochasz kochając w ich oczach maleńkie
-        kobiety orientalnych snów,
-        kiedy boisz się twarz ich jak kwiat wziąć do ręki
-        i ostrożnie układasz mozaiki słów?
-        Kogo kochasz? w tych oczach zastygł czas
-        dyluwialnych, zwierzęcych epok
-        i żółte, fosforyczne talerze gwiazd
-        wprawione w oczy jak w niebo.
-        Jakże spokojne ich twarze obrosłe
-        sierścią - osadem - miłością lat,
-        kiedy bijesz na oślep rękami jak wiosłem
-        we wrogi obraz nieba i ziemi, w świat.
-        Rzuć, rzuć magię wirujących kół,
-        podnieś ręce do potęgi łap,
-        wtul się w sierść przyjacielską i płyń
-        przez zarosłe czaszkami wybrzeża lat.</p>
+    <div fxFlex="50" *ngFor="let poem of poems">
+      {{poem.text}}
     </div>
   </div>
 
