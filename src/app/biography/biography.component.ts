@@ -25,13 +25,15 @@ export class BiographyComponent {
 
   questions: any[] = [
     {id: 1, text: 'Kiedy i gdzie urodził się Krzysztof?'},
-    {id: 2, text: 'Kiedy zmarł Krzysztof?'},
+    {id: 2, text: 'Jakim uczniem był Krzyś?'},
     {id: 3, text: 'Co studiował?'},
     {id: 4, text: 'Jak poznał Basie?'}
   ];
 
   answers: any[] = [
-    {text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, magni exercitationem eos iusto iste'}
+    {id: 1, text: 'Krzysztof urodził się dziewięć lat po ślubie rodziców -  22 stycznia 1921 roku w Warszawie. Był dawno oczekiwanym dzieckiem. Stefania Baczyńska długo nie mogła wydać na świat dziecka. Kilka razy poroniła. Pierwsza jej córeczka, która urodziła się przed Krzysiem, wkrótce zmarła. Miała na imię Kamila, co moze tłumaczyć drugie imię poety.'},
+    {id: 2, text: 'Kazimierz Wyka pisał: „Baczyński uczniem był miernym. Maturę otrzymał w czerwcu 1939 roku. Marzył o karierze ilustratora-grafika, posiadał w tym kierunku widoczne uzdolnienia”. Miał kłopoty na lekcjach polskiego — wspomina Jerzy Madziar, szkolny kolega Baczyńskiego. — Nikt nie podejrzewał, że w nim kryje się taki talent; był dla nas przede wszystkim dobrym rysownikiem. Profesor Olszewski zawsze stawiał mu dobre stopnie. — „W tym chłopcu coś drzemie, ma śmiałą linię i subtelne poczucie koloru, ale kpi sobie z perspektywy” — przytacza słowa nauczyciela rysunków Edmund Semil.'},
+
   ];
 
   poems: any[] = [

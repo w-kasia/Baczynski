@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./works.component.css']
 })
 export class WorksComponent {
+  Baczynski_portrait_2 = 'assets/images/Baczynski_works.png';
 
+  getPortraitStyles() {
+    return `
+      width: 350px;
+    `
+  }
 }
