@@ -11,6 +11,8 @@ import { NewsComponent } from './news/news.component';
 import { BiographyComponent } from './biography/biography.component';
 import { WorksComponent } from './works/works.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
+import { WorksService } from './works/works.service';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [WorksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

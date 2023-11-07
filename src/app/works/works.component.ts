@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { WorksService } from './works.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-works',
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.css']
 })
-export class WorksComponent {
+export class WorksComponent implements OnInit {
   Baczynski_portrait_2 = 'assets/images/Baczynski_works.png';
 
   getPortraitStyles() {
@@ -13,4 +15,18 @@ export class WorksComponent {
       width: 350px;
     `
   }
+
+  worksTitles: string[] | undefined;
+
+  
+
+  constructor(private worksService: WorksService) {}
+
+  ngOnInit(): void {
+    this.worksService.getWorksTitles().subscribe(data => {
+      this.worksTitles = data.map(work => work.title
+        );
+    });
+  }
+  
 }

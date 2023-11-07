@@ -9,7 +9,32 @@
     <img [src]="Baczynski_portrait_2" alt="Portret Baczynskiego" [style]="getPortraitStyles()">
   </div>
 
+</div>
+
+<div class="works_section" fxLayout="column" fxLayoutAlign="space-around none">
   <div class="search">
     <input class="search_input" type="text" placeholder="Szukaj">
   </div>
+
+  <div class="list_works">
+    <ul>
+      <li class="title" *ngFor="let title of worksTitles">
+        <a href="#">{{title}}</a>
+      </li>
+    </ul>
+  </div>
+
 </div>
+
+<!-- <div>
+  <table mat-table>
+    <ng-container matColumnDef="title">
+      <td mat-cell *matCellDef="let element">{{ element.title }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  </table>
+</div> -->
+
+
+<!-- <p>{{ selectedWork }}</p> -->
