@@ -13,6 +13,7 @@ import { WorksComponent } from './works/works.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { WorksService } from './works/works.service';
+import { WorkComponent } from './work/work.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WorksService } from './works/works.service';
     NavigationComponent,
     NewsComponent,
     BiographyComponent,
-    WorksComponent
+    WorksComponent,
+    WorkComponent
   ],
   imports: [
     BrowserModule,

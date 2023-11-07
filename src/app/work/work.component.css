@@ -1,0 +1,30 @@
+.poem_container {
+  min-height: 100vh;
+  position: relative;
+}
+
+.poem {
+  max-width: 500px;
+  min-height: 600px;
+  border-radius: 20px;
+  padding: 20px;
+  background:  rgba(0, 0, 0, 0.25);
+  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15));
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.picture_books {
+  position: absolute;
+  right: 45px;
+  bottom: 30px;
+}
+
+.picture_flowers {
+  position: absolute;
+  left: -80px;
+  top: 50px;
+  transform: rotate(50deg);
+}
+
+
