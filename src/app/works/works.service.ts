@@ -15,4 +15,8 @@ export class WorksService {
     return this.http.get<any[]>(this.apiUrl);
   }
 
+  //do poprawy
+  getWork(title: any): Observable<any> {
+    return this.http.get<any>(this.apiUrl);
+  }
 }

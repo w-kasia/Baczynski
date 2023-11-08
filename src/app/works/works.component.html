@@ -19,9 +19,13 @@
   <div class="list_works">
     <ul>
       <li class="title" *ngFor="let title of worksTitles">
-        <a href="#">{{title}}</a>
+        <!-- do poprawy -->
+        <a href="#" (click)="displayData(title)">{{title}}</a>
       </li>
     </ul>
+
+    <p *ngIf="selectedTitle">{{ selectedTitle }}</p>
+    <p>{{ displayedWork }}</p>
   </div>
 
 </div>

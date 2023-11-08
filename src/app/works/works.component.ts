@@ -18,7 +18,9 @@ export class WorksComponent implements OnInit {
 
   worksTitles: string[] | undefined;
 
-  
+  selectedTitle: any = '';
+  displayedWork: any = '';
+
 
   constructor(private worksService: WorksService) {}
 
@@ -28,5 +30,16 @@ export class WorksComponent implements OnInit {
         );
     });
   }
-  
+
+
+//do poprawy
+  displayData(title: any): void {
+    this.selectedTitle = title;
+
+    this.worksService.getWork(title).subscribe((data) => {
+      // this.displayedWork = text;
+      this.displayedWork = data.map((work: { href: any; }) => work.href)
+    })
+  }
+
 }
