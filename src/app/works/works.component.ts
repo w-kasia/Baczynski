@@ -38,7 +38,7 @@ export class WorksComponent implements OnInit {
 
     this.worksService.getWork(title).subscribe((data) => {
       // this.displayedWork = text;
-      this.displayedWork = data.map((work: { href: any; }) => work.href)
+      this.displayedWork = data.map((work: { url: any; }) => work.url)
     })
   }
 

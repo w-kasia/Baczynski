@@ -23,8 +23,7 @@
         <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">
       </div>
       <div class="quote" fxFlex="40">
-        <h1 class="mat-display-1"> na imię mi było Krzysztof,
-          i jeszcze ciało - to tak niewiele.
+        <h1 class="mat-display-1">{{ quote }}
         </h1>
       </div>
     </div>
@@ -35,34 +34,48 @@
     <!-- <h3 class=".md-display-2">Poznaj Krzysia</h3> -->
     <div class="faq_container" fxLayout="row" fxLayoutAlign="space-between none">
       <div fxLayout="column" fxLayoutGap="20">
-        <div fxFlex="50" class="questions" *ngFor="let question of questions">
-          {{question.text}}
+        <!-- <div fxFlex="50" class="questions" *ngFor="let question of questions">
+          {{question.text}} -->
 
+        <!--próba z json-->
+        <div fxFlex="50" class="questions">
+          <ul>
+            <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"
+              [class.active]="question === selectedQuestion">{{question.question}}</li>
+          </ul>
         </div>
-      </div>
+        <!---->
 
-      <div class="answer" fxFlex="50" *ngFor="let answer of answers">
-        {{answer.text}}
       </div>
-
+      <div class="answer" fxFlex="50">
+        {{selectedQuestion.answer}}
+      </div>
 
     </div>
+
+
+    <!-- <div class="answer" fxFlex="50" *ngFor="let answer of answers">
+      {{answer.text}}
+    </div> -->
+
 
   </div>
 
+</div>
 
-  <div fxLayout="row" fxLayoutAlign="space-around center">
-    <div fxFlex="50">
-      <img [src]="teenage" alt="">
-    </div>
-    <div fxFlex="50" *ngFor="let poem of poems">
-      {{poem.text}}
-    </div>
+
+<div fxLayout="row" fxLayoutAlign="space-around center">
+  <div fxFlex="50">
+    <img [src]="teenage" alt="">
   </div>
+  <div fxFlex="50" *ngFor="let poem of poems">
+    {{poem.text}}
+  </div>
+</div>
 
 
 
-  <!-- <mat-accordion>
+<!-- <mat-accordion>
 
   <mat-expansion-panel>
     <mat-expansion-panel-header>
