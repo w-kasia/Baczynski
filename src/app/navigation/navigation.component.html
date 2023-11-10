@@ -6,15 +6,21 @@
     </button>
   </mat-toolbar-row> -->
 
+<div class="menu-container">
 
-<button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-  <mat-icon>more_vert</mat-icon>
-</button>
-<mat-menu #menu="matMenu">
-  <button mat-menu-item>Aktualności
+  <button class="menu-icon" mat-icon [matMenuTriggerFor]="menu" svgIcon="menu"
+    aria-label="Example icon-button with a menu">
+    <mat-icon>menu</mat-icon>
   </button>
-  <button mat-menu-item disabled>Życiorys
-  </button>
-  <button mat-menu-item>Wiersze
-  </button>
-</mat-menu>
+  <mat-menu class="custom-menu" #menu="matMenu">
+    <button mat-menu-item>Home
+    </button>
+    <button mat-menu-item>Aktualności
+    </button>
+    <button mat-menu-item>Życiorys
+    </button>
+    <button mat-menu-item>Wiersze
+    </button>
+  </mat-menu>
+
+</div>

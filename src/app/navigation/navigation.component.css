@@ -1,0 +1,20 @@
+.menu-container {
+  position: relative;
+
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  color: white;
+  background: transparent;
+
+}
+
+/* .mate-menu-panel {
+  min-width: 100%;
+  height: 100vh;
+  background-color: rgb(1, 0, 0);
+} */
