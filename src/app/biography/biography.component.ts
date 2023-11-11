@@ -12,6 +12,9 @@ export class BiographyComponent {
   butterfly = 'assets/images/butterfly.png';
   teenage = 'assets/images/teenage.png';
 
+  // menuItems = ['Home', 'Aktualności', 'Życiorys', 'Utwory'];
+  menuIcon = 'menu';
+
   quote = `Na imię mi było Krzysztof,
   i jeszcze ciało - to tak niewiele.`
 

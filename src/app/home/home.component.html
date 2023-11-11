@@ -19,7 +19,11 @@
 </mat-menu> -->
 
 
-<div [style]="getContainerStyles()">
+<div class="home_container">
+
+
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+
   <img mat-card-lg-image [src]="backgroundImage" alt="Portret Krzysztofa Kamila Baczyńskiego"
     [style]="getBackgroundImageStyles()">
 </div>

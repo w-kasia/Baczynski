@@ -7,20 +7,25 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+
+  menuIcon = 'menu';
+
   backgroundImage = 'assets/images/portrait.png';
 
-  getContainerStyles() {
-    return `  
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    `;
-  }
+  // getContainerStyles() {
+  //   return `
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //   `;
+  // }
 
   getBackgroundImageStyles() {
     return `
      width: 652px;
     `;
   }
-  
+
+
+
 }

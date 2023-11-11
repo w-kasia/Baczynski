@@ -1,9 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
   --background-color: #2b4162;
-
-
 }
+
 
 * {
   margin: 0;
@@ -25,6 +24,51 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   min-height: 100vh;
   color: whitesmoke;
+}
+
+
+
+
+
+.menu-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border: none;
+  color: white;
+  background: transparent;
+
+}
+
+/* .menu-items {
+  width: 100%;
+  min-height: 100vh;
+} */
+
+.custom-menu {
+  min-width: 100vw;
+  min-height: 100vh;
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+/* .mat-menu-item {
+  color: white !important;
+} */
+
+/* .menu-container {
+  min-width: 95px;
+  background: red;
+} */
+
+
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 

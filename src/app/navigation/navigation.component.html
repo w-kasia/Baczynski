@@ -1,26 +1,74 @@
-<!-- <mat-toolbar>
-  <mat-toolbar-row>
-    <span class="example-spacer"></span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </mat-toolbar-row> -->
-
 <div class="menu-container">
 
-  <button class="menu-icon" mat-icon [matMenuTriggerFor]="menu" svgIcon="menu"
-    aria-label="Example icon-button with a menu">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-menu class="custom-menu" #menu="matMenu">
-    <button mat-menu-item>Home
+  <div class="icon">
+
+    <button class="menu-icon" mat-icon [matMenuTriggerFor]="menu" svgIcon="menu"
+      aria-label="Example icon-button with a menu">
+      <mat-icon>{{menuIcon}}</mat-icon>
     </button>
-    <button mat-menu-item>Aktualności
-    </button>
-    <button mat-menu-item>Życiorys
-    </button>
-    <button mat-menu-item>Wiersze
-    </button>
-  </mat-menu>
+
+  </div>
+
+
+
+  <div class="menu-items">
+<!-- 
+    add routerLinkActive for styles -->
+    <mat-menu class="custom-menu" #menu="matMenu">
+      <button mat-menu-item class="mat-menu-item"><a routerLink="/home">Home</a>
+      </button>
+      <button mat-menu-item class="mat-menu-item"><a routerLink="/aktualnosci">Aktualności</a>
+      </button>
+      <button mat-menu-item class="mat-menu-item"><a routerLink="/works">Utwory</a>
+      </button>
+      <button mat-menu-item class="mat-menu-item"><a routerLink="/biografia">Życiorys</a>
+      </button>
+
+
+      <!-- <button mat-menu-item class="mat-menu-item" *ngFor="let menuItem of menuItems">{{menuItem}}
+      </button> -->
+
+      <!-- <button mat-menu-item class="mat-menu-item">Home
+      </button>
+      <button mat-menu-item class="mat-menu-item">Aktualności
+      </button>
+      <button mat-menu-item class="mat-menu-item">Życiorys
+      </button>
+      <button mat-menu-item class="mat-menu-item">Wiersze
+      </button> -->
+    </mat-menu>
+
+  </div>
 
 </div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="menu-container">
+
+
+  <div class="menu-item">
+    <button mat-button class="menu-button">
+      <mat-icon>dashboard</mat-icon>
+      <span>Home</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>dashboard</mat-icon>
+      <span>Aktualności</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>dashboard</mat-icon>
+      <span>Życiorys</span>
+    </button>
+    <button mat-button class="menu-button">
+      <mat-icon>dashboard</mat-icon>
+      <span>Wiersze</span>
+    </button>
+  </div>
+</div> -->

@@ -1,19 +1,19 @@
-import { Injectable } from '@angular/core';
+// import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class NavigationService {
+// @Injectable({
+//   providedIn: 'root'
+// })
+// export class NavigationService {
 
-  constructor() { }
+//   constructor() { }
 
-  private showNavigation = false;
+//   private showNavigation = false;
 
-  setShowNavigation(show: boolean) {
-    this.showNavigation = show;
-  }
+//   setShowNavigation(show: boolean) {
+//     this.showNavigation = show;
+//   }
 
-  getShowNavigation() {
-    return this.showNavigation;
-  }
-}
+//   getShowNavigation() {
+//     return this.showNavigation;
+//   }
+// }

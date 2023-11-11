@@ -8,7 +8,12 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./works.component.css']
 })
 export class WorksComponent implements OnInit {
+  // menuItems = ['Home', 'Aktualności', 'Życiorys', 'Utwory'];
+
+  menuIcon = 'menu';
+
   Baczynski_portrait_2 = 'assets/images/Baczynski_works.png';
+
 
   getPortraitStyles() {
     return `
