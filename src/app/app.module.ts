@@ -14,12 +14,14 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { WorksService } from './works/works.service';
 import { WorkComponent } from './work/work.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
-    routingComponents
+    routingComponents,
+    BlogPostComponent
   ],
   imports: [
     BrowserModule,

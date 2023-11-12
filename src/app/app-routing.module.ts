@@ -5,14 +5,16 @@ import { BiographyComponent } from './biography/biography.component';
 import { WorksComponent } from './works/works.component';
 import { NewsComponent } from './news/news.component';
 import { WorkComponent } from './work/work.component';
+import { BlogPostComponent } from './blog-post/blog-post.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
   { path: 'biografia', component: BiographyComponent},
   { path: 'works', component: WorksComponent},
-  { path: 'aktualnosci', component: NewsComponent},
   { path: 'work', component: WorkComponent},
+  { path: 'aktualnosci', component: NewsComponent},
+  { path: 'aktualnosci/:id', component: BlogPostComponent}
 
   //dodać error component na końcu!
 ];

@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class NewsComponent {
 
+  blogPosts = [
+    { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego',
+    content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam laborum quos sapiente ipsa nostrum illum tempora quia, fugit repellat!'
+    },
+    { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego',
+    content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam laborum quos sapiente ipsa nostrum illum tempora quia, fugit repellat!'
+    },
+     { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego',
+    content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam laborum quos sapiente ipsa nostrum illum tempora quia, fugit repellat!'
+    },
+    { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego',
+    content: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo numquam laborum quos sapiente ipsa nostrum illum tempora quia, fugit repellat!'
+    }
+  ];
+
+  navigateToArticle(post: any) {
+    window.open(`/aktualnosci/${post.title}`)
+  }
 }
