@@ -27,7 +27,7 @@ export class WorksService {
   formatTitle(title: string): string {
     return title
     .toLowerCase()
-    .replace(/[.,;*!?}{[\]]/g, '')
+    .replace(/[.,;:*!?}{[\]]/g, '')
     .replace(/ /g, '-')
     .replace(/[ł]/g, 'l')
     .replace(/[ą]/g, 'a')

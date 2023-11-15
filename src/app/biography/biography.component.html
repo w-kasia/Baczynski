@@ -10,7 +10,6 @@
 </div> -->
 
 <div class="page_container">
-  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
 
   <div class="animations">
     <img [src]="butterfly" alt="Motyle" [style]="getButterflyStyles()" class="bg_image">
@@ -20,6 +19,7 @@
   <div class="component__container" fxLayout="row" fxLayoutAlign="center center">
 
     <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-around center">
+      <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
 
       <div class="portrait" fxFlex="60">
         <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">

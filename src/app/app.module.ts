@@ -15,7 +15,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { WorksService } from './works/works.service';
 import { WorkComponent } from './work/work.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
-import { QuoteComponent } from './quote/quote.component';
 import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
@@ -24,7 +23,6 @@ import { FooterComponent } from './footer/footer.component';
     NavigationComponent,
     routingComponents,
     BlogPostComponent,
-    QuoteComponent,
     FooterComponent
   ],
   imports: [

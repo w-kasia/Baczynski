@@ -11,18 +11,12 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class WorksComponent implements OnInit {
 
   menuIcon = 'menu';
-  Baczynski_portrait_2 = 'assets/images/Baczynski_works.png';
+  portrait_Baczynski = 'assets/images/portrait_Krzys.png';
 
-  getPortraitStyles() {
-    return `
-      width: 350px;
-    `
-  }
 
   worksTitles: string[] | undefined;
 
   selectedTitle: any = '';
-  displayedWork: any = '';
 
   apiURL2: any | undefined;
 
@@ -34,7 +28,6 @@ export class WorksComponent implements OnInit {
       this.worksTitles = data.map(work => work.title
         );
     });
-
   }
 
   redirectToPDF(title: string) {
@@ -42,6 +35,5 @@ export class WorksComponent implements OnInit {
     const pdfURL = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
     window.open(pdfURL, '_blank');
   }
-
 
 }

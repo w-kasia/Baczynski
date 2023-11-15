@@ -1,9 +1,11 @@
 :root {
   --white: #faf4f4;
-  --main-bg: #2b4162;
-  --container-bg: rgba(0, 0, 0, 0.75);
-  --container-bg-gradient: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
-  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --grey: #717276;
+  --main-bg: #15181E;
+  --container-bg: rgba(0, 0, 0, 0.25);
+  --container-bg-gradient: linear-gradient(to right top, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.20));
+  /* --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  --shadow:  rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -15,18 +17,10 @@
 
 body {
   background-color: var(--main-bg);
-  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
-
-  /* background: #485563; /* fallback for old browsers */
-  /* background: -webkit-linear-gradient(to right, #485563, #29323c); /* Chrome 10-25, Safari 5.1-6 */
-  /* background: linear-gradient(to right, #485563, #29323c); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  background-repeat: no-repeat;
   font-family: var(--main-font);
   color: var(--white);
   min-height: 100vh;
   max-width: 100%;
-
 }
 
 .component__container {
@@ -38,12 +32,14 @@ body {
   height: 85vh;
   border-radius: 20px;
   position: relative;
-  background: var(--container-bg);
-  background: var(--container-bg-gradient);
-  box-shadow: var(--shadow);
   overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: var(--main-bg);
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  -webkit-backdrop-filter: blur(15.1px);
+  backdrop-filter: blur(15.1px);
 }
-
 
 .menu-icon {
   position: absolute;
@@ -52,7 +48,6 @@ body {
   border: none;
   color: white;
   background: transparent;
-
 }
 
 /* .menu-items {
@@ -78,13 +73,8 @@ body {
   background: red;
 } */
 
-
-
 .navigation {
   position: absolute;
   top: 0;
   left: 0;
 }
-
-
-
