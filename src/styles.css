@@ -1,8 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
 :root {
-  --background-color: #2b4162;
+  --white: #faf4f4;
+  --main-bg: #2b4162;
+  --container-bg: rgba(0, 0, 0, 0.75);
+  --container-bg-gradient: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.25));
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --main-font: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 
 * {
   margin: 0;
@@ -10,24 +13,36 @@
   box-sizing: border-box;
 }
 
-/*sprawdzić jak to zadziała*/
-/* body {
-  width: 100vw;
-height: 100vh;
-} */
-
-
 body {
-  background-color: var(--background-color);
+  background-color: var(--main-bg);
   background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+
+  /* background: #485563; /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to right, #485563, #29323c); /* Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to right, #485563, #29323c); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   background-repeat: no-repeat;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--main-font);
+  color: var(--white);
   min-height: 100vh;
-  color: whitesmoke;
+  max-width: 100%;
+
 }
 
+.component__container {
+  min-height: 100vh;
+}
 
-
+.component__container--smaller {
+  width: 90%;
+  height: 85vh;
+  border-radius: 20px;
+  position: relative;
+  background: var(--container-bg);
+  background: var(--container-bg-gradient);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
 
 
 .menu-icon {

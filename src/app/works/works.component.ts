@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { WorksService } from './works.service';
 import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-works',
@@ -8,12 +9,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./works.component.css']
 })
 export class WorksComponent implements OnInit {
-  // menuItems = ['Home', 'Aktualności', 'Życiorys', 'Utwory'];
 
   menuIcon = 'menu';
-
   Baczynski_portrait_2 = 'assets/images/Baczynski_works.png';
-
 
   getPortraitStyles() {
     return `
@@ -26,25 +24,24 @@ export class WorksComponent implements OnInit {
   selectedTitle: any = '';
   displayedWork: any = '';
 
+  apiURL2: any | undefined;
 
-  constructor(private worksService: WorksService) {}
+
+  constructor(private worksService: WorksService, private router: Router) {}
 
   ngOnInit(): void {
     this.worksService.getWorksTitles().subscribe(data => {
       this.worksTitles = data.map(work => work.title
         );
     });
+
   }
 
-
-//do poprawy
-  displayData(title: any): void {
-    this.selectedTitle = title;
-
-    this.worksService.getWork(title).subscribe((data) => {
-      // this.displayedWork = text;
-      this.displayedWork = data.map((work: { url: any; }) => work.url)
-    })
+  redirectToPDF(title: string) {
+    const formattedTitle = this.worksService.formatTitle(title);
+    const pdfURL = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
+    window.open(pdfURL, '_blank');
   }
+
 
 }

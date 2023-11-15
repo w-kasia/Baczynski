@@ -1,6 +1,6 @@
-<div class="works_container" fxLayout="column" fxLayoutAlign="center center">
+<div class="component__container" fxLayout="column" fxLayoutAlign="center center">
   <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
-  <div class="header" fxLayout="row" fxLayoutAlign="space-between center">
+  <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-between center">
     <h3 class="mat-h3">
       I wyszedłeś, jasny synku, z czarną bronią w noc,<br>
       i poczułeś, jak się czai w dzwięku minut - zło.<br>
@@ -21,7 +21,8 @@
     <ul>
       <li class="title" *ngFor="let title of worksTitles">
         <!-- do poprawy -->
-        <a href="#" (click)="displayData(title)">{{title}}</a>
+        <!-- <a href="#" (click)="displayData(title)">{{title}}</a> -->
+        <a href="#" (click)="redirectToPDF(title)">{{title}}</a>
       </li>
     </ul>
 
@@ -29,9 +30,16 @@
     <p>{{ displayedWork }}</p>
   </div>
 
-</div>
 
-<!-- <div>
+  <!-- //proba -->
+  <!-- <ul>
+  <li *ngFor="let book of books" (click)="displayBook(book)">{{book.title}}</li>
+</ul>
+<p *ngIf="selectedBook">{{ selectedBook.content }}</p>
+
+</div> -->
+
+  <!-- <div>
   <table mat-table>
     <ng-container matColumnDef="title">
       <td mat-cell *matCellDef="let element">{{ element.title }}</td>
@@ -42,4 +50,4 @@
 </div> -->
 
 
-<!-- <p>{{ selectedWork }}</p> -->
+  <!-- <p>{{ selectedWork }}</p> -->

@@ -17,9 +17,9 @@
   </div>
 
 
-  <div class="mainContainer" fxLayout="row" fxLayoutAlign="center center">
+  <div class="component__container" fxLayout="row" fxLayoutAlign="center center">
 
-    <div class="container" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-around center">
 
       <div class="portrait" fxFlex="60">
         <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">
@@ -33,7 +33,7 @@
 
   <div class="faq_main_container" fxLayout="column" fxLayoutAlign="center center">
 
-    <!-- <h3 class=".md-display-2">Poznaj Krzysia</h3> -->
+    <h3 class=".md-display-2 faq_title">{{ faq_title }}</h3>
     <div class="faq_container" fxLayout="row" fxLayoutAlign="space-between none">
       <div fxLayout="column" fxLayoutGap="20">
         <!-- <div fxFlex="50" class="questions" *ngFor="let question of questions">

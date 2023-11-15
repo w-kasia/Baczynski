@@ -12,6 +12,7 @@ export class BiographyComponent {
   butterfly = 'assets/images/butterfly.png';
   teenage = 'assets/images/teenage.png';
 
+  faq_title = 'Poznaj Krzysia';
   // menuItems = ['Home', 'Aktualności', 'Życiorys', 'Utwory'];
   menuIcon = 'menu';
 

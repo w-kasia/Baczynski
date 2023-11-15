@@ -1,21 +1,19 @@
-/* body {
-  width: 100%;
+/* .component__container {
   min-height: 100vh;
 } */
 
-body {
-  overflow: hidden;
-}
-
-.home_container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-}
-
-/* .navigation {
-  position: absolute;
-  top: 0;
-  left: 0;
+/* .component__container--smaller {
+  width: 90%;
+  height: 85vh;
+  border-radius: 20px;
+  position: relative;
+  background: var(--container-bg);
+  background: var(--container-bg-gradient);
+  box-shadow: var(--shadow);
 } */
+
+.home__container--img {
+  width: 560px;
+}
+
+

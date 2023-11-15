@@ -6,26 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-
-
   menuIcon = 'menu';
-
-  backgroundImage = 'assets/images/portrait.png';
-
-  // getContainerStyles() {
-  //   return `
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: center;
-  //   `;
-  // }
-
-  getBackgroundImageStyles() {
-    return `
-     width: 652px;
-    `;
-  }
-
-
+  homeBgImage = 'assets/images/portrait.png';
 
 }
