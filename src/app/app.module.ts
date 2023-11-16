@@ -16,6 +16,8 @@ import { WorksService } from './works/works.service';
 import { WorkComponent } from './work/work.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { FooterComponent } from './footer/footer.component';
+import { FormsModule } from '@angular/forms';
+import { SearchComponent } from './works/search/search.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
     NavigationComponent,
     routingComponents,
     BlogPostComponent,
-    FooterComponent
+    FooterComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { FooterComponent } from './footer/footer.component';
     BrowserAnimationsModule,
     MaterialModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [WorksService],
   bootstrap: [AppComponent]

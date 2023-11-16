@@ -11,10 +11,12 @@ export class BiographyComponent {
   motherImage = 'assets/images/mother.png';
   butterfly = 'assets/images/butterfly.png';
   teenage = 'assets/images/teenage.png';
-
-  faq_title = 'Poznaj Krzysia';
-  // menuItems = ['Home', 'Aktualności', 'Życiorys', 'Utwory'];
+  quoteIcon = 'assets/quote.svg';
   menuIcon = 'menu';
+arrowIcon = 'assets/arrow_icon.svg';
+ faq_title = 'Poznaj Krzysia';
+
+
 
   quote = `Na imię mi było Krzysztof,
   i jeszcze ciało - to tak niewiele.`

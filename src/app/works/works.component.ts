@@ -14,12 +14,14 @@ export class WorksComponent implements OnInit {
   portrait_Baczynski = 'assets/images/portrait_Krzys.png';
 
 
-  worksTitles: string[] | undefined;
+  worksTitles!: string[];
 
   selectedTitle: any = '';
 
   apiURL2: any | undefined;
 
+  //for search input
+  searchTitle: string = '';
 
   constructor(private worksService: WorksService, private router: Router) {}
 
@@ -36,4 +38,8 @@ export class WorksComponent implements OnInit {
     window.open(pdfURL, '_blank');
   }
 
+  //for search input
+  onSearchTextEntered(searchValue: string) {
+    this.searchTitle = searchValue;
+  }
 }

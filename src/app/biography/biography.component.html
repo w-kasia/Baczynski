@@ -43,10 +43,12 @@
         <div fxFlex="50" class="questions">
           <ul>
             <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"
-              [class.active]="question === selectedQuestion">{{question.question}}</li>
+              [class.active]="question === selectedQuestion">{{question.question}}
+              <img src="arrow_icon.svg" alt="">
+            </li>
           </ul>
         </div>
-        <!---->
+
 
       </div>
       <div class="answer" fxFlex="50">
@@ -71,6 +73,7 @@
     <img [src]="teenage" alt="">
   </div>
   <div fxFlex="50" *ngFor="let poem of poems">
+    <img [src]="quoteIcon" alt="Quote Icon" class="quoteIcon">
     {{poem.text}}
   </div>
 </div>

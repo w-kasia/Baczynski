@@ -14,14 +14,15 @@
 </div>
 
 <div class="works_section" class="component__container" fxLayout="column" fxLayoutAlign="center center">
-  <div class="search">
-    <input class="search_input" type="text" placeholder="Szukaj">
-  </div>
+  <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
 
-  <div class="list_works" fxLayout="column" fxLayoutAlign="space-between center">
+  <div class=" list_works" fxLayout="column" fxLayoutAlign="center center" *ngFor="let title of worksTitles">
     <ul>
-      <li class="title" *ngFor="let title of worksTitles">
+      <li class="title" *ngIf="searchTitle === '' || title.toLowerCase().includes(searchTitle)">
         <a (click)="redirectToPDF(title)">{{title}}</a>
       </li>
     </ul>
   </div>
+
+
+</div>

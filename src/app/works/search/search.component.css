@@ -1,0 +1,17 @@
+.search {
+  padding-top: 40px;
+}
+
+.search_input {
+  width: 350px;
+  border-radius: 20px;
+  padding: 15px;
+  min-width: 90%;
+ border: none;
+ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+ background: var(--white);
+ -webkit-backdrop-filter: blur(15.1px);
+ backdrop-filter: blur(15.1px);
+ list-style: none;
+}
