@@ -13,7 +13,8 @@ export class BiographyComponent {
   teenage = 'assets/images/teenage.png';
   quoteIcon = 'assets/quote.svg';
   menuIcon = 'menu';
-arrowIcon = 'assets/arrow_icon.svg';
+// arrowIcon = 'assets/arrow_icon.svg';
+curvedIcon = 'assets/images/curved.png'
  faq_title = 'Poznaj Krzysia';
 
 
@@ -72,26 +73,18 @@ arrowIcon = 'assets/arrow_icon.svg';
 
 
   poems: any[] = [
-    {id: 1, text: `W oczach psów można unieść nieba biały tulipan.
-    Kogo kochasz kochając przydrożne psy,
-    chodząc w ulicach wiatrem spalonych,
-    na szybach zastygając oczami szklanymi jak łzy?
-    Kogo kochasz kochając w ich oczach maleńkie
-    kobiety orientalnych snów,
-    kiedy boisz się twarz ich jak kwiat wziąć do ręki
-    i ostrożnie układasz mozaiki słów?
-    Kogo kochasz? w tych oczach zastygł czas
-    dyluwialnych, zwierzęcych epok
-    i żółte, fosforyczne talerze gwiazd
-    wprawione w oczy jak w niebo.
-    Jakże spokojne ich twarze obrosłe
-    sierścią - osadem - miłością lat,
-    kiedy bijesz na oślep rękami jak wiosłem
-    we wrogi obraz nieba i ziemi, w świat.
-    Rzuć, rzuć magię wirujących kół,
-    podnieś ręce do potęgi łap,
-    wtul się w sierść przyjacielską i płyń
-    przez zarosłe czaszkami wybrzeża lat.`}
+    {id: 1, text: `Nas nauczono. Nie ma miłości.
+    Jakże nam jeszcze uciekać w mrok
+    przed żaglem nozdrzy węszących nas,
+    przed siecią wzdętą kijów i rąk,
+    kiedy nie wrócą matki ni dzieci
+    w pustego serca rozpruty strąk.
+    Nas nauczono. Trzeba zapomnieć,
+    żeby nie umrzeć rojąc to wszystko.
+    Wstajemy nocą. Ciemno jest, ślisko.
+    Szukamy serca – bierzemy w rękę,
+    nasłuchujemy: wygaśnie męka,
+    ale zostanie kamień – tak – głaz.`}
   ]
 
 }

@@ -18,6 +18,8 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './works/search/search.component';
+import { GalleryComponent } from './gallery/gallery.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { SearchComponent } from './works/search/search.component';
     routingComponents,
     BlogPostComponent,
     FooterComponent,
-    SearchComponent
+    SearchComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

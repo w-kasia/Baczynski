@@ -1,0 +1,43 @@
+<!-- <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation> -->
+<!-- <div class="component__container" fxLayout="column">
+  <div class="component__container--gallery" fxLayout="row wrap" fxLayoutAlign="center center">
+    <div fxLayoutAlign="center center" *ngFor="let image of images">
+      <img fxFlex="33%" class="component__container--gallery--image" src="assets/images/gallery/{{ image.filename }}"
+        alt="">
+      <!-- <div class="image-title">{{ image.title }}</div> -->
+<!-- </div>
+  </div>
+</div> -->
+
+<div class="component__container" fxLayout="column">
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <div fxLayoutAlign="center center" class="component__container--gallery" fxLayout="row wrap" fxLayoutGap="40px">
+    <div *ngFor="let image of images">
+      <img class="component__container--gallery--image" src="assets/images/gallery/{{ image.filename }}" alt="">
+      <!-- <div class="image-title">{{ image.title }}</div> -->
+    </div>
+  </div>
+
+</div>
+
+<!--
+
+<div class="large-view" *ngIf="isLargeViewDisplayed">
+  <div class="component--container--view">
+    <img class="largeViewImage" src="assets/images/gallery/{{ selectedImage }}" alt="">
+    <button class="close-button" (click)="closeLargeView()">Close</button>
+  </div>
+</div> -->
+
+
+
+
+<!-- <div class="component__container" fxLayout="column">
+  <div fxLayoutAlign="center center" class="component__container--gallery" fxLayout="row wrap" fxLayoutGap="40px">
+    <div *ngFor="let image of images" (click)="openLightbox(image)">
+      <img class="component__container--gallery--image" [src]="image.src" alt="">
+      <!-- <div class="image-title">{{ image.title }}</div> -->
+<!-- </div>
+  </div>
+
+</div>  -->
