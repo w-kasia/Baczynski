@@ -19,6 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './works/search/search.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { MemoriesComponent } from './memories/memories.component';
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { GalleryComponent } from './gallery/gallery.component';
     BlogPostComponent,
     FooterComponent,
     SearchComponent,
-    GalleryComponent
+    GalleryComponent,
+    MemoriesComponent
   ],
   imports: [
     BrowserModule,

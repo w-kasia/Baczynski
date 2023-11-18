@@ -1,31 +1,19 @@
-<!-- <div class="container">
-  <div class="quote">
-    <h1 class="mat-display-1"> na imię mi było Krzysztof,
-      i jeszcze ciało - to tak niewiele.
-    </h1>
-  </div>
-  <div class="portrait">
-    <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">
-  </div>
-</div> -->
-
 <div class="page_container">
 
   <div class="animations">
-    <img [src]="butterfly" alt="Motyle" [style]="getButterflyStyles()" class="bg_image">
+    <img [src]="butterfly" alt="Motyle" class="bg_image">
   </div>
-
 
   <div class="component__container" fxLayout="row" fxLayoutAlign="center center">
 
     <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-around center">
       <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
 
-      <div class="portrait" fxFlex="60">
-        <img [src]="motherImage" alt="Portret z matką - lata dziecięce" [style]="getPortraitStyles()">
+      <div class="portrait_container" fxFlex="55">
+        <img [src]="motherImage" alt="Portret z matką - lata dziecięce" class="portrait-with-mother">
       </div>
-      <div class="quote" fxFlex="40">
-        <h1 class="mat-display-1">{{ quote }}
+      <div class="quote" fxFlex="45">
+        <h1>{{ quote }}
         </h1>
       </div>
     </div>
@@ -34,7 +22,7 @@
   <div class="faq_main_container" fxLayout="column" fxLayoutAlign="center center">
 
     <div fxLayout="row" fxLayoutAlign="center center">
-      <h3 class=".md-display-2 faq_title">{{ faq_title }}</h3>
+      <h3 class="faq_title">Poznaj <span>Krzysia</span></h3>
     </div>
 
     <div class="faq_container" fxLayout="row" fxLayoutAlign="space-between none">
@@ -66,22 +54,22 @@
     </div> -->
 
 
-    <div fxLayout="row" fxLayoutAlign="center center">
-      <div *ngFor="let poem of poems" fxFlex="40">
-        <!-- <img [src]="quoteIcon" alt="Quote Icon" class="quoteIcon"> -->
-        {{poem.text}}
-      </div>
+    <div fxLayout="row" fxLayoutAlign="center center" class="biography_section">
 
-      <div fxFlex="60">
+      <div fxFlex="50" fxLayoutAlign="center center">
         <img class=" portrait" src="assets/images/image-1.jpg" alt="">
-        <!-- <img [src]="teenage" alt=""> -->
       </div>
+
+      <div class="poem" *ngFor="let poem of poems" fxFlex="50" fxLayoutAlign="center center">
+        <!-- <img [src]="quoteIcon" alt="Quote Icon" class="quoteIcon"> -->
+        <h2>{{poem.text}}</h2>
+      </div>
+
+
     </div>
 
-    <div memories_container>
-      <h1>Inni o <span>Krzysztofie</span> </h1>
-    </div>
 
+    <app-memories></app-memories>
 
   </div>
 
