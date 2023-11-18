@@ -1,45 +1,42 @@
-import { Component, OnInit } from '@angular/core';
-import { WorksService } from './works.service';
-import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-works',
   templateUrl: './works.component.html',
   styleUrls: ['./works.component.css']
 })
-export class WorksComponent implements OnInit {
+export class WorksComponent {
 
   menuIcon = 'menu';
   portrait_Baczynski = 'assets/images/portrait_Krzys.png';
 
 
-  worksTitles!: string[];
+  // worksTitles!: string[];
 
-  selectedTitle: any = '';
+  // selectedTitle: any = '';
 
-  apiURL2: any | undefined;
+  // apiURL2: any | undefined;
 
-  //for search input
-  searchTitle: string = '';
+  // //for search input
+  // searchTitle: string = '';
 
-  constructor(private worksService: WorksService, private router: Router) {}
+  // constructor(private worksService: WorksService, private router: Router) {}
 
-  ngOnInit(): void {
-    this.worksService.getWorksTitles().subscribe(data => {
-      this.worksTitles = data.map(work => work.title
-        );
-    });
-  }
+  // ngOnInit(): void {
+  //   this.worksService.getWorksTitles().subscribe(data => {
+  //     this.worksTitles = data.map(work => work.title
+  //       );
+  //   });
+  // }
 
-  redirectToPDF(title: string) {
-    const formattedTitle = this.worksService.formatTitle(title);
-    const pdfURL = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
-    window.open(pdfURL, '_blank');
-  }
+  // redirectToPDF(title: string) {
+  //   const formattedTitle = this.worksService.formatTitle(title);
+  //   const pdfURL = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
+  //   window.open(pdfURL, '_blank');
+  // }
 
-  //for search input
-  onSearchTextEntered(searchValue: string) {
-    this.searchTitle = searchValue;
-  }
+  // //for search input
+  // onSearchTextEntered(searchValue: string) {
+  //   this.searchTitle = searchValue;
+  // }
 }

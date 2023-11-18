@@ -1,0 +1,35 @@
+import { Component } from '@angular/core';
+import { WorksService } from '../works.service';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-poems',
+  templateUrl: './poems.component.html',
+  styleUrls: ['./poems.component.css']
+})
+export class PoemsComponent {
+  worksTitles!: string[];
+  selectedTitle: any = '';
+  apiURL2: any | undefined;
+  searchTitle: string = '';
+
+  constructor(private worksService: WorksService, private router: Router) {}
+
+  ngOnInit(): void {
+    this.worksService.getWorksTitles().subscribe(data => {
+      this.worksTitles = data.map(work => work.title
+        );
+    });
+  }
+
+  redirectToPDF(title: string) {
+    const formattedTitle = this.worksService.formatTitle(title);
+    const pdfURL = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
+    window.open(pdfURL, '_blank');
+  }
+
+  //for search input
+  onSearchTextEntered(searchValue: string) {
+    this.searchTitle = searchValue;
+  }
+}

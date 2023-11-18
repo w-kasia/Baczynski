@@ -6,58 +6,7 @@
   padding-left: 70px;
 }
 
-/* .search {
-  padding-top: 40px;
-}
 
-.search_input {
-  width: 350px;
-  border-radius: 20px;
-  padding: 15px;
-  min-width: 90%;
- border: none;
- box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
- background: var(--white);
- -webkit-backdrop-filter: blur(15.1px);
- backdrop-filter: blur(15.1px);
- list-style: none;
-} */
-
-.works_section {
-  /* min-width: 90%; */
-  max-width: 100vw;
-  min-height: 100vh;
-}
-
-.list_works {
-  padding-top: 40px; ;
-  width: 90%;
-}
-
-.title {
-  /* background:  rgba(0, 0, 0, 0.25);
-  background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15)); */
-  cursor: pointer;
-  background: var(--main-bg);
-  -webkit-backdrop-filter: blur(15.1px);
-  backdrop-filter: blur(15.1px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  list-style: none;
-  /* min-width: 90%; */
-  padding: 15px;
-  margin-bottom: 4px;
-  border-radius: 13px;
-}
-
-.title:hover {
-  background-color: #00bfb2;
-background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
-}
-ul li a {
-  text-decoration: none;
-  color: white;
-}
 
 
 

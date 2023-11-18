@@ -1,0 +1,13 @@
+<div class="works_section" class="component__container" fxLayout="column" fxLayoutAlign="center center">
+  <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
+
+  <div class="list_works" fxLayout="row wrap" fxLayoutGap="15" fxLayoutAlign="center center">
+    <!-- tutaj ewentualnie zmieć fxFlex="33" żeby wyświetlone były 2 tytuły w wierszu -->
+    <ul fxFlex="29" *ngFor="let title of worksTitles">
+      <li class="title" *ngIf="searchTitle === '' || title.toLowerCase().includes(searchTitle)"
+        (click)="redirectToPDF(title)">
+        <a>{{title}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

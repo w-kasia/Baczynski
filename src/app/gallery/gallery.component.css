@@ -1,12 +1,15 @@
+.component__container {
+  padding-top: 38px;
+  padding: 30px;
+}
+
 .component-container--gallery {
   min-width: 90%;
-
 }
 
 .component__container--gallery--image {
   width: 380px;
   border-radius: 15px;
-  /* padding-bottom: 30px; */
 }
 
 .component__container--gallery--image:hover {

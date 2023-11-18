@@ -9,34 +9,5 @@
     </h2>
     <img class="component_container--image" [src]="portrait_Baczynski" alt="Portret frontalny Krzysztofa Baczyńskiego">
   </div>
-
-
 </div>
-
-<!-- <div class="works_section" class="component__container" fxLayout="column" fxLayoutAlign="center center">
-  <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
-
-  <div class=" list_works" fxLayout="column" fxLayoutAlign="center center" *ngFor="let title of worksTitles">
-    <ul>
-      <li class="title" *ngIf="searchTitle === '' || title.toLowerCase().includes(searchTitle)">
-        <a (click)="redirectToPDF(title)">{{title}}</a>
-      </li>
-    </ul>
-  </div>
-
-
-</div> -->
-
-
-<div class="works_section" class="component__container" fxLayout="column" fxLayoutAlign="center center">
-  <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
-
-  <div class=" list_works" fxLayout="row wrap" fxFlex="33" fxLayoutAlign="center center">
-    <ul *ngFor="let title of worksTitles">
-      <li class="title" *ngIf="searchTitle === '' || title.toLowerCase().includes(searchTitle)">
-        <a (click)="redirectToPDF(title)">{{title}}</a>
-      </li>
-    </ul>
-  </div>
-
-</div>
+<app-poems></app-poems>

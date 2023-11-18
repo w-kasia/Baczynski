@@ -20,6 +20,7 @@ import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './works/search/search.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MemoriesComponent } from './memories/memories.component';
+import { PoemsComponent } from './works/poems/poems.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { MemoriesComponent } from './memories/memories.component';
     FooterComponent,
     SearchComponent,
     GalleryComponent,
-    MemoriesComponent
+    MemoriesComponent,
+    PoemsComponent
   ],
   imports: [
     BrowserModule,
