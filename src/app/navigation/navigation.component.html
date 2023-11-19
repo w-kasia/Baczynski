@@ -1,20 +1,14 @@
 <div class="menu-container">
-
   <div class="icon">
-
     <button class="menu-icon" mat-icon [matMenuTriggerFor]="menu" svgIcon="menu"
       aria-label="Example icon-button with a menu">
       <mat-icon>{{menuIcon}}</mat-icon>
     </button>
-
   </div>
 
-
-
   <div class="menu-items">
-    <!-- 
-    add routerLinkActive for styles -->
-    <mat-menu class="custom-menu" #menu="matMenu">
+    add routerLinkActive for styles 
+<mat-menu class="custom-menu" #menu="matMenu">
       <button mat-menu-item class="mat-menu-item"><a routerLink="/home">Home</a>
       </button>
       <button mat-menu-item class="mat-menu-item"><a routerLink="/aktualnosci">Aktualności</a>
@@ -25,53 +19,7 @@
       </button>
       <button mat-menu-item class="mat-menu-item"><a routerLink="/galeria">Galeria</a>
       </button>
-
-
-
-      <!-- <button mat-menu-item class="mat-menu-item" *ngFor="let menuItem of menuItems">{{menuItem}}
-      </button> -->
-
-      <!-- <button mat-menu-item class="mat-menu-item">Home
-      </button>
-      <button mat-menu-item class="mat-menu-item">Aktualności
-      </button>
-      <button mat-menu-item class="mat-menu-item">Życiorys
-      </button>
-      <button mat-menu-item class="mat-menu-item">Wiersze
-      </button> -->
     </mat-menu>
-
   </div>
+</div> 
 
-</div>
-
-
-
-
-
-
-
-
-
-<!-- <div class="menu-container">
-
-
-  <div class="menu-item">
-    <button mat-button class="menu-button">
-      <mat-icon>dashboard</mat-icon>
-      <span>Home</span>
-    </button>
-    <button mat-button class="menu-button">
-      <mat-icon>dashboard</mat-icon>
-      <span>Aktualności</span>
-    </button>
-    <button mat-button class="menu-button">
-      <mat-icon>dashboard</mat-icon>
-      <span>Życiorys</span>
-    </button>
-    <button mat-button class="menu-button">
-      <mat-icon>dashboard</mat-icon>
-      <span>Wiersze</span>
-    </button>
-  </div>
-</div> -->

@@ -8,7 +8,6 @@ import { Component, Input, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class NavigationComponent {
-  // @Input() menuItems: string[] | undefined;
 
   @Input() menuIcon: string | undefined;
 

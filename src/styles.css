@@ -21,6 +21,7 @@ body {
   color: var(--white);
   min-height: 100vh;
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .component__container {
@@ -51,18 +52,20 @@ body {
 }
 
 /* .menu-items {
-  width: 100%;
+  min-width: 100vw;
   min-height: 100vh;
 } */
 
-.custom-menu {
+
+
+/* .custom-menu {
   min-width: 100vw;
   min-height: 100vh;
   margin-top: 20px;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-}
+  /* width: 100%;
+  height: 100%; */
+  /* background-color: red;
+}  */
 
 /* .mat-menu-item {
   color: white !important;
