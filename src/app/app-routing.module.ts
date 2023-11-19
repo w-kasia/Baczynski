@@ -7,6 +7,7 @@ import { NewsComponent } from './news/news.component';
 import { WorkComponent } from './work/work.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { GalleryComponent } from './gallery/gallery.component';
+import { ErrorComponent } from './error/error.component';
 
 
 const routes: Routes = [
@@ -16,10 +17,9 @@ const routes: Routes = [
   { path: 'works', component: WorksComponent},
   { path: 'work', component: WorkComponent},
   { path: 'aktualnosci', component: NewsComponent},
-  { path: 'aktualnosci/:id/', component: BlogPostComponent},
-  { path: 'galeria', component: GalleryComponent}
-
-  //dodać error component na końcu!
+  { path: 'aktualnosci/:id', component: BlogPostComponent},
+  { path: 'galeria', component: GalleryComponent},
+  { path: '**', component: ErrorComponent}
 ];
 
 @NgModule({

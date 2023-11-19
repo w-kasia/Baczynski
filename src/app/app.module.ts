@@ -21,6 +21,7 @@ import { SearchComponent } from './works/search/search.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MemoriesComponent } from './memories/memories.component';
 import { PoemsComponent } from './poems/poems.component';
+import { ErrorComponent } from './error/error.component';
 
 
 
@@ -34,7 +35,8 @@ import { PoemsComponent } from './poems/poems.component';
     SearchComponent,
     GalleryComponent,
     MemoriesComponent,
-    PoemsComponent
+    PoemsComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
