@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { WorksService } from '../works.service';
 import { Router } from '@angular/router';
+import { WorksService } from '../works/works.service';
 
 @Component({
   selector: 'app-poems',

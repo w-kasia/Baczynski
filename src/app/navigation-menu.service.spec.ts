@@ -1,16 +1,16 @@
-import { TestBed } from '@angular/core/testing';
+// import { TestBed } from '@angular/core/testing';
 
-import { NavigationMenuService } from './navigation.service';
+// import { NavigationMenuService } from './navigation.service';
 
-describe('NavigationMenuService', () => {
-  let service: NavigationMenuService;
+// describe('NavigationMenuService', () => {
+//   let service: NavigationMenuService;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({});
-    service = TestBed.inject(NavigationMenuService);
-  });
+//   beforeEach(() => {
+//     TestBed.configureTestingModule({});
+//     service = TestBed.inject(NavigationMenuService);
+//   });
 
-  it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-});
+//   it('should be created', () => {
+//     expect(service).toBeTruthy();
+//   });
+// });

@@ -1,8 +1,12 @@
-<!-- do poprawy adres przekierowania -->
-<div fxLayout="row wrap" fxLayoutGap="50px" fxLayoutAlign="center center" class="news__container">
-  <div fxLayout="column" LayoutAlign="space-between center" class="post__container"
-    *ngFor="let post of blogPosts" [routerLink]="['/aktualnosci', post.title]">
-    <h2>{{post.title}}</h2>
-    <p>{{post.content}}...</p>
+<div class="component__container" fxLayout="column" fxLayoutGap="50">
+  <div fxLayoutAlign="center center">
+    <h1>Sprawdź, co nowego u <span>Baczyńskiego</span></h1>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50">
+    <div class="post__container" *ngFor="let post of blogPosts" [routerLink]="['/aktualnosci', post.title]">
+      <span class="date_post">{{post.date}}</span>
+      <h2 class="title_post">{{post.title}}</h2>
+      <p class="introduction_post">{{post.content}}...</p>
+    </div>
   </div>
 </div>

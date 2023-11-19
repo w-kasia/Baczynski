@@ -6,9 +6,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import {MatTableModule} from '@angular/material/table';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
 
-const material = [MatIconModule, MatMenuModule, MatExpansionModule, MatTableModule, MatButtonModule, MatCardModule, MatProgressBarModule];
+const material = [MatIconModule, MatMenuModule, MatExpansionModule, MatTableModule, MatButtonModule, MatCardModule ];
 
 @NgModule({
   imports: [material],

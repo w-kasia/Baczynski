@@ -16,7 +16,7 @@ const routes: Routes = [
   { path: 'works', component: WorksComponent},
   { path: 'work', component: WorkComponent},
   { path: 'aktualnosci', component: NewsComponent},
-  { path: 'aktualnosci/:id', component: BlogPostComponent},
+  { path: 'aktualnosci/:id/', component: BlogPostComponent},
   { path: 'galeria', component: GalleryComponent}
 
   //dodać error component na końcu!

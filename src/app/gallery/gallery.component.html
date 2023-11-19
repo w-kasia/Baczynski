@@ -1,5 +1,5 @@
 <div class="component__container" fxLayout="column">
-  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <app-navigation class="navigation"></app-navigation>
   <div fxLayoutAlign="center center" class="component__container--gallery" fxLayout="row wrap" fxLayoutGap="40px">
     <div class="images_container" *ngFor="let image of images">
       <img class="component__container--gallery--image" src="assets/images/gallery/{{ image.filename }}" alt="">
