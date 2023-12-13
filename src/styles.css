@@ -44,11 +44,12 @@ body {
 
 .menu-icon {
   position: absolute;
-  top: 10px;
+  top: 20px;
   left: 10px;
   border: none;
   color: white;
-  background: transparent;
+  background-color: var(--main-bg);
+
 }
 
 .navigation {

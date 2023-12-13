@@ -17,11 +17,12 @@ import { WorkComponent } from './work/work.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
-import { SearchComponent } from './works/search/search.component';
+import { SearchComponent } from './search/search.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { MemoriesComponent } from './memories/memories.component';
 import { PoemsComponent } from './poems/poems.component';
 import { ErrorComponent } from './error/error.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -36,7 +37,8 @@ import { ErrorComponent } from './error/error.component';
     GalleryComponent,
     MemoriesComponent,
     PoemsComponent,
-    ErrorComponent
+    ErrorComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

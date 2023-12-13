@@ -10,6 +10,7 @@
 }
 
 .title {
+  
   /* background:  rgba(0, 0, 0, 0.25);
   background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15)); */
   cursor: pointer;
@@ -38,5 +39,5 @@ ul li {
 ul li a {
   text-decoration: none;
   color: white;
-  
+
 }

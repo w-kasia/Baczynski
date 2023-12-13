@@ -1,0 +1,59 @@
+
+
+mat-sidenav-container {
+  width: 60px;
+  background-color: var(--main-bg);
+
+}
+
+mat-icon:hover {
+  background: transparent;
+}
+
+.closeButtonContainer {
+    position: absolute;
+  top: 0;
+  right: 16px;
+ 
+}
+
+.close-icon {
+
+  font-size: 30px;
+  color: white;
+  background: transparent;
+}
+
+mat-sidenav {
+  width: 100vw;
+  max-height: 100vh;
+  background: var(--main-bg);
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+
+}
+
+.listItem {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 26px;
+  padding: 25px;
+}
+
+
+/* .navigationDiv {
+  width: 100vw;
+  max-height: 100vh;
+  background: var(--main-bg);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+} */
+
+.menuItemsContainer {
+  height: 100vh;
+}
