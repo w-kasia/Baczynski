@@ -17,3 +17,32 @@
 }
 
 
+.quoteContainer {
+  /* min-height: 30vh;
+ max-width: 100vw;  */
+ width: 90vw;
+ min-height: 30vh;
+    padding-top: 40px;
+background-color: var(--grey);
+
+}
+
+.quote {
+  width: 90%;
+}
+
+
+
+.napisSection2 {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  opacity: 0.8;
+}
+
+.napis {
+  font-family: 'Hurricane', cursive;
+  color: white;
+  font-size: 50px;
+ 
+}
