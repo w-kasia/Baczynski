@@ -26,6 +26,7 @@ import { ContactComponent } from './contact/contact.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -39,6 +40,7 @@ import { ContactComponent } from './contact/contact.component';
     PoemsComponent,
     ErrorComponent,
     ContactComponent
+
   ],
   imports: [
     BrowserModule,

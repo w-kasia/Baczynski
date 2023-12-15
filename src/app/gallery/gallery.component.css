@@ -4,6 +4,7 @@
 
 .component-container--gallery {
 width: 90vw;
+
 }
 
 
@@ -12,6 +13,7 @@ width: 90vw;
   height: 600px;
   border-radius: 15px;
   margin-bottom: 40px;
+
 }
 
 .component__container--gallery--image:hover {
@@ -19,3 +21,45 @@ width: 90vw;
   transition: 1s ease-in-out;
 }
 
+
+
+
+
+
+.lightbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: -10px;
+  bottom: -10px;
+  width: 100vw;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0,0,0,.85);
+}
+
+.img-preview {
+  border-radius: 15px;
+  height: 95vh;
+  position: relative;
+}
+
+.prev-button {
+  position: absolute;
+  left: 20px;
+  font-size: 35px;
+}
+
+.next-button {
+  position: absolute;
+  right: 20px;
+  font-size: 35px;
+}
+
+.close-button {
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  font-size: 35px;
+}

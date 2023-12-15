@@ -8,6 +8,7 @@ import { WorkComponent } from './work/work.component';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ErrorComponent } from './error/error.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   { path: 'aktualnosci', component: NewsComponent},
   { path: 'aktualnosci/:id', component: BlogPostComponent},
   { path: 'galeria', component: GalleryComponent},
+  { path: 'kontakt', component: ContactComponent},
   { path: '**', component: ErrorComponent}
 ];
 
@@ -27,4 +29,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [HomeComponent, BiographyComponent, WorksComponent, NewsComponent, WorkComponent, GalleryComponent]
+export const routingComponents = [HomeComponent, BiographyComponent, WorksComponent, NewsComponent, WorkComponent, GalleryComponent, ContactComponent]

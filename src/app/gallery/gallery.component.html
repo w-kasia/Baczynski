@@ -1,9 +1,83 @@
+<!-- <div class="component__container" fxLayout="column">
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <div fxLayoutAlign="center center" class="component__container--gallery" fxLayout="row wrap" fxLayoutGap="40px">
+    <div class="images_container" *ngFor="let image of images; let i = index">
+      <img class="component__container--gallery--image" src="assets/images/gallery/{{ image.filename }}" alt="{{ image.alt }}">
+    </div>
+  </div>
+</div> -->
+
+
 <div class="component__container" fxLayout="column">
   <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
   <div fxLayoutAlign="center center" class="component__container--gallery" fxLayout="row wrap" fxLayoutGap="40px">
-    <div class="images_container" *ngFor="let image of images">
-      <img class="component__container--gallery--image" src="assets/images/gallery/{{ image.filename }}" alt="">
-      <!-- <div class="image-title">{{ image.title }}</div> -->
+    <div class="images_container" *ngFor="let image of images; let i = index">
+      <img (click)="onPreviewImage(i)" class="component__container--gallery--image"
+        src="assets/images/gallery/{{ image.filename }}" alt="{{ image.alt }}">
     </div>
   </div>
+
+
+
+  <div *ngIf="showMask" class="lightbox">
+    <button mat-icon-button (click)="closePreview()" *ngIf="previewImage" class="close-button">
+      <mat-icon class="mat-18">close</mat-icon>
+    </button>
+
+    <button mat-icon-button *ngIf="controls" class="prev-button" type="button" (click)="goToPrev()">
+      <mat-icon class="mat-18">keyboard_arrow_left</mat-icon>
+    </button>
+
+    <button mat-icon-button class="next-button" type="button" (click)="goToNext()">
+      <mat-icon class="mat-18">keyboard_arrow_right</mat-icon>
+    </button>
+
+
+    <div *ngIf="previewImage" class="lightbox-img">
+      <img class="img-preview" src="assets/images/gallery/{{currentLightboxImage.filename}}" alt="">
+    </div>
+
+  </div>
+
+
 </div>
+
+
+
+
+
+
+
+
+<!--
+<div class="container justify-content-center align-items-center mt-4 mb-4">
+  <div class="row g-2">
+    <div class="col-4" *ngFor="let image of images; let i = index">
+      <div class="image-container p-3">
+        <img (click)="onPreviewImage(i)" class="imageOfDish" src="assets/images/gallery/{{image}}" alt="">
+      </div>
+    </div>
+    <div *ngIf="showMask" class="lightbox">
+      <button (click)="closePreview()" *ngIf="previewImage" class="close-btn">
+        <img src="assets/icon-close.svg" alt="">
+      </button>
+
+      <button *ngIf="controls" class="carousel-control-prev btn-control" type="button" data-bs-slide="prev"
+        (click)="goToPrev()">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next btn-control" type="button" data-bs-slide="next" (click)="goToNext()">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div *ngIf="previewImage" class="lightbox-img">
+        <img class="img-preview" src="assets/images/gallery/{{currentLightboxImage}}" alt="">
+      </div>
+
+    </div>
+  </div>
+
+</div> -->
