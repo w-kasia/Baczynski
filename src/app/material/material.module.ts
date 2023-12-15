@@ -11,8 +11,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
+import {MatInputModule} from '@angular/material/input';
 
-const material = [MatIconModule, MatMenuModule, MatExpansionModule, MatTableModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule, MatToolbarModule, MatFormFieldModule, MatDialogModule];
+const material = [MatIconModule, MatMenuModule, MatExpansionModule, MatTableModule, MatButtonModule, MatCardModule, MatSidenavModule, MatListModule, MatToolbarModule, MatFormFieldModule, MatDialogModule, MatInputModule];
 
 @NgModule({
   imports: [material],
