@@ -2,6 +2,8 @@ import { Component, ViewChild, inject } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Firestore } from '@angular/fire/firestore';
 import { addDoc, collection } from 'firebase/firestore';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogAnimationsComponent } from '../dialog-animations/dialog-animations.component';
 
 @Component({
   selector: 'app-contact',
@@ -29,4 +31,16 @@ export class ContactComponent {
     this.saveData();
     form.resetForm();
   }
+
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog(enterAnimationDuration: string, exitAnimationDuration: string): void {
+    this.dialog.open(DialogAnimationsComponent, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration,
+    });
+  }
+
 }

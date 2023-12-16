@@ -25,6 +25,7 @@ import { ErrorComponent } from './error/error.component';
 import { ContactComponent } from './contact/contact.component';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { DialogAnimationsComponent } from './dialog-animations/dialog-animations.component';
 
 const firebaseConfig = {
 
@@ -58,7 +59,8 @@ const firebaseConfig = {
     MemoriesComponent,
     PoemsComponent,
     ErrorComponent,
-    ContactComponent
+    ContactComponent,
+    DialogAnimationsComponent
 
   ],
   imports: [
