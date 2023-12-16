@@ -23,7 +23,26 @@ import { MemoriesComponent } from './memories/memories.component';
 import { PoemsComponent } from './poems/poems.component';
 import { ErrorComponent } from './error/error.component';
 import { ContactComponent } from './contact/contact.component';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
+const firebaseConfig = {
+
+  apiKey: "AIzaSyAR6Rqxxo7lvgHkL1ldNEturX8ZgJySKAg",
+
+  authDomain: "baczynski-f11fc.firebaseapp.com",
+
+  databaseURL: "https://baczynski-f11fc-default-rtdb.europe-west1.firebasedatabase.app",
+
+  projectId: "baczynski-f11fc",
+
+  storageBucket: "baczynski-f11fc.appspot.com",
+
+  messagingSenderId: "628278115373",
+
+  appId: "1:628278115373:web:5606ce928c74c4e6000ca4"
+
+};
 
 
 
@@ -43,6 +62,8 @@ import { ContactComponent } from './contact/contact.component';
 
   ],
   imports: [
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
+    provideFirestore(() => getFirestore()),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
