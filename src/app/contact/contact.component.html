@@ -1,4 +1,5 @@
 <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
   <h1 class="contactHeading">Skontaktuj się z nami</h1>
   <form (ngSubmit)="onSubmit(f)" fxLayout="column" fxLayoutAlign="center center" #f="ngForm" class="form">
     <div class="form-group">
@@ -33,3 +34,4 @@
 
 
 </div>
+<app-footer></app-footer>

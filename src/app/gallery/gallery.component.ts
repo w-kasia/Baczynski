@@ -118,10 +118,4 @@ export class GalleryComponent {
     this.previewImage = false;
     this.showMask = false;
   }
-
 }
-
-
-
-
-

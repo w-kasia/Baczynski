@@ -44,5 +44,54 @@ background-color: var(--grey);
   font-family: 'Hurricane', cursive;
   color: white;
   font-size: 50px;
- 
+
+}
+
+/* .quoteContainer {
+  min-height: 30vh;
+} */
+
+.quoteSection {
+
+    width: 90vw;
+    min-height: 40vh;
+    /* position: relative; */
+    overflow: hidden;
+    background: var(--white);
+    border-radius: 16px;
+    color:black;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-family: 'Charm', cursive;
+}
+
+.page_container {
+  min-height: 100vh;
+}
+
+.quoteText {
+  border: 2px solid #00bfb2;;
+  width: 97%;
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.pictureByBaczynski {
+  max-width: 50vw;
+  margin-bottom: 8px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.description {
+  font-size: 14px;
+  padding-bottom: 40px;
+}
+
+.pictureOfPoem {
+  max-width: 30vw;
+  margin-bottom: 30px;
+  border-radius: 16px;
+  overflow: hidden;
 }

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
-import { Observable } from 'rxjs';
+// import { Router } from '@angular/router';
+// import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-news',
@@ -8,6 +8,8 @@ import { Observable } from 'rxjs';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent {
+
+  menuIcon = 'menu';
 
   blogPosts = [
     { date: '17 czerwca, 2022',
@@ -28,6 +30,5 @@ export class NewsComponent {
   navigateToArticle(post: any) {
     window.open(`/aktualnosci/${post.title}`)
   }
-
 
   }

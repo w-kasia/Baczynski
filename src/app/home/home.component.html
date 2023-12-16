@@ -1,15 +1,38 @@
-<div class="component__container" fxLayout="column" fxLayoutAlign="center center">
-  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
-  <div class="component__container--smaller" fxLayout="column" fxLayoutAlign="center center">
+<div class="page_container">
+  <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
+    <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+    <div class="component__container--smaller" fxLayout="column" fxLayoutAlign="center center">
 
-    <img class="home__container--img" [src]="homeBgImage" alt="Portret frontalny Krzysztofa Baczyńskiego">
-    <div class="napisSection2">
-      <h1 class="napis">Baczyński</h1>
+      <img class="home__container--img" [src]="homeBgImage" alt="Portret frontalny Krzysztofa Baczyńskiego">
+      <div class="napisSection2">
+        <h1 class="napis">Baczyński</h1>
+      </div>
+
     </div>
-
   </div>
+  <app-news></app-news>
+  <!-- <div class="quoteContainer"> -->
+  <!-- <p>Nie kocham Cię wcale<br>
+      tylko moja dusza jakaś taka smutna<br>
+      kiedy przechodzisz obok obojętnie.</p> -->
+  <div class="quotesSection" fxLayout="column" fxLayoutAlign="center center">
+    <img class="pictureByBaczynski" src="assets/images/Serce-jak-oblok.jpg" alt="">
+    <p class="description">K.K.Baczyński, Serce jak obłok</p>
+    <div class="quoteSection" fxLayout="row" fxLayoutAlign="center center">
+      <p class="quoteText">Matko, nie ma już dni, które nas rozdzielą,<br>
+        choć upiór dnia stoi w oknie i czeka,<br>
+        nie doścignie nas nikt na drodze dalszej od śmierci,<br>
+        nie odnajdzie nas nikt, bo droga nasza za daleka.</p>
+    </div>
+    <div class="poemsSection" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="40px">
+      <img class="pictureOfPoem" src="assets/images/canvas.png" alt="">
+      <img class="pictureOfPoem" src="assets/images/canvas5.png" alt="">
+    </div>
+  </div>
+
+  <!-- </div> -->
+
 </div>
-<app-news></app-news>
 <!-- <div class="quoteContainer">
   <p>Nie kocham Cię wcale<br>
     tylko moja dusza jakaś taka smutna<br>
@@ -18,7 +41,7 @@
 </div> -->
 
 
-<!-- 
+<!--
 <div class="quoteContainer"  fxLayoutAlign="center center">
   <div class="quote">
       <p>Nie kocham Cię wcale<br>
@@ -26,7 +49,7 @@
     kiedy przechodzisz obok obojętnie.</p>
   </div>
 
-    
+
   </div> -->
 
 

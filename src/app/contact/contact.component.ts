@@ -12,6 +12,7 @@ import { DialogAnimationsComponent } from '../dialog-animations/dialog-animation
 })
 export class ContactComponent {
 
+  menuIcon = 'menu';
 
   firestore: Firestore = inject(Firestore);
 
