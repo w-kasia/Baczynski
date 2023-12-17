@@ -1,16 +1,17 @@
 .footerContainer {
   width: 90vw;
   min-height: 30vh;
- 
+
+
 }
 
 .footer {
-  width: 90%;
+  width: 90vw;
   margin-bottom: 40px;
   height: 40vh;
-  border-radius: 20px;
-  background:  #00bfb2;
-
+  /* border-radius: 20px;
+  background:  #00bfb2; */
+  border-top: 2px solid var(--grey);
 }
 
 .logo {
@@ -32,7 +33,7 @@
   font-size: 18px;
   color: white;
   text-decoration: none;
-  
+
 }
 
 h1, h2 {

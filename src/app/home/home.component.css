@@ -57,9 +57,10 @@ background-color: var(--grey);
     min-height: 40vh;
     /* position: relative; */
     overflow: hidden;
-    background: var(--white);
+    /* background: var(--white); */
+    background: transparent;
     border-radius: 16px;
-    color:black;
+    /* color:black; */
     margin-bottom: 40px;
     font-size: 28px;
     font-family: 'Charm', cursive;
@@ -94,4 +95,21 @@ background-color: var(--grey);
   margin-bottom: 30px;
   border-radius: 16px;
   overflow: hidden;
+}
+
+.contentSection {
+
+  width: 70vw;
+  min-height: 40vh;
+  text-align: center;
+}
+
+h1, h2 {
+  font-size: 20px;
+
+}
+
+.pictureOfWork {
+  max-width: 60vw;
+  margin-bottom: 60px;
 }
