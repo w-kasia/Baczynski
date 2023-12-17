@@ -1,3 +1,54 @@
+BACZYŃSKI
+
+Hi! Nice to see you. :) I want to present you my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński. All content was published in Polish.
+
+What was my aim?
+My main aim was to create the Angular website with open API. Let's see my page! I hope, you'll have fun.
+
+
+Demo (video)
+
+Tech Stack
+Angular - framework (v.16)
+Typescript - language
+CSS - styling
+Angular Material - styling
+Angular Flex Layout - UI layout engine
+Firebase/Firestore - database
+https://wolnelektury.pl/api/ - API
+
+What will you find in my project?
+
+
+
+Getting Started
+Prerequisites
+
+Here's what you need to be able to run Papermark:
+
+    Node.js (version >= 18)
+    PostgreSQL (I use Vercel Postgres)
+    Blob storage (I use Vercel Blob)
+    Google OAuth Client (for authentication)
+    Resend (for sending emails)
+
+1. Clone the repository
+
+git clone https://github.com/mfts/papermark.git
+cd papermark
+
+2. Install npm dependencies
+
+npm install
+
+6. Run the dev server
+
+npm run dev
+
+7. Open the app in your browser
+
+Visit http://localhost:3000 in your browser.
+
 # Baczynski
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
