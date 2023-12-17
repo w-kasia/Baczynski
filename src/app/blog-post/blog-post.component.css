@@ -1,4 +1,6 @@
 .blog-container {
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 70vw;
   min-height: 90vh;
   position: relative;
@@ -6,4 +8,22 @@
   background: var(--white);
   border-radius: 16px;
   color:black;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+img {
+
+  width: 500px;
+  border-radius: 12px;
+  margin-top: 30px;
 }

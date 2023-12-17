@@ -1,6 +1,9 @@
 <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
-  <div class="blog-container">
-
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <div class="blog-container" *ngFor="let post of blogPosts; let i = index">
+    <h1>{{ post.date }}</h1>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.text }}</p>
+    <img src="{{post.image}}" alt="">
   </div>
 </div>
-

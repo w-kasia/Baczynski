@@ -39,5 +39,6 @@ export class WorksService {
     .replace(/[ć]/g, 'c')
     .replace(/[ń]/g, 'n')
     .replace(/-{2,}/g, '-')
+    
   }
 }

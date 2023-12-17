@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { BlogDataService } from '../blog-data.service';
 
 @Component({
   selector: 'app-blog-post',
@@ -7,4 +9,17 @@ import { Component } from '@angular/core';
 })
 export class BlogPostComponent {
 
-}
+  menuIcon = 'menu';
+  blogPosts: any[] = [];
+
+  constructor(private blogDataService: BlogDataService) {}
+
+  ngOnInit(): void {
+    this.blogDataService.getData().subscribe(response => {
+      this.blogPosts = response;
+    })
+  }
+
+  }
+
+
