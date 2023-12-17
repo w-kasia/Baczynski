@@ -1,20 +1,20 @@
 .post__container {
-  border-radius: 20px;
-  padding: 25px;
-  min-height: 500px;
   max-width: 400px;
+  min-height: 500px;
+  padding: 25px;
   border: 2px solid rgba(255, 255, 255, 0.2);
-  background: var(--main-bg);
-  border-radius: 16px;
+  border-radius: 20px;
+  background-color: transparent;
   box-shadow: var(--shadow);
   -webkit-backdrop-filter: blur(15.1px);
   backdrop-filter: blur(15.1px);
+  cursor: pointer;
 }
 
 .post__container:hover {
+  box-shadow:#00bfb2 0px 25px 50px -12px;
   transform: scale(1);
   transition: 0.5s ease-in-out;
-  box-shadow:#00bfb2 0px 25px 50px -12px;
 }
 
 h1 {
@@ -22,14 +22,14 @@ h1 {
 }
 
 h1 span {
-  color: #00bfb2;
+  color: var(--blue);
 }
 
 .title_post {
-  font-size: 25px;
-  padding-bottom: 40px;
   padding-top: 30px;
+  padding-bottom: 40px;
   color: #8ef1eb;
+  font-size: 25px;
 }
 
 .introduction_post {

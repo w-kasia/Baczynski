@@ -3,17 +3,14 @@
 }
 
 .component-container--gallery {
-width: 90vw;
-
+  width: 90vw;
 }
-
 
 .component__container--gallery--image {
   width: 420px;
   height: 600px;
-  border-radius: 15px;
   margin-bottom: 40px;
-
+  border-radius: 15px;
 }
 
 .component__container--gallery--image:hover {
@@ -21,28 +18,24 @@ width: 90vw;
   transition: 1s ease-in-out;
 }
 
-
-
-
-
-
+/*! do zrobienia  dodać flex w template zamiast tu*/
 .lightbox {
+  position: fixed;
+  top: -10px;
+  left: 0;
+  bottom: -10px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: fixed;
-  top: -10px;
-  bottom: -10px;
-  width: 100vw;
-  left: 0;
-  height: 100vh;
   background-color: rgba(0,0,0,.85);
 }
 
 .img-preview {
-  border-radius: 15px;
-  height: 95vh;
   position: relative;
+  height: 95vh;
+  border-radius: 15px;
 }
 
 .prev-button {
@@ -59,7 +52,7 @@ width: 90vw;
 
 .close-button {
   position: absolute;
-  top: 30px;
-  right: 10px;
+  top: 10px;
+  right: 20px;
   font-size: 35px;
 }

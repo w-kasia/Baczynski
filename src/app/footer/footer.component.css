@@ -1,50 +1,40 @@
 .footerContainer {
   width: 90vw;
   min-height: 30vh;
-
-
 }
 
 .footer {
   width: 90vw;
-  margin-bottom: 40px;
   height: 40vh;
-  /* border-radius: 20px;
-  background:  #00bfb2; */
+  margin-bottom: 40px;
   border-top: 2px solid var(--grey);
 }
 
 .logo {
-  font-family: 'Hurricane', cursive;
   color: white;
+  font-family: 'Hurricane', cursive;
   font-size: 50px;
 }
 
 .copyright {
   padding-top: 100px;
 }
+
 .footerListItems li {
-  list-style: none;
   margin-bottom: 8px;
+  list-style: none;
 }
 
 .footerListItem,
 .contact a {
-  font-size: 18px;
   color: white;
+  font-size: 18px;
   text-decoration: none;
 
 }
 
 h1, h2 {
-  font-size: 24px;
   margin-bottom: 15px;
+  font-size: 24px;
 }
 
-/* .contact {
-  margin-top: 15px;
-}
-
-.links {
-  margin-top: 15px;
-} */
