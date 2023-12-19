@@ -1,12 +1,14 @@
-input {
+/* input {
   width: 300px;
   border: 2px solid white;
   color: white;
-}
+} */
 
-mat-form-field.mat-form-field {
+/* mat-form-field.mat-form-field {
   color:white;
-}
+} */
+
+
 
 .contactHeading {
   padding-bottom: 50px;
@@ -16,3 +18,16 @@ mat-form-field.mat-form-field {
 button {
   z-index: -1;
 }
+
+mat-form-field{
+  width: 600px;
+  margin-bottom: 15px;
+
+}
+
+input {
+  padding: 20px;
+  border: 2px solid var(--white)!important;
+  border-radius: 10px;
+}
+

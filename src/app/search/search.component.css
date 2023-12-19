@@ -3,6 +3,7 @@
 }
 
 .search_input {
+
   width: 450px;
   padding: 15px;
   border: none;
@@ -15,10 +16,10 @@
   list-style: none;
 }
 
-.results {
+/* .results {
   display: flex;
-}
+} */
 
-.result {
+/* .result {
   margin-right: 10px;
-}
+} */

@@ -1,4 +1,4 @@
-import { Component, ViewChild, inject } from '@angular/core';
+import { Component, ViewChild, ViewEncapsulation, inject } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Firestore } from '@angular/fire/firestore';
 import { addDoc, collection } from 'firebase/firestore';
@@ -9,6 +9,7 @@ import { DialogAnimationsComponent } from '../dialog-animations/dialog-animation
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
+
 })
 export class ContactComponent {
 

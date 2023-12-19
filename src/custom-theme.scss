@@ -7,7 +7,11 @@
 // Include the common styles for Angular Material. We include this here so that you only
 // have to load a single css file for Angular Material in your app.
 // Be sure that you only ever include this mixin once!
+
+
 @include mat.core();
+
+
 
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
@@ -16,7 +20,7 @@ $Baczynski-primary: mat.define-palette(mat.$indigo-palette);
 $Baczynski-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
 
 // The warn palette is optional (defaults to red).
-$Baczynski-warn: mat.define-palette(mat.$red-palette);
+// $Baczynski-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
@@ -24,7 +28,7 @@ $Baczynski-theme: mat.define-light-theme((
   color: (
     primary: $Baczynski-primary,
     accent: $Baczynski-accent,
-    warn: $Baczynski-warn,
+    // warn: $Baczynski-warn,
   )
 ));
 
@@ -33,4 +37,17 @@ $Baczynski-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($Baczynski-theme);
 
+
+
+
+// @use '@angular/material' as mat;
+
+// // @import '@angular/material/theming';
+// @include mat-core();
+
+// $Baczynski-primary: mat-palette($mat-white);
+// $Baczynski-accent: mat-palette($mat-gray, 100, 200, 300);
+// $Baczynski-warn: mat-palette($mat-black);$my-app-theme: mat-light-theme($Baczynski-primary, $Baczynski-accent, $Baczynski-warn);
+
+// @include angular-material-theme($Baczynski-theme);
 

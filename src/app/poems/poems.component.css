@@ -10,7 +10,7 @@
 }
 
 .title {
-  
+
   /* background:  rgba(0, 0, 0, 0.25);
   background: linear-gradient(to right top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.15)); */
   cursor: pointer;
@@ -23,6 +23,7 @@
   padding: 15px;
   margin-bottom: 4px;
   border-radius: 13px;
+
 }
 
 .title:hover {
@@ -31,6 +32,8 @@ background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
 overflow: hidden;
 border: none;
 }
+
+
 
 ul li {
   margin-top: 15px;

@@ -1,0 +1,15 @@
+.scrollToTopBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 30px;
+  border: none;
+  overflow: hidden;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.topIcon {
+  filter: invert(99%) sepia(1%) saturate(6494%) hue-rotate(251deg) brightness(131%) contrast(91%);
+}
+

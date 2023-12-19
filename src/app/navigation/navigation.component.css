@@ -28,6 +28,7 @@ mat-sidenav {
   background: var(--main-bg);
   /* bottom: 0; */
   /* overflow-y: scroll; */
+
 }
 
 .listItem {
@@ -51,3 +52,5 @@ mat-sidenav {
 .menuItemsContainer {
   height: 100vh;
 }
+
+

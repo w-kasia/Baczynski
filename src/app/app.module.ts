@@ -12,8 +12,7 @@ import { BiographyComponent } from './biography/biography.component';
 import { WorksComponent } from './works/works.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
-import { WorksService } from './works/works.service';
-import { WorkComponent } from './work/work.component';
+import { WorksService } from './works.service';
 import { BlogPostComponent } from './blog-post/blog-post.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
@@ -26,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { DialogAnimationsComponent } from './dialog-animations/dialog-animations.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 const firebaseConfig = {
 
@@ -60,7 +60,9 @@ const firebaseConfig = {
     PoemsComponent,
     ErrorComponent,
     ContactComponent,
-    DialogAnimationsComponent
+    DialogAnimationsComponent,
+    WorksComponent,
+    ScrollToTopComponent
 
   ],
   imports: [
