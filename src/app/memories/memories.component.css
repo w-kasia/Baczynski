@@ -3,11 +3,44 @@ h1 span {
 }
 
 .memories_container {
+  width: 90vw;
   padding-top: 100px;
+  padding-bottom: 60px;
 }
 
 .memories_title {
+  padding-bottom: 80px;
   font-size: 40px;
 }
 
+.memoryQuoteContainer {
+  position: relative;
+  width: 700px;
+  min-height: 200px;
+  padding: 20px;
+  margin-bottom: 60px;
+  border: 2px solid var(--blue);
+  border-radius: 20px;
+  background-color: transparent;
+  z-index: -1;
+}
+
+.authorName {
+  position: absolute;
+  top: -30px;
+  left: -25px;
+  width: 250px;
+  padding: 10px;
+  border: 2px solid var(--blue);
+  border-radius: 20px;
+  background-color: #15181E;
+  color: var(--blue);
+  font-size: 20px;
+  text-align: center;
+}
+
+.quote {
+  margin-top: 25px;
+  font-size: 16px;
+}
 

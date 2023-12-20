@@ -1,12 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit} from '@angular/core';
-import { Observable } from 'rxjs';
 
-
-// interface Memories {
-//   author: string;
-//   quote: string;
-// }
 @Component({
   selector: 'app-memories',
   templateUrl: './memories.component.html',

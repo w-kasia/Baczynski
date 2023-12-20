@@ -1,26 +1,7 @@
-<!-- <div class="memories_container">
-  <section class="section1">
-    <h1>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ad?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet?</p>
-  </section>
-
-  <section class="section2">
-    <h1>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ad?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet?</p>
-  </section>
-
-  <section class="section3">
-    <h1>1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, ad?</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eveniet?</p>
-  </section>
-</div> -->
-
-
-
-<div class="memories_container">
+<div class="memories_container" fxLayout="column" fxLayoutAlign="center center">
   <h1 class="memories_title">Inni o <span>Krzysztofie</span></h1>
-  <div *ngFor="let memory of memories; let i = index">
-    <h2>{{memory.author}}</h2>
-    <p>{{memory.quote}}</p>
+  <div class="memoryQuoteContainer" *ngFor="let memory of memories; let i = index">
+    <h2 class="authorName">{{memory.author}}</h2>
+    <p class="quote">{{memory.quote}}</p>
   </div>
 </div>
