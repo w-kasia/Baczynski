@@ -16,10 +16,11 @@
 </div> -->
 
 
-<!--
+
 <div class="memories_container">
   <h1 class="memories_title">Inni o <span>Krzysztofie</span></h1>
-</div> -->
-
-
-
+  <div *ngFor="let memory of memories; let i = index">
+    <h2>{{memory.author}}</h2>
+    <p>{{memory.quote}}</p>
+  </div>
+</div>

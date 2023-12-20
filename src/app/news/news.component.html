@@ -1,4 +1,4 @@
-<div class="component__container" fxLayout="column" fxLayoutGap="50">
+<!-- <div class="component__container" fxLayout="column" fxLayoutGap="50">
   <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
   <div fxLayoutAlign="center center">
     <h1>Sprawdź, co nowego u <span>Baczyńskiego</span></h1>
@@ -11,4 +11,20 @@
     </div>
   </div>
 
+</div> -->
+
+<div class="component__container" fxLayout="column" fxLayoutGap="50">
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <div fxLayoutAlign="center center">
+    <h1>Sprawdź, co nowego u <span>Baczyńskiego</span></h1>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="50">
+    <div class="post__container" *ngFor="let post of blogPosts; let i = index" (click)="openPost(post.title)">
+      <span class="date_post">{{post.date}}</span>
+      <h2 class="title_post">{{post.title}}</h2>
+      <p class="introduction_post">{{post.content}}...</p>
+    </div>
+  </div>
+
 </div>
+<app-footer></app-footer>

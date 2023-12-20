@@ -17,7 +17,9 @@ const routes: Routes = [
   { path: 'biografia', component: BiographyComponent},
   { path: 'works', component: WorksComponent},
   { path: 'aktualnosci', component: NewsComponent},
-  { path: 'aktualnosci/:id', component: BlogPostComponent},
+  // { path: 'aktualnosci/:id', component: BlogPostComponent},
+  { path: 'aktualnosci/:title', component: BlogPostComponent},
+  { path: '', redirectTo: '/aktualnosci', pathMatch: 'full'},
   { path: 'galeria', component: GalleryComponent},
   { path: 'kontakt', component: ContactComponent},
   { path: '**', component: ErrorComponent}
