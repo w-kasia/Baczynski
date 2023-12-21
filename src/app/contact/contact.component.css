@@ -1,33 +1,56 @@
-/* input {
-  width: 300px;
-  border: 2px solid white;
-  color: white;
-} */
-
-/* mat-form-field.mat-form-field {
-  color:white;
-} */
-
-
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
 
 .contactHeading {
   padding-bottom: 50px;
-
-}
-
-button {
-  z-index: -1;
-}
-
-mat-form-field{
-  width: 600px;
-  margin-bottom: 15px;
-
+  color: var(--blue);
 }
 
 input {
-  padding: 20px;
-  border: 2px solid var(--white)!important;
-  border-radius: 10px;
+  width: 400px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 16px;
 }
 
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 3px solid red;
+}
+
+/* .help-block {
+  padding-bottom: 5px;
+  color: red;
+  font-size: 13px;
+}
+ */
+
+textarea {
+  width: 830px;
+  min-height: 200px;
+  border-radius: 20px;
+}
+
+.data {
+  display: flex;
+  padding: 15px;
+
+}
+
+.name {
+  margin-right: 15px;
+}
+
+.submitBtn {
+  width: 100px;
+  padding: 15px;
+  margin-top: 15px;
+  z-index: -1;
+}
+
+.form-label {
+  padding-bottom: 8px;
+}

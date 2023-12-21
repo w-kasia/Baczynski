@@ -1,13 +1,13 @@
-  <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
+<!-- <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
     <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
     <h1 class="contactHeading">Skontaktuj się z nami</h1>
     <form (ngSubmit)="onSubmit(f)" fxLayout="column" fxLayoutAlign="center center" #f="ngForm" class="form">
       <div class="form-group">
         <mat-form-field appearance="outline">
-          <mat-label for="inputName">Imię i Nazwisko</mat-label>
+          <mat-label class="form-label" for="inputName">Imię i Nazwisko</mat-label>
           <input class="form-control" matInput required ngModel name="name" #name="ngModel" id="inputName">
           <!-- <mat-hint *ngIf="!name.valid && name.touched">Podaj imię i nazwisko</mat-hint> -->
-        </mat-form-field>
+<!-- </mat-form-field>
       </div>
       <div class="form-group">
         <mat-form-field appearance="outline">
@@ -34,5 +34,47 @@
 
 
   </div>
-  <app-footer></app-footer>
+  <app-footer></app-footer> -->
 
+
+  <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
+    <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+<div class="component__container--smaller" fxLayout="column" fxLayoutAlign="center center">
+  <!-- <div class="component__container" fxLayout="column" fxLayoutAlign="center center"> -->
+  <h1 class="contactHeading">Skontaktuj się z nami</h1>
+  <form (ngSubmit)="onSubmit(f)" fxLayout="column" fxLayoutAlign="center center" #f="ngForm" class="form">
+    <div class="data">
+        <div class="form-group name">
+
+      <label class="form-label" for="inputName">Imię i Nazwisko*</label>
+      <input type="text" id="inputName" class="form-control" required ngModel name="name" #name="ngModel">
+      <!-- <span class="help-block" *ngIf="!name.valid && name.touched">Imię jest wymagane</span> -->
+    </div>
+    <div class="form-group">
+
+      <label class="form-label" for="inputEmail">E-mail*</label>
+      <input id="inputEmail" type="email" class="form-control" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+        required email ngModel name="email" #email="ngModel">
+      <!-- <span class="help-block" *ngIf="!email.valid && email.touched">Email jest wymagany</span> -->
+    </div>
+    </div>
+
+    <!-- <div class="form-group">
+
+      <label class="form-label" for="inputTitle">Tytuł*</label>
+      <input type="text" id="inputTitle" class="form-control" required ngModel name="title" #title="ngModel"> -->
+      <!-- <span class="help-block" *ngIf="!title.valid && title.touched">Tytuł jest wymagany</span> -->
+    <!-- </div> -->
+    <div class="form-group">
+
+      <label class="form-label" for="inputMessage">Wiadomość*</label>
+      <textarea id="inputMessage" class="form-control" required ngModel name="message" #message="ngModel"></textarea>
+      <!-- <span class="help-block" *ngIf="!message.valid && message.touched">Zamieść wiadomość</span> -->
+    </div>
+    <button (click)="openDialog('0ms', '0ms')" type="submit" class="submitBtn" [disabled]="!f.valid">Wyślij</button>
+  </form>
+
+
+</div>
+</div>
+<app-footer></app-footer>
