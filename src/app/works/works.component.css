@@ -5,3 +5,10 @@
 .component__container--quote {
   padding-left: 70px;
 }
+
+.component__container--smaller {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

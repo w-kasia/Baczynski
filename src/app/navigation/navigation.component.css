@@ -26,9 +26,6 @@ mat-sidenav {
   width: 100vw;
   max-height: 100vh;
   background: var(--main-bg);
-  /* bottom: 0; */
-  /* overflow-y: scroll; */
-
 }
 
 .listItem {
@@ -39,18 +36,10 @@ mat-sidenav {
   text-decoration: none;
 }
 
-/* .navigationDiv {
-  width: 100vw;
-  max-height: 100vh;
-  background: var(--main-bg);
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-} */
-
 .menuItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
 }
-
-

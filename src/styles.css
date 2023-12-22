@@ -29,11 +29,16 @@ body {
 }
 
 .component__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  /* margin-bottom: 100px; */
 }
 
 .component__container--smaller {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
   position: relative;
   width: 90vw;
   height: 85vh;

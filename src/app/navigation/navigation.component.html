@@ -1,80 +1,9 @@
-<!-- <div class="menu-container">
-  <div class="icon">
-    <button class="menu-icon" mat-icon [matMenuTriggerFor]="menu" svgIcon="menu"
-      aria-label="Example icon-button with a menu">
-      <mat-icon>{{menuIcon}}</mat-icon>
-    </button>
-  </div>
-
-  <div class="menu-items">
-
- <mat-menu class="custom-menu" #menu="matMenu">
-      <button mat-menu-item class="mat-menu-item"><a routerLink="/home">Home</a>
-      </button>
-      <button mat-menu-item class="mat-menu-item"><a routerLink="/aktualnosci">Aktualności</a>
-      </button>
-      <button mat-menu-item class="mat-menu-item"><a routerLink="/works">Utwory</a>
-      </button>
-      <button mat-menu-item class="mat-menu-item"><a routerLink="/biografia">Życiorys</a>
-      </button>
-      <button mat-menu-item class="mat-menu-item"><a routerLink="/galeria">Galeria</a>
-      </button>
-    </mat-menu>
-  </div>
-</div> -->
-
-
-
-
-
-
-
-
-<!-- <mat-sidenav #sidenav [opened]="isSidenavOpen">
-    <mat-nav-list>
-      <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
-      <a mat-list-item routerLink="/aktualnosci" (click)="sidenav.close()">Aktualności</a>
-      <a mat-list-item routerLink="/works" (click)="sidenav.close()">Utwory</a>
-      <a mat-list-item routerLink="/galeria" (click)="sidenav.close()">Galeria</a>
-      <a mat-list-item routerLink="/biografia" (click)="sidenav.close()">Biografia</a>
-      <button mat-icon-button class="close-icon" (click)="sidenav.close()">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <button mat-icon-button (click)="toggleSidenav()">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </mat-sidenav-content> -->
-
-
-
-<!-- <mat-toolbar color="primary">
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>menu</mat-icon>
-  </button>
-  <mat-nav-list>
-    <a mat-list-item routerLink="/home" (click)="sidenav.close()">Home</a>
-    <a mat-list-item routerLink="/aktualnosci" (click)="sidenav.close()">Aktualności</a>
-    <a mat-list-item routerLink="/works" (click)="sidenav.close()">Utwory</a>
-    <a mat-list-item routerLink="/galeria" (click)="sidenav.close()">Galeria</a>
-    <a mat-list-item routerLink="/biografia" (click)="sidenav.close()">Biografia</a>
-    <button mat-icon-button class="close-icon" (click)="sidenav.close()">
-      <mat-icon>close</mat-icon>
-    </button>
-  </mat-nav-list>
-</mat-toolbar> -->
-
-<!-- this! -->
-
 <mat-sidenav-container>
   <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened=!opened">
     <mat-icon class="menu-icon">{{menuIcon}}</mat-icon>
-
   </button>
   <mat-sidenav mode="over" [(opened)]="opened">
-    <div class="menuItemsContainer" fxLayout="column" fxLayoutAlign="center center">
+    <div class="menuItemsContainer">
       <a class="listItem" mat-list-item routerLink="/home">Home</a>
       <a class="listItem" mat-list-item routerLink="/aktualnosci">Aktualności</a>
       <a class="listItem" mat-list-item routerLink="/works">Utwory</a>
@@ -87,29 +16,5 @@
       <mat-icon class="close-icon" *ngIf="opened">close</mat-icon>
       </button>
     </div>
-
   </mat-sidenav>
-
-
-
 </mat-sidenav-container>
-
-<!--koniec-->
-
-<!-- <div class="menu-container">
-  <mat-sidenav #sidenav [mode]="'over'" [(opened)]="opened">
-
-    <a mat-list-item routerLink="/home" >Home</a>
-    <a mat-list-item routerLink="/aktualnosci" >Aktualności</a>
-    <a mat-list-item routerLink="/works" >Utwory</a>
-    <a mat-list-item routerLink="/galeria" >Galeria</a>
-    <a mat-list-item routerLink="/biografia" >Biografia</a>
-
-  </mat-sidenav>
-  <mat-sidenav-content>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
-      (click)="opened=!opened">
-      <mat-icon>{{opened? 'close': 'menu'}}</mat-icon>
-    </button>
-  </mat-sidenav-content>
-</div> -->

@@ -2,6 +2,7 @@
   max-width: 400px;
   min-height: 500px;
   padding: 25px;
+  margin-right: 25px;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   background-color: transparent;
@@ -38,4 +39,19 @@ h1 span {
 
 .date_post {
   font-size: 15px;
+}
+
+.newsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.listOfNews {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
 }

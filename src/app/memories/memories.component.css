@@ -4,6 +4,10 @@ h1 span {
 
 .memories_container {
   width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   padding-top: 100px;
   padding-bottom: 60px;
 }

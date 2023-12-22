@@ -1,9 +1,18 @@
 .component__container {
+
   padding-top: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .component-container--gallery {
   width: 90vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .component__container--gallery--image {
@@ -11,6 +20,7 @@
   height: 600px;
   margin-bottom: 40px;
   border-radius: 15px;
+
 }
 
 .component__container--gallery--image:hover {
@@ -18,7 +28,7 @@
   transition: 1s ease-in-out;
 }
 
-/*! do zrobienia  dodać flex w template zamiast tu*/
+
 .lightbox {
   position: fixed;
   top: -10px;
@@ -57,3 +67,11 @@
   right: 20px;
   font-size: 35px;
 }
+
+/* .images_container {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+} */

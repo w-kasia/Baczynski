@@ -1,16 +1,3 @@
-/* .component__container {
-  min-height: 100vh;
-} */
-
-/* .component__container--smaller {
-  width: 90%;
-  height: 85vh;
-  border-radius: 20px;
-  position: relative;
-  background: var(--container-bg);
-  background: var(--container-bg-gradient);
-  box-shadow: var(--shadow);
-} */
 
 .home__container--img {
   width: 560px;
@@ -43,6 +30,9 @@
 }
 
 .quoteSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
     width: 90vw;
     min-height: 40vh;
     margin-bottom: 40px;
@@ -53,8 +43,12 @@
     font-size: 28px;
 }
 
-.page_container {
+.quotesSection {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .quoteText {
@@ -73,13 +67,14 @@
 }
 
 .description {
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
   font-size: 14px;
 }
 
 .pictureOfPoem {
   max-width: 30vw;
-  margin-bottom: 30px;
+  margin-right: 40px;
+  /* margin-bottom: 50px; */
   border-radius: 16px;
   overflow: hidden;
 }
@@ -88,6 +83,9 @@
   width: 70vw;
   min-height: 40vh;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 h1, h2 {
@@ -97,4 +95,17 @@ h1, h2 {
 .pictureOfWork {
   max-width: 60vw;
   margin-bottom: 60px;
+}
+
+.component__container--smaller {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.painting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }

@@ -1,14 +1,10 @@
-<div class="page_container">
-
-  <div class="animations">
-    <img [src]="butterfly" alt="Motyle" class="bg_image">
-  </div>
-
-  <div class="component__container" fxLayout="row" fxLayoutAlign="center center">
+  <div class="component__container">
+    <div class="animations">
+      <img [src]="butterfly" alt="Motyle" class="bg_image">
+    </div>
     <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
 
     <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-around center">
-
       <div class="portrait_container" fxFlex="55">
         <img [src]="motherImage" alt="Portret z matką - lata dziecięce" class="portrait-with-mother">
       </div>
@@ -19,19 +15,13 @@
     </div>
   </div>
 
-  <div class="faq_main_container" fxLayout="column" fxLayoutAlign="center center">
 
-    <div fxLayout="row" fxLayoutAlign="center center">
+  <div class="faq_main_container">
+    <div>
       <h3 class="faq_title">Poznaj <span>Krzysia</span></h3>
     </div>
-
-    <div class="faq_container" fxLayout="row" fxLayoutAlign="space-between none">
-      <div fxLayout="column" fxLayoutGap="20">
-        <!-- <div fxFlex="50" class="questions" *ngFor="let question of questions">
-          {{question.text}} -->
-
-        <!--próba z json-->
-        <div fxFlex="50" class="questions">
+    <div class="faq_container">
+        <div class="questions">
           <ul>
             <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"
               [class.active]="question === selectedQuestion">{{question.question}}
@@ -39,41 +29,20 @@
             </li>
           </ul>
         </div>
-
-
-      </div>
-      <div class="answer" fxFlex="50">
+      <div class="answer">
         {{selectedQuestion.answer}}
       </div>
-
     </div>
-
-
-    <!-- <div class="answer" fxFlex="50" *ngFor="let answer of answers">
-      {{answer.text}}
-    </div> -->
-
-
-    <div fxLayout="row" fxLayoutAlign="center center" class="biography_section">
-
-      <div fxFlex="50" fxLayoutAlign="center center">
-        <img class=" portrait" src="assets/images/image-1.jpg" alt="">
-      </div>
-
-      <div class="poem" *ngFor="let poem of poems" fxFlex="50" fxLayoutAlign="center center">
-        <!-- <img [src]="quoteIcon" alt="Quote Icon" class="quoteIcon"> -->
-        <h2>{{poem.text}}</h2>
-      </div>
-
-
-    </div>
-
-
-    <app-memories></app-memories>
-
-  </div>
-
-
-<app-footer></app-footer>
 </div>
 
+    <div class="biography_section">
+  <div>
+        <img class=" portrait" src="assets/images/image-1.jpg" alt="">
+      </div>
+      <div class="poem" *ngFor="let poem of poems">
+        <h2>{{poem.text}}</h2>
+      </div>
+    </div>
+
+    <app-memories></app-memories>
+<app-footer></app-footer>

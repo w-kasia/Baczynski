@@ -1,7 +1,7 @@
 <div class="page_container">
-  <div class="component__container" fxLayout="column" fxLayoutAlign="center center">
+  <div class="component__container">
     <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
-    <div class="component__container--smaller" fxLayout="column" fxLayoutAlign="center center">
+    <div class="component__container--smaller">
 
       <img class="home__container--img" [src]="homeBgImage" alt="Portret frontalny Krzysztofa Baczyńskiego">
       <div class="napisSection2">
@@ -12,62 +12,39 @@
   </div>
   <app-news></app-news>
 
-  <div class="quotesSection" fxLayout="column" fxLayoutAlign="center center">
-    <img class="pictureByBaczynski" src="assets/images/Serce-jak-oblok.jpg" alt="">
-    <p class="description">K.K.Baczyński, Serce jak obłok</p>
-    <div class="quoteSection" fxLayout="row" fxLayoutAlign="center center">
+  <div class="quotesSection">
+    <div class="painting">
+      <img class="pictureByBaczynski" src="assets/images/Serce-jak-oblok.jpg" alt="">
+      <p class="description">K.K.Baczyński, Serce jak obłok</p>
+    </div>
+
+    <div class="quoteSection">
       <p class="quoteText">Matko, nie ma już dni, które nas rozdzielą,<br>
         choć upiór dnia stoi w oknie i czeka,<br>
         nie doścignie nas nikt na drodze dalszej od śmierci,<br>
         nie odnajdzie nas nikt, bo droga nasza za daleka.</p>
     </div>
-    <div class="poemsSection" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="40px">
+    <div class="poemsSection">
       <img class="pictureOfPoem" src="assets/images/canvas.png" alt="">
       <img class="pictureOfPoem" src="assets/images/canvas5.png" alt="">
     </div>
-    <div class="contentSection" fxLayout="row" fxLayoutAlign="center center">
+    <div class="contentSection">
 
       <h1>Poezje Baczyńskiego spotkały się z żywym przyjęciem, pełną akceptacją i przekonaniem o jego wybitnym talencie przede wszystkim w środowisku starszego pokolenia pisarzy. Jarosław Iwaszkiewicz wspominał: „Baczyńskiego przywiózł do Stawiska Jerzy Andrzejewski. […] wizytę tę poprzedził znaczny hyr pomiędzy przyczajonymi literatami, że narodził się nadzwyczajny młody poeta, że dojrzałość jego w tak młodym wieku jest zdumiewająca, że pisze bardzo dużo, jednym słowem, że jest to zjawisko nieprzeciętne”.</h1>
     </div>
-    <div class="" fxLayout="column" fxLayoutAlign="center center">
+    <div class="painting">
       <img class="pictureByBaczynski" src="assets/images/poet_painting.jpg" alt="">
       <p class="description">K.K.Baczyński, Poeta</p>
     </div>
 
-    <div class="contentSection" fxLayout="row" fxLayoutAlign="center center">
+    <div class="contentSection">
     <h2>Bolesne odczuwanie losu i świadomość odpowiedzialności za sens egzystencji były wspólne pokoleniu wojennemu, zaś dylematy poety – moralne koszty zbrojnej walki – były dylematami jego rówieśników. W elementarnej niezgodzie na zło i odpowiedzialności za kształt świata dawał wyraz swoim wątpliwościom, lękom wobec moralnej niejednoznaczności walki z wrogiem – zabijania.</h2>
     </div>
 
-    <div fxLayoutAlign="center center">
+    <div>
       <img class="pictureOfWork" src="assets/images/rodzicom.png" alt="">
     </div>
-
-
   </div>
-
-  <!-- </div> -->
-
 </div>
-<!-- <div class="quoteContainer">
-  <p>Nie kocham Cię wcale<br>
-    tylko moja dusza jakaś taka smutna<br>
-    kiedy przechodzisz obok obojętnie.</p>
-
-</div> -->
-
-
-<!--
-<div class="quoteContainer"  fxLayoutAlign="center center">
-  <div class="quote">
-      <p>Nie kocham Cię wcale<br>
-    tylko moja dusza jakaś taka smutna<br>
-    kiedy przechodzisz obok obojętnie.</p>
-  </div>
-
-
-  </div> -->
-
-
-
 <app-footer></app-footer>
 
