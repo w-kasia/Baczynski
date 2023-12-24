@@ -1,6 +1,6 @@
 BACZYŃSKI
 
-Hi! Nice to see you. :) I want to present you my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński. All content was published in Polish.
+I want to present you my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.
 
 What was my aim?
 My main aim was to create the Angular website with open API. Let's see my page! I hope, you'll have fun.
@@ -13,12 +13,16 @@ Angular - framework (v.16)
 Typescript - language
 CSS - styling
 Angular Material - styling
-Angular Flex Layout - UI layout engine
 Firebase/Firestore - database
 https://wolnelektury.pl/api/ - API
 
 What will you find in my project?
+You will find a list of poems, that are fetched from open API. You can use search input to find specific title.
+You can send message via contact form, that is send to firestore.
+You can look at the images gallery, where preview of images is available. 
+You will find few modern animations
 
+All website is responsive and it's possible to use app on mobile screens.
 
 
 Getting Started
