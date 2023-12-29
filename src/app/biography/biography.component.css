@@ -7,6 +7,8 @@
   z-index: 1;
 }
 
+
+
 .portrait-with-mother {
   width: 750px;
 }
@@ -116,6 +118,8 @@ h3 span {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  min-height: 100vh;
 }
 
 .questions {
@@ -125,5 +129,13 @@ h3 span {
 .questions,
 .answer {
   width: 50%;
+}
+
+.pictureOfFlowers {
+  /* position: absolute;
+  right: 0;
+  bottom: 0; */
+  width: 400px;
+  transform: rotate(-0.10turn);
 }
 
