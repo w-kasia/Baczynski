@@ -31,7 +31,10 @@ You can look at the images gallery, where preview of images is available.
 You will find few modern animations
 
 You can fill in the <b>contact form</b>. Your message will be send to <b>Firestore</b>. There was created a <b>template-driven form<b>.
-<img src="https://github.com/w-kasia/Baczynski/assets/121196574/e0e5de78-3223-4fd2-9289-d6801df0b1f6" width="800">
+<img src="https://github.com/w-kasia/Baczynski/assets/121196574/e0e5de78-3223-4fd2-9289-d6801df0b1f6" width="700">
+
+You can search title of poem. All works are rendered from open API. 
+<img src="https://github.com/w-kasia/Baczynski/assets/121196574/582a2636-f86c-4b6b-b1a8-66e17a5c7765" width="700">
 
 
 
