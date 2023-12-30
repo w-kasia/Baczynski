@@ -16,7 +16,7 @@ describe('HomeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule, MaterialModule, BrowserAnimationsModule], 
+      imports: [HttpClientTestingModule, MaterialModule, BrowserAnimationsModule],
       providers: [BlogDataService],
       declarations: [HomeComponent, NavigationComponent, NewsComponent, FooterComponent]
     });
@@ -43,7 +43,7 @@ describe('HomeComponent', () => {
         expect(paragraph.textContent).toBeTruthy();
       }
     expect(heading).toBeTruthy();
-  })
+  });
 
   it('should render navigation, news and footer components', () => {
     const navigation = fixture.nativeElement.querySelector('app-navigation');
@@ -53,5 +53,5 @@ describe('HomeComponent', () => {
     expect(navigation).toBeTruthy();
     expect(news).toBeTruthy();
     expect(footer).toBeTruthy();
-  })
+  });
 })
