@@ -2,6 +2,10 @@
 
 I want to present my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.
 
+<img src="https://github.com/w-kasia/Baczynski/assets/121196574/a5713fe4-772d-4041-8b95-e85fa61665bb" width="128">
+
+
+
 <h4>What was my aim?</h4>
 My main aim was to create the Angular website with open API. Let's see my page! I hope, you'll have fun.
 
