@@ -30,6 +30,11 @@ You can send message via contact form, that is send to firestore. using template
 You can look at the images gallery, where preview of images is available. 
 You will find few modern animations
 
+You can fill in the <b>contact form</b>. Your message will be send to <b>Firestore</b>. There was created a <b>template-driven form<b>.
+<img src="https://github.com/w-kasia/Baczynski/assets/121196574/e0e5de78-3223-4fd2-9289-d6801df0b1f6" width="800">
+
+
+
 All website is responsive and it's possible to use app on mobile screens.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
