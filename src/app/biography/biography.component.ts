@@ -1,6 +1,10 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
+interface Questions {
+  question: any;
+  answer: any;
+}
 @Component({
   selector: 'app-biography',
   templateUrl: './biography.component.html',
@@ -18,7 +22,7 @@ export class BiographyComponent {
   quote = `"Na imię mi było Krzysztof,
   i jeszcze ciało - to tak niewiele".`
 
-  questions: any[] = [];
+  questions: Questions[] = [];
   selectedQuestion: any;
 
 

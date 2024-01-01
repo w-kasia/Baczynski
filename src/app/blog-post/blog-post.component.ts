@@ -1,4 +1,3 @@
-
 import { Component } from '@angular/core';
 import { BlogDataService } from '../blog-data.service';
 import { ActivatedRoute } from '@angular/router';
@@ -10,8 +9,6 @@ interface Post {
   text: string;
   image: string;
 }
-
-
 @Component({
   selector: 'app-blog-post',
   templateUrl: './blog-post.component.html',
@@ -44,21 +41,4 @@ export class BlogPostComponent {
       .replace(/-{2,}/g, '-') === title)
     });
   }
-
 }
-
-
-
-  // blogPosts: any[] = [];
-
-  // constructor(private blogDataService: BlogDataService) {}
-
-  // ngOnInit(): void {
-
-
-  //   this.blogDataService.getData().subscribe(response => {
-  //     this.blogPosts = response;
-  //   })
-  // }
-
-  // }

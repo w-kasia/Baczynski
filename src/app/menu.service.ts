@@ -5,9 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class MenuService {
 
-  constructor() { }
-
-  isMenuOpen = false;
+  isMenuOpen: boolean = false;
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
