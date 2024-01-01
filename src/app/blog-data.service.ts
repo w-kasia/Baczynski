@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
 })
 export class BlogDataService {
 
-
   constructor(private http: HttpClient) { }
 
   getData(): Observable<any> {
     return this.http.get<any>('assets/blog.json');
   }
 }
+
