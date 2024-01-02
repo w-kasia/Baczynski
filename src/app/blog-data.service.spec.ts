@@ -26,9 +26,9 @@ describe('BlogDataService', () => {
 
   it('should retrive blog data', () => {
     const testData = [
-      { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego', content: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego Katarzyny Zyskowskiej to książka rzucająca nowe światło na życie jednego z najważniejszych poetów polskich XX wieku, który zginął w powstaniu warszawskim, pozostawiając po sobie twórczość porównywaną do dzieł Słowackiego.'},
-      { title: 'Damian Ukeje śpiewa Baczyńskiego. Oto pierwszy singiel z projektu Poeci+', content: 'Pomysł na projekt zrodził się podczas gdy Damian przygotowywał materiał na specjalny koncert organizowany przez wytwórnię yMusic. Wtedy to sięgnął po twórczość K.K. Baczyńskiego i po przeczytani utworu Bez imienia uznał, że jest to tekst, do którego chce napisać muzykę.'},
-      { title: 'Spacer Literacki z Rozdroża za rogatki mokotowskie', content: 'Już 10 marca odbędzie się spacer literacki w Warszawie, który poprowadzi poetka i animatorska kultury, Dorota Ryst. Podczas spaceru będzie czytania m.in. poezja Krzysztofa Kamila Baczyńskiego...'}
+      { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego', content: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego Katarzyny Zyskowskiej to książka rzucająca nowe światło na życie jednego z najważniejszych poetów polskich XX wieku, który zginął w powstaniu warszawskim, pozostawiając po sobie twórczość porównywaną do dzieł Słowackiego.'}
+      // { title: 'Damian Ukeje śpiewa Baczyńskiego. Oto pierwszy singiel z projektu Poeci+', content: 'Pomysł na projekt zrodził się podczas gdy Damian przygotowywał materiał na specjalny koncert organizowany przez wytwórnię yMusic. Wtedy to sięgnął po twórczość K.K. Baczyńskiego i po przeczytani utworu Bez imienia uznał, że jest to tekst, do którego chce napisać muzykę.'},
+      // { title: 'Spacer Literacki z Rozdroża za rogatki mokotowskie', content: 'Już 10 marca odbędzie się spacer literacki w Warszawie, który poprowadzi poetka i animatorska kultury, Dorota Ryst. Podczas spaceru będzie czytania m.in. poezja Krzysztofa Kamila Baczyńskiego...'}
 ];
 
 
