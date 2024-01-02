@@ -1,5 +1,5 @@
 import { Component, ViewChild, ViewEncapsulation, inject } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormGroup, NgForm } from '@angular/forms';
 import { Firestore } from '@angular/fire/firestore';
 import { addDoc, collection } from 'firebase/firestore';
 import { MatDialog } from '@angular/material/dialog';
@@ -12,6 +12,7 @@ import { DialogAnimationsComponent } from '../dialog-animations/dialog-animation
 
 })
 export class ContactComponent {
+
 
   menuIcon = 'menu';
 
