@@ -63,9 +63,5 @@ describe('NavigationComponent', () => {
       expect(link.nativeElement.getAttribute('routerLink')).toBe(expectedLinks[index]);
     });
     });
-
-
-
-
   })
 

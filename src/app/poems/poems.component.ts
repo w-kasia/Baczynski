@@ -17,8 +17,7 @@ export class PoemsComponent {
 
   ngOnInit(): void {
     this.worksService.getWorksTitles().subscribe(data => {
-      this.worksTitles = data.map(work => work.title
-        );
+      this.worksTitles = data.map(work => work.title);
     });
   }
 
