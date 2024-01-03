@@ -1,12 +1,9 @@
-
-import { Component, Input, ViewChild, ViewEncapsulation } from '@angular/core';
-
+import { Component, Input,} from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
   templateUrl: './navigation.component.html',
   styleUrls: ['./navigation.component.css']
-
 
 })
 export class NavigationComponent {
@@ -15,8 +12,4 @@ export class NavigationComponent {
 //  @Input() opened: string | undefined;
 
   opened: boolean = false;
-
 }
-
-
-
