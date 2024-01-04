@@ -30,10 +30,15 @@ mat-sidenav {
 
 .listItem {
   padding: 25px;
-  color: white;
+  color: var(--white);
   font-size: 26px;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.listItem:hover {
+  color: var(--blue);
+  transition: all 0.3s ease-in-out;
 }
 
 .menuItemsContainer {

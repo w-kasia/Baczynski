@@ -46,14 +46,4 @@ describe('MemoriesComponent', () => {
 
     expect(component.memories).toEqual(mockData);
   }));
-
-  // it('should load data from local json', fakeAsync(() => {
-  //   const data = require('assets/memories.json');
-
-  //   component.ngOnInit();
-  //   tick();
-  //   const request = httpMock.expectOne('assets/memories.json');
-  //   request.flush(data);
-  //   expect(component['data']).toEqual(data);
-  // }));
 });

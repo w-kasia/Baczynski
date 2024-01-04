@@ -1,24 +1,16 @@
 <div class="component__container">
   <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
 
-
   <div class="newsContainer">
-
     <div class="heading">
           <h1>Sprawdź, co nowego u <span>Baczyńskiego</span></h1>
     </div>
-
-
     <div class="listOfNews">
-
-
     <div class="post__container" *ngFor="let post of blogPosts; let i = index" (click)="openPost(post.title)">
       <span class="date_post">{{post.date}}</span>
       <h2 class="title_post">{{post.title}}</h2>
       <p class="introduction_post">{{post.content}}..</p>
     </div>
-
 </div>
  </div>
-
 </div>

@@ -21,7 +21,6 @@ beforeEach(() => {
   beforeEach(() => {
     fixture = TestBed.createComponent(DialogAnimationsComponent);
     component = fixture.componentInstance;
-    // fixture.detectChanges();
   });
 
   it('should create the dialog-animations component', () => {
