@@ -43,6 +43,7 @@ h1 span {
 
 .newsContainer {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -54,4 +55,38 @@ h1 span {
   align-items: center;
   justify-content: space-around;
   margin-top: 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  h1 {
+    font-size: 20px;
+  }
+  .heading {
+    width: 90vw;
+  }
+  .post__container {
+    width: 290px;
+    min-height: 200px !important;
+    margin-bottom: 10px;
+  }
+  .listOfNews {
+    flex-direction: column;
+  }
+  .newsContainer {
+    padding: 0;
+    margin: 0;
+    width: 90vw;
+  }
+  .date_post {
+    font-size: 9px;
+  }
+  .title_post {
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .introduction_post {
+    font-size: 13px;
+  }
+
 }

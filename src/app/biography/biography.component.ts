@@ -1,8 +1,12 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 
-interface Questions {
-  question: any;
+// interface Questions {
+//   question: any;
+//   answer: any;
+// }
+
+interface selectedQuestion {
   answer: any;
 }
 @Component({
@@ -22,8 +26,8 @@ export class BiographyComponent {
   quote = `"Na imię mi było Krzysztof,
   i jeszcze ciało - to tak niewiele".`
 
-  questions: Questions[] = [];
-  selectedQuestion: any;
+  questions: any[] = [];
+  selectedQuestion: selectedQuestion = {} as selectedQuestion;
 
 
   constructor(private http: HttpClient) {

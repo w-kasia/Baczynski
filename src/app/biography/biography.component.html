@@ -1,49 +1,49 @@
-  <div class="component__container">
-    <div class="animations">
-      <img [src]="butterfly" alt="Motyle" class="bg_image">
+<div class="component__container">
+  <div class="animations">
+    <img [src]="butterfly" alt="Motyle" class="bg_image">
 
+  </div>
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+
+  <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="portrait_container" fxFlex="55">
+      <img [src]="motherImage" alt="Portret z matką - lata dziecięce" class="portrait-with-mother">
     </div>
-    <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
-
-    <div class="component__container--smaller" fxLayout="row" fxLayoutAlign="space-around center">
-      <div class="portrait_container" fxFlex="55">
-        <img [src]="motherImage" alt="Portret z matką - lata dziecięce" class="portrait-with-mother">
-      </div>
-      <div class="quote">
-        <h1>{{ quote }}</h1>
-      </div>
+    <div class="quote">
+      <h1>{{ quote }}</h1>
     </div>
   </div>
-
-
-  <div class="faq_main_container">
-    <div>
-      <h3 class="faq_title">Poznaj <span>Krzysia</span></h3>
-    </div>
-    <div class="faq_container">
-        <div class="questions">
-          <ul>
-            <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"
-              [class.active]="question === selectedQuestion">{{question.question}}
-              <img src="arrow_icon.svg" alt="">
-            </li>
-          </ul>
-        </div>
-      <div class="answer">
-        {{selectedQuestion.answer}}
-      </div>
-    </div>
 </div>
 
-    <div class="biography_section">
-  <div>
-        <img class=" portrait" src="assets/images/image-1.jpg" alt="">
-      </div>
-      <div class="poem" *ngFor="let poem of poems">
-        <h2>{{poem.text}}</h2>
-      </div>
-    </div>
 
-    <app-memories></app-memories>
+<div class="faq_main_container">
+  <div>
+    <h3 class="faq_title">Poznaj <span>Krzysia</span></h3>
+  </div>
+  <div class="faq_container">
+    <div class="questions">
+      <ul>
+        <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"
+          [class.active]="question === selectedQuestion">{{question.question}}
+          <img src="arrow_icon.svg" alt="">
+        </li>
+      </ul>
+    </div>
+    <div class="answer">
+      {{selectedQuestion.answer}}
+    </div>
+  </div>
+</div>
+
+<div class="biography_section">
+  <div>
+    <img class=" portrait" src="assets/images/image-1.jpg" alt="">
+  </div>
+  <div class="poem" *ngFor="let poem of poems">
+    <h2>{{poem.text}}</h2>
+  </div>
+</div>
+
+<app-memories></app-memories>
 
 <app-footer></app-footer>

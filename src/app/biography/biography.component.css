@@ -42,7 +42,7 @@
 }
 
 .question {
-  min-width: 670px;
+  max-width: 670px;
   padding: 25px;
   margin-bottom: 6px;
   border: 2px solid var(--grey);
@@ -77,7 +77,7 @@
   justify-content: center;
 
   align-items: center;
-    width: 90%;
+    max-width: 90%;
     padding-top: 100px;
   }
 
