@@ -1,19 +1,30 @@
-
-.bg_image {
+.animationImg {
   position: absolute;
   top: -30px;
   right: 0px;
-  width: 280px;
+  max-width: 280px;
   z-index: 1;
 }
 
-
-
-.portrait-with-mother {
-  width: 750px;
+.smallPageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
-.faq_main_container {
+.portraitWithMother {
+  width: 760px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.quoteContainer {
+  padding-right: 30px;
+  white-space: pre-line;
+}
+
+.faqSection {
   padding-bottom: 40px;
   display: flex;
   align-items: center;
@@ -21,28 +32,35 @@
   flex-direction: column;
 }
 
-.faq_container {
-  width: 90vw;
+.faqTitle{
+  font-size: 40px;
+}
+
+.faqTitle span {
+  color: var(--blue);
+}
+
+.faqContainer {
+  max-width: 90vw;
+  padding-top: 40px;
   min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding-top: 40px;
 }
 
-.quote {
-  padding-right: 30px;
-  white-space: pre-line;
-
+.questions {
+  margin-right: 10px;
 }
 
-.faq_title {
-  font-size: 40px;
+.questions,
+.answer {
+  max-width: 45vw;
 }
 
 .question {
-  max-width: 670px;
+  min-width: 670px;
   padding: 25px;
   margin-bottom: 6px;
   border: 2px solid var(--grey);
@@ -71,72 +89,30 @@
   color: var(--black);
 }
 
-.biography_section {
+.poemSection {
+  max-width: 90vw;
+  padding-top: 100px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-
   align-items: center;
-    max-width: 90%;
-    padding-top: 100px;
-  }
-
-.quoteIcon {
-  width: 90px;
-  color: var(--white);
-}
-
-.curvedIcon {
-  width: 100px;
-  transform: rotate(0.35turn);
-}
-
-.portrait {
-  width: 380px;
-  margin-right: 100px;
-  border-radius: 10px;
-
-}
-
-.portrait:hover {
-  box-shadow: var(--blue) 0px 25px 50px -12px;
-  transform: scale(1.1);
-  transition: 0.5s ease-in-out;
-}
-
-h3 span {
-  color: var(--blue);
+  justify-content: space-around;
 }
 
 .poem {
+  margin-left: 50px;
+  font-size: 20px;
+  text-align: center;
   line-height: 34px;
   white-space: pre-line;
 }
 
-
-.component_container {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  min-height: 100vh;
+.portraitOfBaczynski {
+  max-width: 380px;
+  border-radius: 10px;
 }
 
-.questions {
-  margin-right: 10px;
+.portraitOfBaczynski:hover {
+  box-shadow: var(--blue) 0px 25px 50px -12px;
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
 }
-
-.questions,
-.answer {
-  width: 50%;
-}
-
-.pictureOfFlowers {
-  /* position: absolute;
-  right: 0;
-  bottom: 0; */
-  width: 400px;
-  transform: rotate(-0.10turn);
-}
-
