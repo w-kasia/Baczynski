@@ -1,39 +1,31 @@
-<div class="component__container">
-  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
-  <div class="component__container--smaller">
-
-
-    <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form">
-      <div class="heading">
-        <h1 class="contactHeading">Skontaktuj się z nami</h1>
-      </div>
-
-      <div class="data">
-        <div class="form-group name">
-
-          <label class="form-label" for="inputName">Imię i Nazwisko*</label>
-          <input type="text" id="inputName" class="form-control" required ngModel name="name" #name="ngModel">
-
+<div class="componentContainer">
+    <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+    <div class="smallPageContainer">
+      <form (ngSubmit)="onSubmit(f)" #f="ngForm" class="form">
+        <div>
+          <h1 class="contactHeading">Skontaktuj się z nami</h1>
         </div>
-        <div class="form-group">
-
-          <label class="form-label" for="inputEmail">E-mail*</label>
-          <input id="inputEmail" type="email" class="form-control" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-            required email ngModel name="email" #email="ngModel">
-
+        <div class="userData">
+          <div class="form-group name">
+            <label class="form-label" for="inputName">Imię i Nazwisko*</label>
+            <input class="form-control" id="inputName" type="text" required ngModel name="name" #name="ngModel">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="inputEmail">E-mail*</label>
+            <input class="form-control" id="inputEmail" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              required email ngModel name="email" #email="ngModel">
+          </div>
         </div>
-      </div>
-
-      <div class="form-group">
-
-        <label class="form-label" for="inputMessage">Wiadomość*</label>
-        <textarea id="inputMessage" class="form-control" required ngModel name="message" #message="ngModel"></textarea>
-
-      </div>
-      <button (click)="openDialog('0ms', '0ms')" type="submit" id="submitBtn" class="submitBtn" [disabled]="!f.valid">Wyślij</button>
-    </form>
-
-
+        <div class="messageGroup">
+          <div class="form-group">
+            <label class="form-label" for="inputMessage">Wiadomość*</label>
+            <textarea class="form-control messageArea" id="inputMessage" required ngModel name="message"
+              #message="ngModel"></textarea>
+          </div>
+        </div>
+        <button class="submitBtn" id="submitBtn" type="submit" (click)="openDialog('0ms', '0ms')"
+          [disabled]="!f.valid">Wyślij</button>
+      </form>
+    </div>
   </div>
-</div>
-<app-footer></app-footer>
+  <app-footer></app-footer>

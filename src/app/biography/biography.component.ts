@@ -45,5 +45,4 @@ export class BiographyComponent {
     Szukamy serca – bierzemy w rękę,
     nasłuchujemy: wygaśnie męka,
     ale zostanie kamień – tak – głaz.`
-
 }

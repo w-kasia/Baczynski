@@ -36,7 +36,7 @@ body {
 
 .smallPageContainer {
   position: relative;
-  max-width: 90vw;
+  width: 90vw;
   min-height: 85vh;
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 16px;
@@ -47,7 +47,7 @@ body {
   backdrop-filter: blur(15.1px);
 }
 
-.menu-icon {
+.menuIcon {
   position: absolute;
   top: 20px;
   left: 10px;

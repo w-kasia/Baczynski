@@ -1,6 +1,6 @@
 <mat-sidenav-container>
-  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="opened=!opened">
-    <mat-icon class="menu-icon">{{menuIcon}}</mat-icon>
+  <button mat-icon-button class="menuBtn" aria-label="Icon-button with menu icon" (click)="opened=!opened">
+    <mat-icon class="menuIcon">{{menuIcon}}</mat-icon>
   </button>
   <mat-sidenav mode="over" [(opened)]="opened">
     <div class="menuItemsContainer">
@@ -12,8 +12,8 @@
       <a class="listItem" mat-list-item routerLink="/kontakt">Kontakt</a>
     </div>
     <div class="closeButtonContainer">
-       <button class="close-btn" mat-icon-button aria-label="Example icon-button with menu icon" (click)="opened=!opened">
-      <mat-icon class="close-icon" *ngIf="opened">close</mat-icon>
+       <button class="closeBtn" mat-icon-button aria-label="Example icon-button with menu icon" (click)="opened=!opened">
+      <mat-icon class="closeIcon" *ngIf="opened">close</mat-icon>
       </button>
     </div>
   </mat-sidenav>

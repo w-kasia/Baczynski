@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ContactComponent } from './contact.component';
 import { FooterComponent } from '../footer/footer.component';
 import { NavigationComponent } from '../navigation/navigation.component';
@@ -8,8 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { DebugElement } from '@angular/core';
-import { By } from '@angular/platform-browser';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAR6Rqxxo7lvgHkL1ldNEturX8ZgJySKAg",
@@ -24,13 +21,11 @@ const firebaseConfig = {
 describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
-  let debugElement: DebugElement;
-
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [MaterialModule, FormsModule, BrowserAnimationsModule,  provideFirebaseApp(() => initializeApp(firebaseConfig)),
-        provideFirestore(() => getFirestore()),],
+        provideFirestore(() => getFirestore())],
       declarations: [ContactComponent, NavigationComponent, FooterComponent]
     });
   });
@@ -39,7 +34,7 @@ describe('ContactComponent', () => {
     fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  })
+  });
 
   it('should create the contact component', () => {
     expect(component).toBeTruthy();
@@ -52,8 +47,4 @@ describe('ContactComponent', () => {
     expect(navigation).toBeTruthy();
     expect(footer).toBeTruthy();
   });
-
-
-
-});
-
+})

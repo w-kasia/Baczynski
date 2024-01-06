@@ -1,9 +1,18 @@
 form {
+  padding-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 40px;
+}
+.contactHeading {
+  padding-bottom: 50px;
+  color: var(--blue);
+}
+
+.userData {
+  display: flex;
+  padding: 15px;
 }
 
 .form-group {
@@ -11,12 +20,11 @@ form {
   flex-direction: column;
 }
 
-.contactHeading {
-  padding-bottom: 50px;
-  color: var(--blue);
+.name {
+  margin-right: 15px;
 }
 
-input {
+.form-control {
   width: 400px;
   padding: 15px;
   border: none;
@@ -24,31 +32,19 @@ input {
   border-radius: 16px;
 }
 
-input.ng-invalid.ng-touched,
-textarea.ng-invalid.ng-touched {
-  border: 3px solid red;
+.form-label {
+  padding-bottom: 8px;
 }
 
-/* .help-block {
-  padding-bottom: 5px;
-  color: red;
-  font-size: 13px;
-}
- */
-
-textarea {
+.messageArea {
   width: 830px;
   min-height: 200px;
   border-radius: 20px;
 }
 
-.data {
-  display: flex;
-  padding: 15px;
-}
-
-.name {
-  margin-right: 15px;
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+  border: 3px solid red;
 }
 
 .submitBtn {
@@ -56,15 +52,4 @@ textarea {
   padding: 15px;
   margin-top: 15px;
   z-index: -1;
-}
-
-.form-label {
-  padding-bottom: 8px;
-}
-
-.component_container {
-  flex-direction: row;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

@@ -1,5 +1,5 @@
-import { Component, ViewChild, ViewEncapsulation, inject } from '@angular/core';
-import { FormGroup, NgForm } from '@angular/forms';
+import { Component, ViewChild, inject } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Firestore } from '@angular/fire/firestore';
 import { addDoc, collection } from 'firebase/firestore';
 import { MatDialog } from '@angular/material/dialog';
@@ -9,13 +9,10 @@ import { DialogAnimationsComponent } from '../dialog-animations/dialog-animation
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
-
 })
+
 export class ContactComponent {
-
-
   menuIcon = 'menu';
-
   firestore: Firestore = inject(Firestore);
 
   @ViewChild('f') contactForm: any;
@@ -27,14 +24,13 @@ export class ContactComponent {
       'email': this.contactForm.value.email,
       'title': this.contactForm.value.title,
       'message': this.contactForm.value.message
-    })
+    });
    }
 
   onSubmit(form: NgForm) {
     this.saveData();
     form.resetForm();
   }
-
 
   constructor(public dialog: MatDialog) {}
 
@@ -45,5 +41,4 @@ export class ContactComponent {
       exitAnimationDuration,
     });
   }
-
 }
