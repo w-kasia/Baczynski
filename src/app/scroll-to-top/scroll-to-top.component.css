@@ -2,14 +2,43 @@
   position: fixed;
   right: 20px;
   bottom: 20px;
-  width: 30px;
+  max-width: 30px;
   border: none;
   overflow: hidden;
   background-color: transparent;
   cursor: pointer;
 }
 
-.topIcon {
+.scrollToTopIcon {
   filter: invert(99%) sepia(1%) saturate(6494%) hue-rotate(251deg) brightness(131%) contrast(91%);
 }
 
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .scrollToTopBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .scrollToTopBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .scrollToTopBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .scrollToTopBtn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .scrollToTopBtn {
+    display: none;
+  }
+}

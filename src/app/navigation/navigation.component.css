@@ -53,6 +53,15 @@ mat-sidenav {
   mat-sidenav-container {
     width: 18px;
   }
-
+  .closeButtonContainer {
+    right: 5px;
+  }  
+  .close-icon {
+    font-size: 15px;
+  }
+  .listItem {
+    padding: 8px;
+    font-size: 15px;
+  }
 
 }

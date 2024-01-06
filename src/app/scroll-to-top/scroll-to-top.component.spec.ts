@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ScrollToTopComponent } from './scroll-to-top.component';
 
 describe('ScrollToTopComponent', () => {
@@ -21,9 +20,7 @@ describe('ScrollToTopComponent', () => {
 
   it('should scroll to top when scrollToTop is called', () => {
     spyOn(window, 'scrollTo');
-
     component.scrollToTop();
-
     expect(window.scrollTo).toHaveBeenCalled();
   });
 });
