@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DialogAnimationsComponent } from './dialog-animations.component';
 import { MatDialogRef } from '@angular/material/dialog';
 import { MaterialModule } from '../material/material.module';
@@ -11,12 +10,12 @@ describe('DialogAnimationsComponent', () => {
 
 beforeEach(() => {
   mockDialogRef = jasmine.createSpyObj('MatDialogRef', ['close']);
-      TestBed.configureTestingModule({
-        imports: [MaterialModule],
-      providers: [{ provide: MatDialogRef, useValue: mockDialogRef}],
-      declarations: [DialogAnimationsComponent]
+  TestBed.configureTestingModule({
+    imports: [MaterialModule],
+    providers: [{ provide: MatDialogRef, useValue: mockDialogRef}],
+    declarations: [DialogAnimationsComponent]
     });
-})
+});
 
   beforeEach(() => {
     fixture = TestBed.createComponent(DialogAnimationsComponent);
@@ -28,10 +27,9 @@ beforeEach(() => {
   });
 
   it('should close the dialog when "Ok" button is clicked', () => {
-    const okButton = fixture.nativeElement.querySelector('button');
+    const confirmButton = fixture.nativeElement.querySelector('.confirmBtn');
 
-    okButton.click();
-
+    confirmButton.click();
     expect(mockDialogRef.close).toHaveBeenCalled();
   });
 });

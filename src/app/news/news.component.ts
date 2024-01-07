@@ -24,7 +24,8 @@ export class NewsComponent implements OnInit{
   }
 
   openArticle(title: string): void {
-    const formattedTitle = title.toLowerCase()
+    const formattedTitle = title
+    .toLowerCase()
     .replace(/[.,;:*!?()}{[\]]/g, '')
     .replace(/ /g, '-')
     .replace(/[ł]/g, 'l')
