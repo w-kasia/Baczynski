@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { FooterComponent } from './footer.component';
 import { By } from '@angular/platform-browser';
 import { AppRoutingModule, routingComponents } from '../app-routing.module';
@@ -40,8 +39,7 @@ describe('FooterComponent', () => {
 
   it('should have the correct router links', () => {
     const routerLinks = fixture.debugElement.queryAll(By.css('.footerListItem'));
-
-    const expectedLinks = ['/aktualnosci', '/biografia', '/works', '/galeria'];
+    const expectedLinks = ['/aktualnosci', '/biografia', '/utwory', '/galeria'];
 
     expect(routerLinks.length).toBe(expectedLinks.length);
 
