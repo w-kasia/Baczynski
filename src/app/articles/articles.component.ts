@@ -1,32 +1,31 @@
 import { Component } from '@angular/core';
-import { BlogDataService } from '../blog-data.service';
-import { ActivatedRoute } from '@angular/router';
+import { NewsService } from '../news.service';
+import { ActivatedRoute, Router } from '@angular/router';
 
-interface Post {
+interface Article {
   title: string;
   date: string;
   content: string;
   text: string;
   image: string;
 }
+
 @Component({
-  selector: 'app-blog-post',
-  templateUrl: './blog-post.component.html',
-  styleUrls: ['./blog-post.component.css']
+  selector: 'app-articles',
+  templateUrl: './articles.component.html',
+  styleUrls: ['./articles.component.css']
 })
-export class BlogPostComponent {
-
+export class ArticlesComponent {
   menuIcon = 'menu';
-  post: Post | undefined;
+  article!: Article;
 
-  constructor(private blogDataService: BlogDataService, private route: ActivatedRoute) {}
+  constructor(private newsService: NewsService, private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit(): void {
     const title = this.route.snapshot.paramMap.get('title');
 
-    this.blogDataService.getData().subscribe((data) => {
-      this.post = data.find((post: Post) => post.title.toLowerCase()
-      // .replace(/\s+/g,'-') === title)
+    this.newsService.getData().subscribe((data) => {
+      this.article = data.find((article: Article) => article.title.toLowerCase()
       .replace(/[.,;:*!?()}{[\]]/g, '')
       .replace(/ /g, '-')
       .replace(/[ł]/g, 'l')
@@ -40,5 +39,9 @@ export class BlogPostComponent {
       .replace(/[ń]/g, 'n')
       .replace(/-{2,}/g, '-') === title)
     });
+  }
+  
+  goToNews() {
+    this.router.navigate(['/aktualnosci']);
   }
 }

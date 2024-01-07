@@ -1,18 +1,18 @@
 import { TestBed } from '@angular/core/testing';
 
-import { BlogDataService } from './blog-data.service';
+import { NewsService } from './news.service';
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 describe('BlogDataService', () => {
-  let service: BlogDataService;
+  let service: NewsService;
   let httpMock: HttpTestingController;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule],
-      providers: [BlogDataService]
+      providers: [NewsService]
     });
-    service = TestBed.inject(BlogDataService);
+    service = TestBed.inject(NewsService);
     httpMock = TestBed.inject(HttpTestingController);
   });
 
@@ -27,16 +27,13 @@ describe('BlogDataService', () => {
   it('should retrive blog data', () => {
     const testData = [
       { title: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego', content: 'Szklane ptaki. Opowieść o miłościach Krzysztofa Kamila Baczyńskiego Katarzyny Zyskowskiej to książka rzucająca nowe światło na życie jednego z najważniejszych poetów polskich XX wieku, który zginął w powstaniu warszawskim, pozostawiając po sobie twórczość porównywaną do dzieł Słowackiego.'}
-      // { title: 'Damian Ukeje śpiewa Baczyńskiego. Oto pierwszy singiel z projektu Poeci+', content: 'Pomysł na projekt zrodził się podczas gdy Damian przygotowywał materiał na specjalny koncert organizowany przez wytwórnię yMusic. Wtedy to sięgnął po twórczość K.K. Baczyńskiego i po przeczytani utworu Bez imienia uznał, że jest to tekst, do którego chce napisać muzykę.'},
-      // { title: 'Spacer Literacki z Rozdroża za rogatki mokotowskie', content: 'Już 10 marca odbędzie się spacer literacki w Warszawie, który poprowadzi poetka i animatorska kultury, Dorota Ryst. Podczas spaceru będzie czytania m.in. poezja Krzysztofa Kamila Baczyńskiego...'}
-];
-
+    ];
 
     service.getData().subscribe(data => {
       expect(data).toEqual(testData);
     });
 
-    const req = httpMock.expectOne('assets/blog.json');
+    const req = httpMock.expectOne('assets/news.json');
     expect(req.request.method).toBe('GET');
     req.flush(testData);
   })

@@ -5,12 +5,11 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class BlogDataService {
+export class NewsService {
 
   constructor(private http: HttpClient) { }
 
   getData(): Observable<any> {
-    return this.http.get<any>('assets/blog.json');
+    return this.http.get<any>('assets/news.json');
   }
 }
-

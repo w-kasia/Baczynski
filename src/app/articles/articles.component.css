@@ -1,0 +1,45 @@
+.componentContainer {
+  flex-direction: column;
+}
+
+.articleContainer {
+  max-width: 70vw;
+  min-height: 90vh;
+  padding: 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--white);
+  color:var(--black);
+}
+
+.date {
+  padding-bottom: 20px;
+  font-size: 12px;
+}
+
+.title {
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.articleImg {
+  max-width: 500px;
+  margin-top: 30px;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.goToNewsBtn {
+  margin-bottom: 40px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  text-decoration: underline var(--blue);
+  color: var(--white);
+  background-color: transparent;
+  cursor: pointer;
+}

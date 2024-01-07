@@ -1,0 +1,13 @@
+<div class="componentContainer">
+  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <div class="articleContainer" *ngIf="article">
+    <h1 class="date">{{ article.date }}</h1>
+    <h2 class="title">{{ article.title }}</h2>
+    <p>{{ article.text }}</p>
+    <img class="articleImg" src="{{ article.image }}" alt="">
+  </div>
+  <div>
+    <button class="goToNewsBtn" (click)="goToNews()">Sprawdź pozostałe artykuły</button>
+  </div>
+</div>
+<app-footer></app-footer>

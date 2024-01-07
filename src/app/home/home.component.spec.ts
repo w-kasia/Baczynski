@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HomeComponent } from './home.component';
 import { NavigationComponent } from '../navigation/navigation.component';
 import { NewsComponent } from '../news/news.component';
-import { BlogDataService } from '../blog-data.service';
+import { BlogDataService } from '../news.service';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { FooterComponent } from '../footer/footer.component';
 import { MaterialModule } from '../material/material.module';

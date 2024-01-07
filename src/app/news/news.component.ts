@@ -1,9 +1,6 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { BlogDataService } from '../blog-data.service';
+import { NewsService } from '../news.service';
 import { Router } from '@angular/router';
-// import { Router } from '@angular/router';
-// import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-news',
@@ -11,23 +8,22 @@ import { Router } from '@angular/router';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit{
-
   menuIcon = 'menu';
-  blogPosts: any[] = [];
+  articles: any[] = [];
 
-  constructor(private blogDataService: BlogDataService, private router: Router) {}
+  constructor(private newsService: NewsService, private router: Router) {}
 
   ngOnInit(): void {
-    this.blogDataService.getData().subscribe(response => {
-      this.blogPosts = response;
-    })
+    this.newsService.getData().subscribe(response => {
+      this.articles = response;
+    });
   }
 
-  navigateToArticle(post: any) {
-    window.open(`/aktualnosci/${post.title}`)
+  navigateToArticle(article: any) {
+    window.open(`/aktualnosci/${article.title}`)
   }
 
-  openPost(title: string): void {
+  openArticle(title: string): void {
     const formattedTitle = title.toLowerCase()
     .replace(/[.,;:*!?()}{[\]]/g, '')
     .replace(/ /g, '-')
@@ -43,5 +39,4 @@ export class NewsComponent implements OnInit{
     .replace(/-{2,}/g, '-');
     this.router.navigate(['/aktualnosci', formattedTitle]);
   }
-
-  }
+}

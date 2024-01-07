@@ -1,4 +1,4 @@
-import { BlogDataService } from './blog-data.service';
+import { NewsService } from './news.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -13,7 +13,7 @@ import { WorksComponent } from './works/works.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HttpClientModule } from '@angular/common/http';
 import { WorksService } from './works.service';
-import { BlogPostComponent } from './blog-post/blog-post.component';
+import { ArticlesComponent } from './articles/articles.component';
 import { FooterComponent } from './footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
@@ -26,6 +26,7 @@ import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { DialogAnimationsComponent } from './dialog-animations/dialog-animations.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
+import { MenuService } from './menu.service';
 
 const firebaseConfig = {
 
@@ -52,7 +53,7 @@ const firebaseConfig = {
     AppComponent,
     NavigationComponent,
     routingComponents,
-    BlogPostComponent,
+    ArticlesComponent,
     FooterComponent,
     SearchComponent,
     GalleryComponent,
@@ -76,7 +77,7 @@ const firebaseConfig = {
     HttpClientModule,
     FormsModule
   ],
-  providers: [WorksService, BlogDataService],
+  providers: [WorksService, NewsService, MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
