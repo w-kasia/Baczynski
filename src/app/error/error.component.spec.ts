@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ErrorComponent } from './error.component';
 import { AppRoutingModule, routingComponents } from '../app-routing.module';
 import { By } from '@angular/platform-browser';
@@ -23,7 +22,7 @@ describe('ErrorComponent', () => {
   });
 
   it('should display the error message', () => {
-    const errorMessageContainer = fixture.debugElement.query(By.css('.error_container'));
+    const errorMessageContainer = fixture.debugElement.query(By.css('.errorContainer'));
     const h1 = errorMessageContainer.query(By.css('h1')).nativeElement;
     const h2 = errorMessageContainer.query(By.css('h2')).nativeElement;
     const p = errorMessageContainer.query(By.css('p')).nativeElement;
@@ -33,7 +32,7 @@ describe('ErrorComponent', () => {
     expect(p.textContent).toContain('Szukana strona nie istnieje.');
   });
 
-  it('should call goHome method when the home button is clicked', () => {
+  it('should call goHome method when the button is clicked', () => {
     spyOn(component, 'goHome');
     const homeButton = fixture.debugElement.query(By.css('button')).nativeElement;
     homeButton.click();

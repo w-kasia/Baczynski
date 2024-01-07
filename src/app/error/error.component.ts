@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ErrorComponent {
 
   constructor(private router: Router) {}
-  
+
   goHome() {
     this.router.navigate(['/home']);
   }

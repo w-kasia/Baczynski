@@ -1,24 +1,24 @@
-.error_container {
+.errorContainer {
+  position: relative;
+  max-width: 90vw;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
-  width: 90vw;
-  min-height: 100vh;
+  flex-direction: column;
 }
 
-.error_container h1{
+.errorContainer h1{
   color: #00bfb2;
   font-size: 100px;
 }
 
-.error_container h2, p {
+.errorContainer h2, p {
   font-size: 50px;
 }
 
-.error_container button{
-  min-width: 150px;
+.goToHomeBtn{
+  max-width: 150px;
   padding: 15px;
   margin-top: 60px;
   border: none;
@@ -28,7 +28,7 @@
   cursor: pointer;
 }
 
-.error_container button:hover{
+.goToHomeBtn:hover{
   background: #00bfb2;
   transition: 0.3s;
 }
