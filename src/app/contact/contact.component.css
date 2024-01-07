@@ -51,5 +51,6 @@ textarea.ng-invalid.ng-touched {
   width: 100px;
   padding: 15px;
   margin-top: 15px;
-  z-index: -1;
+  cursor: pointer;
+  /* z-index: -1; */
 }

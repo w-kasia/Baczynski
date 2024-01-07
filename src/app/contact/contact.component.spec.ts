@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialog } from '@angular/material/dialog';
+import { DialogAnimationsComponent } from '../dialog-animations/dialog-animations.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAR6Rqxxo7lvgHkL1ldNEturX8ZgJySKAg",
@@ -21,18 +23,21 @@ const firebaseConfig = {
 describe('ContactComponent', () => {
   let component: ContactComponent;
   let fixture: ComponentFixture<ContactComponent>;
+  let dialog: MatDialog;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [MaterialModule, FormsModule, BrowserAnimationsModule,  provideFirebaseApp(() => initializeApp(firebaseConfig)),
         provideFirestore(() => getFirestore())],
-      declarations: [ContactComponent, NavigationComponent, FooterComponent]
+      declarations: [ContactComponent, NavigationComponent, FooterComponent, DialogAnimationsComponent],
+      providers: [MatDialog]
     });
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ContactComponent);
     component = fixture.componentInstance;
+    dialog = TestBed.inject(MatDialog);
     fixture.detectChanges();
   });
 
@@ -46,5 +51,28 @@ describe('ContactComponent', () => {
 
     expect(navigation).toBeTruthy();
     expect(footer).toBeTruthy();
+  });
+
+  it('should save data when form is submitted and reset form', () => {
+    spyOn(component, 'saveData');
+    const form: any = { resetForm: jasmine.createSpy('resetForm') };
+
+    component.onSubmit(form);
+
+    expect(component.saveData).toHaveBeenCalled();
+    expect(form.resetForm).toHaveBeenCalled();
+  });
+
+  it('should open dialog with specified animation durations', () => {
+    const enterAnimationDuration = '500ms';
+    const exitAnimationDuration = '300ms';
+    spyOn(dialog, 'open');
+
+    component.openDialog(enterAnimationDuration, exitAnimationDuration);
+    expect(dialog.open).toHaveBeenCalledWith(DialogAnimationsComponent, {
+      width: '250px',
+      enterAnimationDuration,
+      exitAnimationDuration
+    });
   });
 })

@@ -19,11 +19,11 @@
         <div class="messageGroup">
           <div class="form-group">
             <label class="form-label" for="inputMessage">Wiadomość*</label>
-            <textarea class="form-control messageArea" id="inputMessage" required ngModel name="message"
+            <textarea class="form-control messageArea" id="inputMessage" type="text" required ngModel name="message"
               #message="ngModel"></textarea>
           </div>
         </div>
-        <button class="submitBtn" id="submitBtn" type="submit" (click)="openDialog('0ms', '0ms')"
+        <button class="submitBtn" type="submit" (click)="openDialog('0ms', '0ms')"
           [disabled]="!f.valid">Wyślij</button>
       </form>
     </div>

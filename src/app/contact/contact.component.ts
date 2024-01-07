@@ -15,16 +15,16 @@ export class ContactComponent {
   menuIcon = 'menu';
   firestore: Firestore = inject(Firestore);
 
+
   @ViewChild('f') contactForm: any;
 
   saveData(): void {
-    const acollection = collection(this.firestore, 'message');
+    const acollection = collection(this.firestore, 'messages');
     addDoc(acollection, {
       'name': this.contactForm.value.name,
       'email': this.contactForm.value.email,
-      'title': this.contactForm.value.title,
-      'message': this.contactForm.value.message
-    });
+      'message': this.contactForm.value.message,
+    })
    }
 
   onSubmit(form: NgForm) {
@@ -39,6 +39,6 @@ export class ContactComponent {
       width: '250px',
       enterAnimationDuration,
       exitAnimationDuration,
-    });
+    })
   }
 }

@@ -44,7 +44,7 @@ const firebaseConfig = {
 
   appId: "1:628278115373:web:5606ce928c74c4e6000ca4"
 
-};
+}
 
 
 
