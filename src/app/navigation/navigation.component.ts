@@ -7,5 +7,5 @@ import { Component, Input,} from '@angular/core';
 })
 export class NavigationComponent {
   opened: boolean = false;
-  @Input() menuIcon: string | undefined;
+  @Input() menuIcon: any;
 }

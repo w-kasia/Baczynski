@@ -12,7 +12,7 @@ import { ContactComponent } from './contact/contact.component';
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'home', component: HomeComponent},
-  { path: 'biografia', component: ArticlesComponent},
+  { path: 'biografia', component: BiographyComponent},
   { path: 'utwory', component: WorksComponent},
   { path: 'aktualnosci', component: NewsComponent},
   { path: 'aktualnosci/:title', component: ArticlesComponent},

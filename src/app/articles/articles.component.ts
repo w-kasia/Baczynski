@@ -16,7 +16,7 @@ interface Article {
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent {
-  menuIcon = 'menu';
+  menuIcon: any;
   article!: Article;
 
   constructor(private newsService: NewsService, private route: ActivatedRoute, private router: Router) {}
@@ -40,7 +40,7 @@ export class ArticlesComponent {
       .replace(/-{2,}/g, '-') === title)
     });
   }
-  
+
   goToNews() {
     this.router.navigate(['/aktualnosci']);
   }

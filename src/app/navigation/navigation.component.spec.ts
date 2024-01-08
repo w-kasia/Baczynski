@@ -23,7 +23,7 @@ describe('NavigationComponent', () => {
       component = fixture.componentInstance;
       fixture.detectChanges();
     });
- 
+
   it('should create the navigation component', () => {
     expect(component).toBeTruthy();
   });
@@ -34,6 +34,7 @@ describe('NavigationComponent', () => {
 
   it('should toggle the menu when the button is clicked', () => {
     const button = fixture.nativeElement.querySelector('.menuBtn');
+    
     button.click();
     expect(component.opened).toBeTrue();
     button.click();
@@ -43,6 +44,7 @@ describe('NavigationComponent', () => {
   it('should close the menu when the close button is clicked', () => {
     const closeButton = fixture.nativeElement.querySelector('.closeBtn');
     component.opened = true;
+
     fixture.detectChanges();
     closeButton.click();
     expect(component.opened).toBeFalse();
@@ -50,7 +52,8 @@ describe('NavigationComponent', () => {
 
    it('should have the correct router links', () => {
     const navigationLinks = fixture.debugElement.queryAll(By.css('.listItem'));
-    const expectedLinks = ['/home', '/aktualnosci', '/works', '/galeria', '/biografia', '/kontakt'];
+    const expectedLinks = ['/home', '/aktualnosci', '/utwory', '/galeria', '/biografia', '/kontakt'];
+
     expect(navigationLinks.length).toBe(expectedLinks.length);
     navigationLinks.forEach((link, index) => {
       expect(link.nativeElement.getAttribute('routerLink')).toBe(expectedLinks[index]);
