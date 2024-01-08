@@ -17,14 +17,10 @@ describe('PoemsComponent', () => {
     TestBed.configureTestingModule({
       imports: [FormsModule, HttpClientTestingModule],
       declarations: [PoemsComponent, SearchComponent],
-      providers: [
-     WorksService,
-        {provide: Router, useValue: {}}
-      ]
+      providers: [WorksService, { provide: Router, useValue: {} }]
     });
     fixture = TestBed.createComponent(PoemsComponent);
     component = fixture.componentInstance;
-    // fixture.detectChanges();
     worksService = TestBed.inject(WorksService);
     router = TestBed.inject(Router);
   });
@@ -35,6 +31,7 @@ describe('PoemsComponent', () => {
 
   it('should update searchTitle on search text entered', () => {
     const searchValue = 'Poem';
+
     component.onSearchTextEntered(searchValue);
     expect(component.searchTitle).toEqual(searchValue);
   });
@@ -43,13 +40,11 @@ describe('PoemsComponent', () => {
     spyOn(window, 'open');
     const title = '1942, 1943, 1944';
     const formattedTitle = '1942-1944-1944';
-   const expectedPdfUrl = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
+    const expectedPdfUrl = `https://wolnelektury.pl/media/book/pdf/baczynski-${formattedTitle}.pdf`;
 
-   spyOn(worksService, 'formatTitle').and.returnValue(formattedTitle);
-
-   component.redirectToPDF(title);
-
-   expect(worksService.formatTitle).toHaveBeenCalledWith(title);
-   expect(window.open).toHaveBeenCalledWith(expectedPdfUrl, '_blank');
+    spyOn(worksService, 'formatTitle').and.returnValue(formattedTitle);
+    component.redirectToPDF(title);
+    expect(worksService.formatTitle).toHaveBeenCalledWith(title);
+    expect(window.open).toHaveBeenCalledWith(expectedPdfUrl, '_blank');
   });
 });

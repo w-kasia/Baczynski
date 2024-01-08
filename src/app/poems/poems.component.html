@@ -1,9 +1,9 @@
-<div class="works_section">
+<div class="worksSection">
   <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
-  <div class="list_works">
+  <div class="worksContainer">
     <ul *ngFor="let title of worksTitles">
-      <li class="title" *ngIf="title.toLowerCase().includes(searchTitle)" (click)="redirectToPDF(title)">
-        <a>{{title}}</a>
+      <li class="workTitle" *ngIf="title.toLowerCase().includes(searchTitle)" (click)="redirectToPDF(title)">
+        <a>{{ title }}</a>
       </li>
     </ul>
   </div>

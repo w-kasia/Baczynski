@@ -1,14 +1,15 @@
-.component_container--image {
-  max-width: 500px;
-}
-
-.component__container--quote {
-  padding-left: 70px;
-}
-
-.component__container--smaller {
+.smallPageContainer {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row;
+}
+
+.quote {
+  padding-left: 70px;
+  font-size: 25px;
+}
+
+.portraitImg {
+  max-width: 500px;
 }

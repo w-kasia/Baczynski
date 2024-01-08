@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { WorksComponent } from './works.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material/material.module';
@@ -16,7 +15,7 @@ describe('WorksComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule, MaterialModule, BrowserAnimationsModule, FormsModule], 
+      imports: [HttpClientTestingModule, MaterialModule, BrowserAnimationsModule, FormsModule],
       declarations: [WorksComponent, NavigationComponent, PoemsComponent, FooterComponent, SearchComponent]
     });
     fixture = TestBed.createComponent(WorksComponent);
@@ -28,23 +27,23 @@ describe('WorksComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render image and heading', () => {
-    const imageWorks = fixture.nativeElement.querySelector('img');
-    const headingWorks = fixture.nativeElement.querySelector('h1');
+  it('should render image and quote', () => {
+    const image = fixture.nativeElement.querySelector('.portraitImg');
+    const quote = fixture.nativeElement.querySelector('.quote');
 
-    expect(imageWorks).toBeTruthy();
-    expect(headingWorks).toBeTruthy();
-    });
+    expect(image).toBeTruthy();
+    expect(quote).toBeTruthy();
+  });
 
   it('should render navigation, poems, search and footer components', () => {
       const navigation = fixture.nativeElement.querySelector('app-navigation');
       const poems = fixture.nativeElement.querySelector('app-poems');
       const search = fixture.nativeElement.querySelector('app-search');
       const footer = fixture.nativeElement.querySelector('app-footer');
-  
+
       expect(navigation).toBeTruthy();
       expect(poems).toBeTruthy();
       expect(search).toBeTruthy();
       expect(footer).toBeTruthy();
-    });
+  });
 })

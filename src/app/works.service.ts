@@ -1,24 +1,23 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Observable, catchError, throwError } from "rxjs";
+import { Observable } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class WorksService {
-
-  private apiUrl = 'https://wolnelektury.pl/api/authors/krzysztof-kamil-baczynski/books/?format=json';
-  private apiURL2= 'https://wolnelektury.pl/media/book/pdf/baczynski-';
+  private apiURL = 'https://wolnelektury.pl/api/authors/krzysztof-kamil-baczynski/books/?format=json';
+  private url = 'https://wolnelektury.pl/media/book/pdf/baczynski-';
 
   constructor(private http: HttpClient) {}
 
   getWorksTitles(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
+    return this.http.get<any[]>(this.apiURL);
   }
 
   getWork(title: any): Observable<any> {
     const formattedTitle = this.formatTitle(title);
-    return this.http.get<any>(`${this.apiURL2}${formattedTitle}.pdf`);
+    return this.http.get<any>(`${this.url}${formattedTitle}.pdf`);
   }
 
   formatTitle(title: string): string {
@@ -36,6 +35,5 @@ export class WorksService {
     .replace(/[ć]/g, 'c')
     .replace(/[ń]/g, 'n')
     .replace(/-{2,}/g, '-')
-
   }
 }

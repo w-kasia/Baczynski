@@ -10,7 +10,7 @@ import { WorksService } from '../works.service';
 export class PoemsComponent {
   worksTitles!: string[];
   selectedTitle: any = '';
-  apiURL2: any | undefined;
+  url: any | undefined;
   searchTitle: string = '';
 
   constructor(private worksService: WorksService, private router: Router) {}
@@ -27,7 +27,6 @@ export class PoemsComponent {
     window.open(pdfURL, '_blank');
   }
 
-  //for search input
   onSearchTextEntered(searchValue: string) {
     this.searchTitle = searchValue;
   }

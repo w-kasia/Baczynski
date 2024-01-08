@@ -1,6 +1,5 @@
 import { WorksService } from './works.service';
 import { TestBed } from '@angular/core/testing';
-
 import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 describe('WorksService', () => {
@@ -30,7 +29,6 @@ describe('WorksService', () => {
     service.getWorksTitles().subscribe((response) => {
       expect(response).toEqual(mockResponse);
     });
-
 
     const req = httpMock.expectOne('https://wolnelektury.pl/api/authors/krzysztof-kamil-baczynski/books/?format=json')
     expect(req.request.method).toBe('GET');

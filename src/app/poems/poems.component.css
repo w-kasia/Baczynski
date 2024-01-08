@@ -1,4 +1,4 @@
-.works_section {
+.worksSection {
   max-width: 100vw;
   min-height: 100vh;
   padding-bottom: 40px;
@@ -7,27 +7,36 @@
   flex-direction: column;
 }
 
-.title {
+.worksContainer {
+  max-width: 90vw;
+  padding-top: 40px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.workTitle {
   width: 400px;
-  cursor: pointer;
-  background: var(--main-bg);
-  -webkit-backdrop-filter: blur(15.1px);
-  backdrop-filter: blur(15.1px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  list-style: none;
   padding: 15px;
   margin-bottom: 4px;
   margin-right: 8px;
+  border: 2px solid var(--grey);
   border-radius: 13px;
-
+  display: flex;
+  background: var(--main-bg);
+  -webkit-backdrop-filter: blur(15.1px);
+  backdrop-filter: blur(15.1px);
+  font-size: 14px;
+  list-style: none;
+  cursor: pointer;
 }
 
-.title:hover {
-  background-color: #00bfb2;
-  background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
-  overflow: hidden;
+.workTitle:hover {
   border: none;
+  overflow: hidden;
+  background-color: var(--blue);
+  background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
 }
 
 ul li {
@@ -35,15 +44,6 @@ ul li {
 }
 
 ul li a {
+  color: var(--white);
   text-decoration: none;
-  color: white;
-}
-
-.list_works {
-  width: 90vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 40px;
 }
