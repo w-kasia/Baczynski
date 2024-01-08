@@ -1,83 +1,63 @@
-import { NewsService } from './news.service';
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule, routingComponents } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MaterialModule } from './material/material.module';
 import { NavigationComponent } from './navigation/navigation.component';
-
-import { WorksComponent } from './works/works.component';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { HttpClientModule } from '@angular/common/http';
-import { WorksService } from './works.service';
 import { ArticlesComponent } from './articles/articles.component';
-import { FooterComponent } from './footer/footer.component';
-import { FormsModule } from '@angular/forms';
-import { SearchComponent } from './search/search.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { MemoriesComponent } from './memories/memories.component';
 import { PoemsComponent } from './poems/poems.component';
+import { SearchComponent } from './search/search.component';
+import { MemoriesComponent } from './memories/memories.component';
+import { FooterComponent } from './footer/footer.component';
 import { ErrorComponent } from './error/error.component';
-import { ContactComponent } from './contact/contact.component';
-import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { DialogAnimationsComponent } from './dialog-animations/dialog-animations.component';
 import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 import { MenuService } from './menu.service';
+import { NewsService } from './news.service';
+import { WorksService } from './works.service';
+import { AppRoutingModule, routingComponents } from './app-routing.module';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './material/material.module';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule } from '@angular/forms';
+import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 const firebaseConfig = {
-
   apiKey: "AIzaSyAR6Rqxxo7lvgHkL1ldNEturX8ZgJySKAg",
-
   authDomain: "baczynski-f11fc.firebaseapp.com",
-
   databaseURL: "https://baczynski-f11fc-default-rtdb.europe-west1.firebasedatabase.app",
-
   projectId: "baczynski-f11fc",
-
   storageBucket: "baczynski-f11fc.appspot.com",
-
   messagingSenderId: "628278115373",
-
   appId: "1:628278115373:web:5606ce928c74c4e6000ca4"
-
 }
-
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent,
     routingComponents,
+    NavigationComponent,
     ArticlesComponent,
-    FooterComponent,
-    SearchComponent,
-    GalleryComponent,
-    MemoriesComponent,
     PoemsComponent,
+    SearchComponent,
+    MemoriesComponent,
+    FooterComponent,
     ErrorComponent,
-    ContactComponent,
     DialogAnimationsComponent,
-    WorksComponent,
     ScrollToTopComponent
-
   ],
   imports: [
     provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideFirestore(() => getFirestore()),
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    FlexLayoutModule,
     HttpClientModule,
+    FlexLayoutModule,
+    MaterialModule,
     FormsModule
   ],
-  providers: [WorksService, NewsService, MenuService],
+  providers: [MenuService, WorksService, NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
