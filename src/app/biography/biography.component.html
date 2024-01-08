@@ -6,25 +6,26 @@
     <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
     <div class="smallPageContainer">
       <div class="portraitContainer">
-        <img class="portraitWithMother" src="assets/images/mother.png" alt="Portrait of Krzysztof Baczynski and his mother" >
+        <img class="portraitWithMother" src="assets/images/portraitwithmom.png"
+          alt="Portrait of Krzysztof Baczynski and his mother">
       </div>
       <div class="quoteContainer">
-        <h1>{{ quote }}</h1>
+        <h1 class="quote">{{ quote }}</h1>
       </div>
     </div>
   </div>
   <div class="faqSection">
-      <h2 class="faqTitle">Poznaj <span>Krzysia</span></h2>
+    <h2 class="faqTitle">Poznaj <span>Krzysia</span></h2>
     <div class="faqContainer">
       <div class="questions">
         <ul>
           <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"
-          [class.active]="question === selectedQuestion">{{question.question}}
+            [class.active]="question === selectedQuestion">{{question.question}}
           </li>
         </ul>
       </div>
       <div class="answer">
-      {{selectedQuestion.answer}}
+        {{selectedQuestion.answer}}
       </div>
     </div>
   </div>
@@ -33,7 +34,7 @@
       <p class="poem">{{ poem }}</p>
     </div>
     <div>
-    <img class="portraitOfBaczynski" src="assets/images/image-1.jpg" alt="">
+      <img class="portraitOfBaczynski" src="assets/images/image-1.jpg" alt="">
     </div>
   </div>
   <app-memories></app-memories>
