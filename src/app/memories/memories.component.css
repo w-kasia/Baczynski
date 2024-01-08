@@ -1,23 +1,23 @@
-h1 span {
-  color: #00bfb2;
-}
-
-.memories_container {
+.memoriesContainer {
   width: 90vw;
+  padding-top: 100px;
+  padding-bottom: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-top: 100px;
-  padding-bottom: 60px;
 }
 
-.memories_title {
+.memoriesHeading{
   padding-bottom: 80px;
   font-size: 40px;
 }
 
-.memoryQuoteContainer {
+.memoriesHeading span {
+  color: var(--blue);
+}
+
+.quotesContainer {
   position: relative;
   max-width: 700px;
   min-height: 200px;
@@ -47,4 +47,3 @@ h1 span {
   margin-top: 25px;
   font-size: 16px;
 }
-

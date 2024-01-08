@@ -8,18 +8,17 @@ import { Component, OnInit} from '@angular/core';
 })
 export class MemoriesComponent implements OnInit{
 
-memories: any;
+  memories: any;
 
-constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-ngOnInit() {
-  this.getData().subscribe((data) => {
-    this.memories = data;
-  })
-}
+  ngOnInit() {
+    this.getData().subscribe((data) => {
+      this.memories = data;
+     })
+  }
 
-getData() {
-  return this.http.get<any[]>('assets/memories.json');
-}
-
+  getData() {
+    return this.http.get<any[]>('assets/memories.json');
+  }
 }
