@@ -116,3 +116,42 @@
   transform: scale(1.1);
   transition: 0.5s ease-in-out;
 }
+
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
+  mat-sidenav-container {
+    width: 30px;
+    border: none;
+  }
+
+  .listItem {
+    padding: 8px;
+    font-size: 15px;
+  }
+
+  .closeButtonContainer {
+    right: 5px;
+  }
+
+  .closeIcon {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .listItem {
+    padding: 8px;
+    font-size: 25px;
+  }
+
+}
+
+@media screen and (min-width: 1201px) {
+
+} */

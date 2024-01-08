@@ -46,16 +46,19 @@ mat-sidenav {
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
   mat-sidenav-container {
-    width: 18px;
+    width: 30px;
+    border: none;
   }
 
   .listItem {
     padding: 8px;
     font-size: 15px;
   }
+
   .closeButtonContainer {
     right: 5px;
   }
+
   .closeIcon {
     font-size: 15px;
   }
