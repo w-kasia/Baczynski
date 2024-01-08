@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { GalleryComponent } from './gallery.component';
 import { FooterComponent } from '../footer/footer.component';
 import { NavigationComponent } from '../navigation/navigation.component';
@@ -26,7 +25,6 @@ describe('GalleryComponent', () => {
 
   it('should initialize the images array', () => {
     expect(component.images).toBeDefined();
-
     expect(component.images.length).toBeGreaterThan(0);
   });
 
@@ -35,7 +33,6 @@ describe('GalleryComponent', () => {
     component.onPreviewImage(imageIndex);
 
     expect(component.currentIndex).toEqual(imageIndex);
-
     expect(component.currentLightboxImage).toEqual(component.images[imageIndex]);
   });
 
@@ -44,7 +41,6 @@ describe('GalleryComponent', () => {
     component.goToPrev();
 
     expect(component.currentIndex).toEqual(0);
-
     expect(component.currentLightboxImage).toEqual(component.images[0]);
   });
 

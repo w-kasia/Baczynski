@@ -1,28 +1,22 @@
-<div class="component__container">
+<div class="componentContainer">
   <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
-  <div class="component__container--gallery" *ngFor="let image of images; let i = index">
-      <img (click)="onPreviewImage(i)" class="component__container--gallery--image"
-        src="assets/images/gallery/{{ image.filename }}" alt="{{ image.alt }}">
+  <div class="imagesContainer" *ngFor="let image of images; let i = index">
+      <img class="galleryImage"
+        src="assets/images/gallery/{{ image.filename }}" alt="{{ image.alt }}" (click)="onPreviewImage(i)">
   </div>
-
-  <div *ngIf="showMask" class="lightbox">
-    <button mat-icon-button (click)="closePreview()" *ngIf="previewImage" class="close-button">
+  <div class="lightbox" *ngIf="showMask" >
+    <button mat-icon-button class="close-button" *ngIf="previewImage" (click)="closePreview()" >
       <mat-icon class="mat-18">close</mat-icon>
     </button>
-
-    <button mat-icon-button *ngIf="controls" class="prev-button" type="button" (click)="goToPrev()">
+    <button mat-icon-button type="button" class="prev-button" *ngIf="controls" (click)="goToPrev()">
       <mat-icon class="mat-18">keyboard_arrow_left</mat-icon>
     </button>
-
-    <button mat-icon-button class="next-button" type="button" (click)="goToNext()">
+    <button mat-icon-button type="button" class="next-button" (click)="goToNext()">
       <mat-icon>keyboard_arrow_right</mat-icon>
     </button>
-
-    <div *ngIf="previewImage" class="lightbox-img">
-      <img class="img-preview" src="assets/images/gallery/{{currentLightboxImage.filename}}" alt="">
+    <div class="lightbox-img" *ngIf="previewImage" >
+      <img class="img-preview" src="assets/images/gallery/{{currentLightboxImage.filename}}" alt="Preview of clicked image">
     </div>
-
   </div>
-
   <app-footer></app-footer>
 </div>
