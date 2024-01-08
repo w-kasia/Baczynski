@@ -9,7 +9,6 @@ export class SearchComponent {
 
   enteredSearchValue: string = '';
   
-
   @Output() searchTextChanged: EventEmitter<string> = new EventEmitter<string>();
 
   onSearchTextChanged() {

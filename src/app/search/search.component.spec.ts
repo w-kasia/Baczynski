@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { SearchComponent } from './search.component';
 import { FormsModule } from '@angular/forms';
 
@@ -23,10 +22,8 @@ describe('SearchComponent', () => {
 
   it('should emit search text when onSearchTextChanged is called', () => {
     spyOn(component.searchTextChanged, 'emit');
-
     component.enteredSearchValue = 'test';
     component.onSearchTextChanged();
-
     expect(component.searchTextChanged.emit).toHaveBeenCalledWith('test');
   });
 });
