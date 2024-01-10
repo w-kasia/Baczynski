@@ -23,11 +23,12 @@
 }
 
 .newsContainer {
+  width: 100%;
   max-width: 400px;
-  min-height: 500px;
+  min-height: 450px;
   padding: 25px;
   margin-right: 25px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  border: 2px solid var(--grey);
   border-radius: 20px;
   background-color: transparent;
   box-shadow: var(--shadow);
@@ -37,7 +38,7 @@
 }
 
 .newsContainer:hover {
-  box-shadow:#00bfb2 0px 25px 50px -12px;
+  box-shadow: var(--blue) 0px 25px 50px -12px;
   transform: scale(1);
   transition: 0.5s ease-in-out;
 }
@@ -49,7 +50,7 @@
 .title {
   padding-top: 30px;
   padding-bottom: 40px;
-  color: #8ef1eb;
+  color: var(--secondary-blue);
   font-size: 25px;
 }
 
@@ -57,30 +58,65 @@
   font-size: 16px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media (max-width: 769px) {
   .heading {
+    max-width: 290px;
+    padding-top: 40px;
     font-size: 20px;
+    text-align: center;
   }
-  .newsContainer {
-    width: 290px;
-    min-height: 200px !important;
-    margin-bottom: 10px;
+  .newsSection {
+    flex-direction: column;
+    align-items: center;
   }
   .listOfNews {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  .newsSection {
-    padding: 0;
-    margin: 0;
-    width: 90vw;
+  .newsContainer {
+    max-width: 90%;
+    margin-right: 0;
+    min-height: 200px;
+    margin-bottom: 10px;
   }
   .date {
-    font-size: 9px;
+    font-size: 10px;
   }
   .title {
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .introduction {
+    font-size: 13px;
+  }
+}
+@media (min-width: 770px) and (max-width: 900px) {
+  .newsSection {
+    flex-direction: row;
+    align-items: center;
+  }
+  .listOfNews {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+  .newsContainer {
+    max-width: 30%;
+    margin-right: 0;
+    min-height: 420px;
+    margin-bottom: 10px;
+  }
+  .heading {
+    padding-top: 40px;
+    font-size: 30px;
+  }
+  .date {
+    font-size: 11px;
+  }
+  .title {
+    font-size: 20px;
   }
   .introduction {
     font-size: 13px;
