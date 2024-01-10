@@ -8,6 +8,7 @@
 
 .footerContent {
   width: 90vw;
+  max-width: 90vw;
   border-top: 2px solid var(--grey);
   display: flex;
   align-items: flex-start;
@@ -60,39 +61,61 @@
   margin-top: 30px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .footer {
-    min-height: 20vh;
-  }
-
+@media (max-width: 320px) {
   .footerContent {
-    width: 100vw;
-    display: flex;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
-
   .logo {
+    font-size: 30px;
+  }
+  .contactBtn {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .footerHeading {
     font-size: 15px;
   }
-
-  .footerHeading {
-    font-size: 10px;
-    padding-bottom: 2px;
+  .footerListItem li {
+    margin-bottom: 0px;
   }
-
   .footerListItem,
-  .emailLink,
-  .contactBtn {
-    font-size: 9px;
-    margin-bottom: 2px;
+  .emailLink {
+    font-size: 12px;
   }
-
-  .footerListItems li {
-    margin-bottom: 1px;
-  }
-
   .copyright {
-    font-size: 8px;
-    margin-bottom: 8px;
+    margin-top: 15px;
+    font-size: 10px;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px), (min-width: 481px) and (max-width: 768px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .logo {
+    font-size: 35px;
+  }
+  .contactBtn {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .footerHeading {
+    font-size: 20px;
+  }
+  .footerListItem li {
+    margin-bottom: 0px;
+  }
+  .footerListItem,
+  .emailLink {
+    font-size: 16px;
+  }
+  .copyright {
+    margin-top: 20px;
+    font-size: 12px;
   }
 }
