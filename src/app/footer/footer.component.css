@@ -18,7 +18,7 @@
 
 .logo {
   padding-top: 40px;
-  color: white;
+  color: var(--white);
   font-family: 'Hurricane', cursive;
   font-size: 50px;
 }
@@ -52,7 +52,7 @@
 
 .footerListItem,
 .emailLink {
-  color: white;
+  color: var(--white);
   font-size: 18px;
   text-decoration: none;
 }
