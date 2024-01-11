@@ -17,8 +17,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  max-width: 800px;
+  width: 800px;
+  max-width: 100%;
   height: auto;
 }
 
@@ -123,10 +123,18 @@
   transition: 0.5s ease-in-out;
 }
 
-@media screen and (max-width: 767px) {
-  .portraitWithMother {
-    position: absolute;
-    bottom: 0;
+@media (max-width: 480px) {
+  .animationImg {
+    display: none;
+  }
+  .smallPageContainer {
+    height: 400px;
+    min-height: 100%;
+    flex-direction: column;
+  }
+  .portraitContainer,
+  .quoteContainer {
+    width: 100%;
   }
   .quoteContainer {
     padding-right: 0px;
@@ -134,28 +142,247 @@
     align-items: center;
     justify-content: center;
   }
+  .portraitWithMother {
+    position: absolute;
+    bottom: 0;
+    max-width: 350px;
+  }
   .quote {
     position: absolute;
-    top: 20px;
+    top: 50px;
+    font-size: 13px;
+  }
+  .faqTitle{
+    font-size: 20px;
+  }
+  .faqContainer {
+    width: 350px;
+    max-width: 100%;
+    min-height: 30vh;
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .questions {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .question,
+  .answer {
+    width: 300px;
+    max-width: 100%;
+  }
+  .answer {
+    min-height: 200px;
   }
   .poemSection {
+    max-width: 350px;
+    padding-top: 13px;
     flex-direction: column;
-    padding-top: 18px;
   }
-  .poem {
-    margin-left: 0;
-    font-size: 18px;
+  .poem {max-width: 300px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 18px;
   }
   .portraitOfBaczynski {
-    max-width: 300px;
+    max-width: 200px;
+  }
+  .portraitOfBaczynski:hover {
+    transform: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .poemSection {
-    justify-content: center;
-    padding-top: 100px;
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .animationImg {
+    display: none;
   }
-  /* .poem {
-    font-size: 24px;
-  } */
+  .smallPageContainer {
+    min-height: 600px;
+    flex-direction: column;
+  }
+  .portraitContainer,
+  .quoteContainer {
+    width: 100%;
+  }
+  .quoteContainer {
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portraitWithMother {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+  }
+  .quote {
+    position: absolute;
+    top: 80px;
+    font-size: 20px;
+  }
+  .faqTitle{
+    font-size: 25px;
+  }
+  .faqContainer {
+    max-width: 500px;
+    min-height: 30vh;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  .questions {
+    margin-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .question,
+  .answer {
+    width: 450px;
+    max-width: 100%;
+  }
+  .answer {
+    min-height: 200px;
+  }
+  .poemSection {
+    max-width: 500px;
+    padding-top: 13px;
+    flex-direction: column;
+  }
+  .poem {
+    max-width: 400px;
+    margin-left: 0px;
+    padding-bottom: 15px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 25px;
+  }
+  .portraitOfBaczynski {
+    max-width: 380px;
+  }
+  .portraitOfBaczynski:hover {
+    transform: none;
+  }
+}
+
+@media all and (min-width: 769px) and (max-width: 900px) {
+  .animationImg {
+    display: none;
+  }
+  .smallPageContainer {
+    min-height: 600px;
+    flex-direction: column;
+  }
+  .portraitContainer,
+  .quoteContainer {
+    width: 100%;
+  }
+  .quoteContainer {
+    padding-right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .portraitWithMother {
+    position: absolute;
+    bottom: 0;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .quote {
+    position: absolute;
+    top: 80px;
+    font-size: 25px;
+  }
+  .faqTitle{
+    font-size: 35px;
+  }
+  .faqContainer {
+    max-width: 950px;
+    min-height: 60vh;
+    font-size: 18px;
+  }
+  .questions {
+    margin-right: 8px;
+  }
+  .question,
+  .answer {
+    max-width: 450px;
+  }
+  .answer {
+    height: 60vh;
+    padding: 30px;
+    overflow: scroll;
+  }
+  .poemSection {
+    max-width: 900px;
+    padding-top: 13px;
+    justify-content: space-between;
+  }
+  .poem {
+    max-width: 450px;
+    font-size: 20px;
+  }
+  .portraitOfBaczynski {
+    max-width: 320px;
+  }
+  .portraitOfBaczynski:hover {
+    transform: none;
+  }
+}
+
+ @media all and (min-width: 901px) and (max-width: 1024px) {
+  .smallPageContainer {
+    min-height: 500px;
+  }
+  .portraitWithMother {
+    width: 550px;
+  }
+  .quote {
+    font-size: 18px;
+  }
+  .faqTitle{
+    font-size: 38px;
+  }
+  .faqContainer {
+   font-size: 20px;
+  }
+  .questions {
+    margin-right: 8px;
+  }
+  .question {
+    max-width: 450px;
+    margin-bottom: 25px;
+  }
+  .answer {
+    height: 400px;
+    padding: 30px;
+    overflow: scroll;
+  }
+  .poemSection {
+    padding-top: 15px;
+    justify-content: space-around;
+  }
+  .poem {
+    max-width: 450px;
+    font-size: 22px;
+  }
+  .portraitOfBaczynski {
+    max-width: 400px;
+    line-height: 25px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1396px) {
+  .smallPageContainer {
+    min-height: 550px;
+  }
+  .portraitWithMother {
+    width: 650px;
+  }
+  .quote {
+    font-size: 20px;
+  }
 }
