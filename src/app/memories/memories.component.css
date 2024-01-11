@@ -1,5 +1,4 @@
 .memoriesContainer {
-  width: 90vw;
   padding-top: 100px;
   padding-bottom: 60px;
   display: flex;
@@ -47,3 +46,58 @@
   margin-top: 25px;
   font-size: 16px;
 }
+
+@media (max-width: 480px) {
+  .memoriesContainer {
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+  .memoriesHeading{
+    font-size: 28px;
+    text-align: center;
+    padding-bottom: 45px;
+  }
+  .quotesContainer {
+    width: 250px;
+    max-width: 250px;
+    min-height: 200px;
+    padding: 15px;
+    margin-bottom: 40px;
+  }
+  .authorName {
+    max-width: 180px;
+    font-size: 12px;
+    top: -20px;
+    left: -20px;
+  }
+  .quote {
+    font-size: 13px;
+  }
+}
+  @media (min-width: 481px) and (max-width: 768px) {
+    .memoriesContainer {
+      padding-top: 40px;
+      padding-bottom: 20px;
+    }
+    .memoriesHeading{
+      font-size: 30px;
+      text-align: center;
+      padding-bottom: 45px;
+    }
+    .quotesContainer {
+      width: 400px;
+      max-width: 400px;
+      min-height: 200px;
+      padding: 18px;
+      margin-bottom: 40px;
+    }
+    .authorName {
+      max-width: 200px;
+      font-size: 15px;
+      top: -20px;
+      left: -20px;
+    }
+    .quote {
+      font-size: 15px;
+    }
+  }
