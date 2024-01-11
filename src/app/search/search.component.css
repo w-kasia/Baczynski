@@ -4,6 +4,7 @@
 
 .searchInput {
   width: 450px;
+  max-width: 100%;
   padding: 15px;
   border: none;
   border-radius: 20px;
@@ -12,4 +13,11 @@
   -webkit-backdrop-filter: blur(15.1px);
   backdrop-filter: blur(15.1px);
   list-style: none;
+}
+
+@media (max-width: 480px) {
+  .searchInput {
+    width: 270px;
+    max-width: 100%;
+  }
 }

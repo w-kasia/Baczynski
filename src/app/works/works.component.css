@@ -13,3 +13,6 @@
 .portraitImg {
   max-width: 500px;
 }
+@media (max-wdth: 480px) {
+  
+}

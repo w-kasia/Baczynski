@@ -47,3 +47,7 @@ ul li a {
   color: var(--white);
   text-decoration: none;
 }
+
+@media (max-wdth: 480px) {
+  
+}
