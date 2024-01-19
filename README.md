@@ -1,25 +1,25 @@
 <h1>BACZYŃSKI</h1>
 
 I want to present my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.
+Let's see my page! I hope, you'll have fun.
 
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/a5713fe4-772d-4041-8b95-e85fa61665bb" width="800">
 
-
-
-<h4>What was my aim?</h4>
-My main aim was to create the Angular website with open API. Let's see my page! I hope, you'll have fun.
+<h4>What was my main aim?</h4>
+My main aim was to show and use the power and potential of open APIs to build a dynamic Angular application. 
 
 <h4>Demo</h4>
 
 <h4>Tech Stack</h4>
-Angular - framework (v.16.2.2)
-Typescript - language
-CSS - styling
-Angular Material - styling
+Angular 
+HTML
+CSS
+Angular Material
+Typescript
 Firebase/Firestore - database
 https://wolnelektury.pl/api/ - API
 
-The structure of project
+<h4>Project Structure</h4>
 Sidenav
 Home
 Footer
