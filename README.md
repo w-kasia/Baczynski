@@ -4,10 +4,10 @@
 
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/a5713fe4-772d-4041-8b95-e85fa61665bb" width="800">
 
-🎯<h4>What was my main aim?</h4>
+<h4>🎯What was my main aim?</h4>
 My main aim was to show the power and potential of open APIs to build a dynamic applications. 
 
-🛠️<h4>Tech Stack</h4>
+<h4>🛠️Tech Stack</h4>
 ✔️HTML</br>
 ✔️CSS</br>
 ✔️Typescript</br>
@@ -25,17 +25,17 @@ My main aim was to show the power and potential of open APIs to build a dynamic 
 📨<b>Contact</b></br>
 🦶<b>Footer</b></br>
 
-⭐<h4>Some interesting features</h4>
+<h4>⭐Some interesting features</h4>
 
-📕<b>Works Section</b>
+<b>📕Works Section</b>
 In this section, you'll find list of poems fetched from an open API. You can explore a variety of works. Additionally, there's a search input feature that allows you to easily search for specific works by titles. Simply enter a keyword or title in the search input, and the component will dynamically filter and display the relevant works.
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/582a2636-f86c-4b6b-b1a8-66e17a5c7765" width="700">
 
-💬<b>Contact Form</b>
+<b>💬Contact Form</b>
 In this section, I've implemented template-driven forms. When a user fills out the form and submits it, the data is sent to Firestore, ensuring that I receive that message promptly.
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/e0e5de78-3223-4fd2-9289-d6801df0b1f6" width="700">
 
-💡<b>FAQ Section</b>
+<b>💡FAQ Section</b>
 This section was built with Angular Material and it provides answers to some interesting questions about poet. It offers a user-friendly interface with an intuitive design, making it easy for users to navigate through the questions and find information they need.
 
 
