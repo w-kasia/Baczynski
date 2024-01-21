@@ -1,30 +1,34 @@
 <h1>BACZYŃSKI</h1>
 
 I want to present my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.
-Let's see my page! I hope, you'll have fun.
 
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/a5713fe4-772d-4041-8b95-e85fa61665bb" width="800">
 
 <h4>What was my main aim?</h4>
-My main aim was to show and use the power and potential of open APIs to build a dynamic Angular application. 
+My main aim was to show the power and potential of open APIs to build a dynamic Angular applications. 
 
 <h4>Demo</h4>
 
 <h4>Tech Stack</h4>
-Angular 
 HTML
 CSS
-Angular Material
 Typescript
-Firebase/Firestore - database
+Angular 
+Angular Material
+Firebase
 https://wolnelektury.pl/api/ - API
 
-<h4>Project Structure</h4>
-Sidenav
-Home
-Footer
+<h4>What sections will you find in that project?</h4>
+🧭<b>Menu</b>
+🏠Home - this is the main landing page of app, where you can start exploring different sections.
+📖Biography - in this part of app, you can find more information about Baczynski. It also includes a Faq section.
+🖼️Gallery - this section displays a collection of images.
+✒️Works - in this section
+📨Contact
+🔎
+🦶Footer
 
-<h4>What will you find in my project?</h4>
+
 You will find a list of poems, that are fetched from open API. You can use search input to find specific title.
 You can send message via contact form, that is send to firestore. using template driven form
 You can look at the images gallery, where preview of images is available. 
