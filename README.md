@@ -16,7 +16,7 @@ My main aim was to show the power and potential of open APIs to build a dynamic 
 ✔️Firebase</br>
 ✔️https://wolnelektury.pl/api/ - API</br>
 
-🧩<h4>What sections will you find in that project?</h4>
+<h4>🧩What sections will you find in that project?</h4>
 🧭<b>Menu</b></br>
 🏠<b>Home</b></br>
 📖<b>Biography</b></br>
@@ -39,7 +39,7 @@ In this section, I've implemented template-driven forms. When a user fills out t
 This section was built with Angular Material and it provides answers to some interesting questions about poet. It offers a user-friendly interface with an intuitive design, making it easy for users to navigate through the questions and find information they need.
 
 
-💻📱The website is designed to be fully responsive. Whether you're accessing it from desktop, laptop, tablet, or smartphone, you can expect a user-freindly experience.
+💻📱The website is designed to be fully responsive. Whether you're accessing it from desktop, laptop, tablet, or smartphone, you can expect a user-friendly experience.
 
 🚀This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
