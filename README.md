@@ -19,14 +19,13 @@ Firebase
 https://wolnelektury.pl/api/ - API
 
 <h4>What sections will you find in that project?</h4>
-🧭<b>Menu</b>
-🏠Home - this is the main landing page of app, where you can start exploring different sections.
-📖Biography - in this part of app, you can find more information about Baczynski. It also includes a Faq section.
-🖼️Gallery - this section displays a collection of images.
-✒️Works - in this section
-📨Contact
-🔎
-🦶Footer
+🧭<b>Menu</b></br>
+🏠<b>Home</b></br>
+📖<b>Biography</b></br>
+🖼️<b>Gallery</b></br>
+✒️<b>Works</b></br>
+📨<b>Contact</b></br>
+🦶<b>Footer</b></br>
 
 
 You will find a list of poems, that are fetched from open API. You can use search input to find specific title.
