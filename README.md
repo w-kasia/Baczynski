@@ -5,21 +5,23 @@
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/a5713fe4-772d-4041-8b95-e85fa61665bb" width="800">
 
 🎯<h4>What was my main aim?</h4>
+
 My main aim was to show the power and potential of open APIs to build a dynamic applications. 
 
 <h4>Demo</h4>
 
 🔨<h4>Tech Stack</h4>
-HTML
-CSS
-<img src="https://github.com/w-kasia/Baczynski/assets/121196574/cb839aca-8e26-4841-aa3f-79287b29ef1f" width="15px">
-Typescript
-Angular 
-Angular Material
-Firebase
-https://wolnelektury.pl/api/ - API
+
+✔️HTML
+✔️CSS
+✔️Typescript
+✔️Angular
+✔️Angular Material
+✔️Firebase
+✔️https://wolnelektury.pl/api/ - API
 
 <h4>What sections will you find in that project?</h4>
+
 🧭<b>Menu</b></br>
 🏠<b>Home</b></br>
 📖<b>Biography</b></br>
