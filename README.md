@@ -1,17 +1,13 @@
 <h1>BACZYŃSKI</h1>
 
-I want to present my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.
+<h4>I want to present my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.</h4>
 
 <img src="https://github.com/w-kasia/Baczynski/assets/121196574/a5713fe4-772d-4041-8b95-e85fa61665bb" width="800">
 
-<h4>What was my main aim?</h4>
-
+🎯<h4>What was my main aim?</h4>
 My main aim was to show the power and potential of open APIs to build a dynamic applications. 
 
-<h4>Demo</h4>
-
-<h4>Tech Stack</h4>
-
+🛠️<h4>Tech Stack</h4>
 ✔️HTML</br>
 ✔️CSS</br>
 ✔️Typescript</br>
@@ -20,8 +16,7 @@ My main aim was to show the power and potential of open APIs to build a dynamic 
 ✔️Firebase</br>
 ✔️https://wolnelektury.pl/api/ - API</br>
 
-<h4>What sections will you find in that project?</h4>
-
+🧩<h4>What sections will you find in that project?</h4>
 🧭<b>Menu</b></br>
 🏠<b>Home</b></br>
 📖<b>Biography</b></br>
@@ -30,7 +25,7 @@ My main aim was to show the power and potential of open APIs to build a dynamic 
 📨<b>Contact</b></br>
 🦶<b>Footer</b></br>
 
-<h4>Some interesting features</h4>
+⭐<h4>Some interesting features</h4>
 
 📕<b>Works Section</b>
 In this section, you'll find list of poems fetched from an open API. You can explore a variety of works. Additionally, there's a search input feature that allows you to easily search for specific works by titles. Simply enter a keyword or title in the search input, and the component will dynamically filter and display the relevant works.
