@@ -61,10 +61,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Baczynski:build:production"
+              "buildTarget": "Baczynski:build:production"
             },
             "development": {
-              "browserTarget": "Baczynski:build:development"
+              "buildTarget": "Baczynski:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +72,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Baczynski:build"
+            "buildTarget": "Baczynski:build"
           }
         },
         "test": {
