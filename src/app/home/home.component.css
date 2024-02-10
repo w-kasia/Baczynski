@@ -52,7 +52,7 @@
   text-align: center;
 }
 
-.textSection p {
+.quoteText {
   font-size: 20px;
 }
 
@@ -74,7 +74,7 @@
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+/* @media screen and (min-width: 320px) and (max-width: 480px) {
   .smallPageContainer {
     min-height: 450px;
     margin-bottom: 0px;
@@ -97,5 +97,160 @@
   }
   .pictureOfPoem {
     margin-right: 8px;
+  }
+} */
+
+@media (max-width: 320px) {
+  .componentContainer {
+    min-height: 30vh;
+  }
+  .smallPageContainer {
+    min-height: 200px;
+    margin-top: 40px;
+  }
+  .mainImg {
+    width: 200px;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .descriptionOfPainting {
+    font-size: 10px;
+  }
+  .quoteText {
+    font-size: 14px;
+    padding: 8px 8px;
+  }
+  .poemsPicturesSection {
+    margin-bottom: 8px;
+  }
+  .paintingByBaczynski {
+    max-width: 90vw;
+  }
+  .poemsPicturesSection{
+    flex-direction: column;
+  }
+  .pictureOfPoem {
+    max-width: 90vw;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .pictureOfWork {
+    max-width: 90vw;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 321px) and (max-width: 480px) {
+  .componentContainer {
+    min-height: 30vh;
+  }
+  .smallPageContainer {
+    min-height: 250px;
+    margin-top: 40px;
+  }
+  .mainImg {
+    width: 250px;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .descriptionOfPainting {
+    font-size: 12px;
+  }
+  .quoteText {
+    font-size: 15px;
+    padding: 8px 8px;
+  }
+  .poemsPicturesSection {
+    margin-bottom: 8px;
+  }
+  .paintingByBaczynski {
+    max-width: 90vw;
+  }
+  .poemsPicturesSection{
+    flex-direction: column;
+  }
+  .pictureOfPoem {
+    max-width: 90vw;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .pictureOfWork {
+    max-width: 90vw;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .componentContainer {
+    min-height: 30vh;
+  }
+  .smallPageContainer {
+    min-height: 300px;
+    margin-top: 40px;
+  }
+  .mainImg {
+    width: 300px;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .descriptionOfPainting {
+    font-size: 13px;
+  }
+  .quoteText {
+    font-size: 14px;
+    padding: 8px 8px;
+  }
+  .poemsPicturesSection {
+    margin-bottom: 8px;
+  }
+  .paintingByBaczynski {
+    max-width: 90vw;
+    margin-top: 20px;
+  }
+  .poemsPicturesSection{
+    flex-direction: column;
+  }
+  .pictureOfPoem {
+    max-width: 90vw;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  .pictureOfWork {
+    max-width: 90vw;
+    margin-bottom: 60px;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .componentContainer {
+    min-height: 20vh;
+  }
+  .smallPageContainer {
+    min-height: 400px;
+    margin-top: 40px;
+  }
+  .mainImg {
+    width: 400px;
+  }
+  .logoContainer {
+    left: 20px;
+  }
+  .logo {
+    font-size: 30px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .componentContainer {
+    min-height: 30vh;
+  }
+  .smallPageContainer {
+    min-height: 500px;
+    margin-top: 40px;
+  }
+  .mainImg {
+    width: 500px;
+  }
+  .logo {
+    font-size: 40px;
   }
 }
