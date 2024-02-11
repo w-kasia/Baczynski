@@ -62,12 +62,19 @@ textarea.ng-invalid.ng-touched {
 }
 
 @media (max-width: 320px) {
+  .smallPageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   form {
+    min-height: 60vh;
     padding-top: 15px;
   }
   .contactHeading {
-    font-size: 20px;
+    font-size: 18px;
     padding-bottom: 30px;
+    text-align: center;
   }
   .userData {
     display: flex;
@@ -80,7 +87,7 @@ textarea.ng-invalid.ng-touched {
     margin-right: 0px;
   }
   .form-control {
-    max-width: 250px;
+    width: 250px;
   }
   .form-label {
     padding-bottom: 4px;
@@ -94,6 +101,11 @@ textarea.ng-invalid.ng-touched {
   }
 }
 @media (min-width: 321px) and (max-width: 480px) {
+  .smallPageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   form {
     padding-top: 20px;
   }
@@ -126,6 +138,11 @@ textarea.ng-invalid.ng-touched {
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .smallPageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   form {
     padding-top: 25px;
   }
@@ -157,7 +174,12 @@ textarea.ng-invalid.ng-touched {
     margin-bottom: 8px;
   }
 }
-  @media (max-width: 1024px) {
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .smallPageContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     form {
       padding-top: 15px;
     }
