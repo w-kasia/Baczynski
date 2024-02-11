@@ -23,6 +23,7 @@
   margin-right: 8px;
   border: 2px solid var(--grey);
   border-radius: 13px;
+  outline: none;
   display: flex;
   background: var(--main-bg);
   -webkit-backdrop-filter: blur(15.1px);
@@ -37,6 +38,7 @@
   overflow: hidden;
   background-color: var(--blue);
   background-image: linear-gradient(315deg, #00bfb2 0%, #028090 74%);
+  transition: all 0.3s ease;
 }
 
 ul li {

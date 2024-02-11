@@ -12,15 +12,3 @@
 .scrollToTopIcon {
   filter: invert(99%) sepia(1%) saturate(6494%) hue-rotate(251deg) brightness(131%) contrast(91%);
 }
-
- @media (max-width: 480px) {
-  .scrollToTopBtn {
-    display: none;
-  }
-}
-
-@media (max-width: 769px) {
-  .scrollToTopBtn {
-    display: none;
-  }
-}
