@@ -16,7 +16,7 @@ interface Article {
   styleUrls: ['./articles.component.css']
 })
 export class ArticlesComponent {
-  menuIcon: any;
+  menuIcon = 'menu';
   article!: Article;
 
   constructor(private newsService: NewsService, private route: ActivatedRoute, private router: Router) {}

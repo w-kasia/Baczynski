@@ -49,16 +49,13 @@ mat-sidenav {
     width: 30px;
     border: none;
   }
-
   .listItem {
     padding: 8px;
     font-size: 15px;
   }
-
   .closeButtonContainer {
     right: 5px;
   }
-
   .closeIcon {
     font-size: 15px;
   }

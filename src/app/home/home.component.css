@@ -74,32 +74,6 @@
   margin-bottom: 60px;
 }
 
-/* @media screen and (min-width: 320px) and (max-width: 480px) {
-  .smallPageContainer {
-    min-height: 450px;
-    margin-bottom: 0px;
-  }
-  .logoContainer {
-    display: none;
-  }
-  .mainImg {
-    width: 400px;
-  }
-  .descriptionOfPainitng {
-    font-size: 10px;
-  }
-  .textSection p {
-    font-size: 12px;
-    padding: 8px 8px;
-  }
-  .poemsPicturesSection {
-    margin-bottom: 8px;
-  }
-  .pictureOfPoem {
-    margin-right: 8px;
-  }
-} */
-
 @media (max-width: 320px) {
   .componentContainer {
     min-height: 30vh;

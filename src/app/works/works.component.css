@@ -15,6 +15,9 @@
 }
 
 @media (max-width: 480px) {
+  .componentContainer {
+    min-height: 70vh;
+  }
   .smallPageContainer {
     min-height: 480px;
     justify-content: center;
@@ -35,6 +38,9 @@
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
+  .componentContainer {
+    min-height: 60vh;
+  }
   .smallPageContainer {
     min-height: 380px;
   }
@@ -48,6 +54,9 @@
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
+  .componentContainer {
+    min-height: 70vh;
+  }
   .smallPageContainer {
     min-height: 450px;
   }
