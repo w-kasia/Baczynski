@@ -17,6 +17,8 @@ My main aim was to show the power and potential of open APIs to build a dynamic 
 ✔️Angular Material</br>
 ✔️Firebase</br>
 ✔️https://wolnelektury.pl/api/ - API</br>
+✔️Jasmine</br>
+✔️Karma
 
 <h4>🧩What sections will you find in that project?</h4>
 🧭<b>Menu</b></br>
