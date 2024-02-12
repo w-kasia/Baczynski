@@ -1,6 +1,6 @@
 <h1>BACZYŃSKI</h1>
 
-<h4>🌐</h4>
+<h4>🌐https://w-kasia.github.io/Baczynski/</h4>
 
 <h4>I want to present my Angular project. "Baczyński" is a website dedicated to Polish poet - Krzysztof Kamil Baczyński.</h4>
 
@@ -17,6 +17,8 @@ My main aim was to show the power and potential of open APIs to build a dynamic 
 ✔️Angular Material</br>
 ✔️Firebase</br>
 ✔️https://wolnelektury.pl/api/ - API</br>
+✔️Jasmine</br>
+✔️Karma
 
 <h4>🧩What sections will you find in that project?</h4>
 🧭<b>Menu</b></br>
