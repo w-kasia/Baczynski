@@ -110,6 +110,9 @@ textarea.ng-invalid.ng-touched {
     padding: 10px;
     margin-bottom: 8px;
   }
+  .birdsImg {
+    display: none;
+  }
 }
 @media (min-width: 321px) and (max-width: 480px) {
   .smallPageContainer {
@@ -146,6 +149,9 @@ textarea.ng-invalid.ng-touched {
     max-width: 70px;
     padding: 10px;
     margin-bottom: 8px;
+  }
+  .birdsImg {
+    display: none;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
@@ -184,6 +190,9 @@ textarea.ng-invalid.ng-touched {
     padding: 10px;
     margin-bottom: 8px;
   }
+  .birdsImg {
+    display: none;
+  }
 }
   @media (min-width: 769px) and (max-width: 1024px) {
     .smallPageContainer {
@@ -221,5 +230,8 @@ textarea.ng-invalid.ng-touched {
       max-width: 80px;
       padding: 10px;
       margin-bottom: 8px;
+    }
+    .birdsImg {
+      display: none;
     }
 }

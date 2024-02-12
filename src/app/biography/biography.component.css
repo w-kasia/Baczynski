@@ -118,9 +118,7 @@
 @media (max-width: 480px) {
   .componentContainer {
     min-height: 50vh;
-  }
-  .animationImg {
-    display: none;
+    margin-top: 20px;
   }
   .smallPageContainer {
     height: 400px;
@@ -192,11 +190,11 @@
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {
-  .animationImg {
-    display: none;
+  .componentContainer {
+    min-height: 70vh;
   }
   .smallPageContainer {
-    min-height: 600px;
+    min-height: 550px;
     flex-direction: column;
   }
   .portraitContainer,
@@ -265,8 +263,8 @@
 }
 
 @media all and (min-width: 769px) and (max-width: 900px) {
-  .animationImg {
-    display: none;
+  .componentContainer {
+    min-height: 80vh;
   }
   .smallPageContainer {
     min-height: 600px;
@@ -331,6 +329,9 @@
 }
 
  @media all and (min-width: 901px) and (max-width: 1024px) {
+  .componentContainer {
+    min-height: 70vh;
+  }
   .smallPageContainer {
     min-height: 500px;
   }
@@ -371,6 +372,9 @@
   }
 }
 @media (min-width: 1025px) and (max-width: 1396px) {
+  .componentContainer {
+    min-height: 80vh;
+  }
   .smallPageContainer {
     min-height: 550px;
   }
