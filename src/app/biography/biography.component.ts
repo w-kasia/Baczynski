@@ -12,7 +12,7 @@ interface selectedQuestion {
 export class BiographyComponent {
 
   menuIcon = 'menu';
-  quote = `"Na imię mi było Krzysztof, 
+  quote = `"Na imię mi było Krzysztof,
   i jeszcze ciało - to tak niewiele".`
 
   questions: any[] = [];

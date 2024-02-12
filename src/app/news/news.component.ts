@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NewsService } from '../news.service';
 import { Router } from '@angular/router';
 
@@ -8,6 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit{
+
+  @Input() showInHome: boolean = false;
+  
   menuIcon = 'menu';
   articles: any[] = [];
 

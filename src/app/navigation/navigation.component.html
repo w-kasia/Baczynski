@@ -1,6 +1,6 @@
 <mat-sidenav-container>
-  <button mat-icon-button aria-label="Icon-button with menu icon" class="menuBtn" (click)="opened=!opened">
-    <mat-icon class="menuIcon">{{ menuIcon }}</mat-icon>
+ <button mat-icon-button aria-label="Icon-button with menu icon" class="menuBtn" (click)="opened=!opened">
+   <mat-icon class="menuIcon">{{ menuIcon }}</mat-icon>
   </button>
   <mat-sidenav mode="over" [(opened)]="opened">
     <div class="menuItemsContainer">
@@ -16,5 +16,6 @@
       <mat-icon class="closeIcon" *ngIf="opened">close</mat-icon>
       </button>
     </div>
+    <img class="flowersImg" src="assets/images/flowersimage.png" alt="">
   </mat-sidenav>
 </mat-sidenav-container>

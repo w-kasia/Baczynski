@@ -1,5 +1,5 @@
 <div class="componentContainer">
-  <app-navigation class="navigation" [menuIcon]="menuIcon"></app-navigation>
+  <app-navigation class="navigation" [menuIcon]="menuIcon" *ngIf="!showInHome"></app-navigation>
   <div class="newsSection">
     <div>
       <h1 class="heading">
@@ -15,3 +15,4 @@
     </div>
   </div>
 </div>
+<app-footer *ngIf="!showInHome"></app-footer>
