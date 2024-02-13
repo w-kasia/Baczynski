@@ -58,6 +58,12 @@
   font-size: 16px;
 }
 
+.errorMessage {
+  margin-top: 20px;
+  color: red;
+  text-align: center;
+}
+
 @media (max-width: 769px) {
   .heading {
     max-width: 290px;

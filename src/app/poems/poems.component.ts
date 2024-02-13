@@ -12,13 +12,18 @@ export class PoemsComponent {
   selectedTitle: any = '';
   url: any | undefined;
   searchTitle: string = '';
+  errorMessage: string = '';
 
   constructor(private worksService: WorksService, private router: Router) {}
 
   ngOnInit(): void {
     this.worksService.getWorksTitles().subscribe(data => {
       this.worksTitles = data.map(work => work.title);
-    });
+    }, error => {
+      console.log('Error fetchnig json data in Poems Component');
+      this.errorMessage = 'Przepraszamy. Wystąpił błąd, nie możemy załadować danych. Prosimy spróbować później.'
+    }
+    );
   }
 
   redirectToPDF(title: string) {

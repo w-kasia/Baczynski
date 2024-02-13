@@ -5,6 +5,9 @@
       <h1 class="heading">
         Sprawdź, co nowego u <span>Baczyńskiego</span>
       </h1>
+      <div *ngIf="errorMessage" class="errorMessage">
+        {{ errorMessage }}
+      </div>
     </div>
     <div class="listOfNews">
       <div class="newsContainer" *ngFor="let article of articles; let i = index" (click)="openArticle(article.title)">

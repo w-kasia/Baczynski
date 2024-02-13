@@ -1,11 +1,14 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs";
+import { Observable, catchError, of } from "rxjs";
 
 @Injectable({
   providedIn: 'root'
 })
 export class WorksService {
+
+  errorMessage:string= '';
+
   private apiURL = 'https://wolnelektury.pl/api/authors/krzysztof-kamil-baczynski/books/?format=json';
   private url = 'https://wolnelektury.pl/media/book/pdf/baczynski-';
 
@@ -17,7 +20,14 @@ export class WorksService {
 
   getWork(title: any): Observable<any> {
     const formattedTitle = this.formatTitle(title);
-    return this.http.get<any>(`${this.url}${formattedTitle}.pdf`);
+    return this.http.get<any>(`${this.url}${formattedTitle}.pdf`)
+    .pipe(
+      catchError(error => {
+        console.log('Error fetchnig json data in Poems Component', error);
+        this.errorMessage = 'Przepraszamy. Wystąpił błąd, nie możemy załadować utworu. Prosimy spróbować później.';
+        return of(null);
+      })
+    );
   }
 
   formatTitle(title: string): string {

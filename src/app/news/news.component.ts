@@ -10,16 +10,21 @@ import { Router } from '@angular/router';
 export class NewsComponent implements OnInit{
 
   @Input() showInHome: boolean = false;
-  
+
   menuIcon = 'menu';
   articles: any[] = [];
+  errorMessage: string = '';
 
   constructor(private newsService: NewsService, private router: Router) {}
 
   ngOnInit(): void {
     this.newsService.getData().subscribe(response => {
       this.articles = response;
-    });
+    }, error => {
+      console.log('Error fetchnig json data in News Component');
+      this.errorMessage = 'Przepraszamy. Wystąpił błąd, nie możemy załadować danych. Prosimy spróbować później.'
+    }
+    );
   }
 
   navigateToArticle(article: any) {
