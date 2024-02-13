@@ -48,6 +48,11 @@
   font-size: 16px;
 }
 
+.errorMessage {
+  text-align: center;
+  color: red;
+}
+
 .flowerImg {
   position: absolute;
   left: -10%;
@@ -96,6 +101,9 @@
   }
   .quote {
     font-size: 13px;
+  }
+  .errorMessage {
+    font-size: 12px;
   }
 }
   @media (min-width: 481px) and (max-width: 768px) {

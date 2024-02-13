@@ -115,6 +115,11 @@
   transition: 0.5s ease-in-out;
 }
 
+.errorMessage {
+  text-align: center;
+  color: red;
+}
+
 @media (max-width: 480px) {
   .componentContainer {
     min-height: 50vh;
@@ -187,6 +192,9 @@
   }
   .portraitOfBaczynski:hover {
     transform: none;
+  }
+  .errorMessage {
+    font-size: 12px;
   }
 }
 @media (min-width: 481px) and (max-width: 768px) {

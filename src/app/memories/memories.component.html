@@ -1,8 +1,11 @@
 <div class="memoriesContainer">
   <h1 class="memoriesHeading">Inni o <span>Krzysztofie</span></h1>
+  <div *ngIf="errorMessage" class="errorMessage">
+    {{ errorMessage }}
+  </div>
   <div class="quotesContainer" *ngFor="let memory of memories; let i = index">
     <h2 class="authorName">{{memory.author}}</h2>
     <p class="quote">{{memory.quote}}</p>
   </div>
-  <img class="flowerImg round-animation" src="assets/images/flowers.png" alt="">
+  <img *ngIf="!errorMessage" class="flowerImg round-animation" src="assets/images/flowers.png" alt="Animation of flower">
 </div>

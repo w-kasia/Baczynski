@@ -13,7 +13,10 @@
   </div>
   <div class="faqSection">
     <h2 class="faqTitle">Poznaj <span>Krzysia</span></h2>
-    <div class="faqContainer">
+    <div *ngIf="errorMessage" class="errorMessage">
+      {{ errorMessage }}
+    </div>
+    <div class="faqContainer" *ngIf="!errorMessage">
       <div class="questions">
         <ul>
           <li class="question" *ngFor="let question of questions" (click)="selectQuestion(question)"

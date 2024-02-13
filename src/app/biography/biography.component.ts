@@ -12,6 +12,7 @@ interface selectedQuestion {
 export class BiographyComponent {
 
   menuIcon = 'menu';
+  errorMessage: string = '';
   quote = `"Na imię mi było Krzysztof,
   i jeszcze ciało - to tak niewiele".`
 
@@ -26,7 +27,12 @@ export class BiographyComponent {
     this.http.get<any[]>('assets/faq.json').subscribe(data => {
       this.questions = data;
       this.selectedQuestion = this.questions[0];
-    });
+    },
+    error => {
+      console.log('Error fetchnig json data in Biography Component');
+      this.errorMessage = 'Przepraszamy. Wystąpił błąd, nie możemy załadować danych. Prosimy spróbować później.'
+    }
+    );
   }
 
   selectQuestion(question: any) {
