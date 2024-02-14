@@ -32,7 +32,7 @@ describe('HomeComponent', () => {
   it('should render all images, paragraphs and heading', () => {
     const images = fixture.nativeElement.querySelectorAll('img');
     const paragraphs = fixture.nativeElement.querySelectorAll('p');
-    const heading = fixture.nativeElement.querySelector('h1');
+    const homeHeading = fixture.nativeElement.querySelector('h1');
 
     expect(images.length).toBeGreaterThan(0);
     for(const image of images) {
@@ -42,7 +42,7 @@ describe('HomeComponent', () => {
       for(const paragraph of paragraphs) {
         expect(paragraph.textContent).toBeTruthy();
       }
-    expect(heading).toBeTruthy();
+    expect(homeHeading).toBeTruthy();
   });
 
   it('should render navigation, news and footer components', () => {

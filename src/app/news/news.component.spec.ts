@@ -7,6 +7,7 @@ import { MaterialModule } from '../material/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
 import { of } from 'rxjs';
+import { FooterComponent } from '../footer/footer.component';
 
 describe('NewsComponent', () => {
   let component: NewsComponent;
@@ -16,7 +17,7 @@ describe('NewsComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule, MaterialModule, BrowserAnimationsModule, RouterTestingModule],
-      declarations: [NewsComponent, NavigationComponent],
+      declarations: [NewsComponent, NavigationComponent, FooterComponent],
       providers: [NewsService]
     });
     fixture = TestBed.createComponent(NewsComponent);
