@@ -64,6 +64,24 @@
   text-align: center;
 }
 
+.fadeInTop {
+  -webkit-animation: fadeInTop 1s both;
+  -moz-animation: fadeInTop 1s both;
+  -o-animation: fadeInTop 1s both;
+  animation: fadeInTop 1s both;
+}
+
+@keyframes fadeInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 769px) {
   .heading {
     max-width: 290px;

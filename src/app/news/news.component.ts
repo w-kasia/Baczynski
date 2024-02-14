@@ -25,6 +25,27 @@ export class NewsComponent implements OnInit{
       this.errorMessage = 'Przepraszamy. Wystąpił błąd, nie możemy załadować danych. Prosimy spróbować później.'
     }
     );
+
+      const newsHeadings = document.querySelectorAll('.heading');
+
+       const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+      }
+
+       const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fadeInTop');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      newsHeadings.forEach(newsHeading => {
+        observer.observe(newsHeading);
+      });
   }
 
   navigateToArticle(article: any) {
