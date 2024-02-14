@@ -22,6 +22,26 @@ export class MemoriesComponent implements OnInit{
       this.errorMessage = 'Przepraszamy. Wystąpił błąd, nie możemy załadować danych. Prosimy spróbować później.'
      }
      );
+     const headings = document.querySelectorAll('.memoriesHeading');
+
+     const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    }
+
+     const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('fadeInTop');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+
+    headings.forEach(heading => {
+      observer.observe(heading);
+    });
   }
 
   getData() {

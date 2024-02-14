@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 interface selectedQuestion {
   answer: any;
@@ -9,7 +9,7 @@ interface selectedQuestion {
   templateUrl: './biography.component.html',
   styleUrls: ['./biography.component.css']
 })
-export class BiographyComponent {
+export class BiographyComponent implements OnInit {
 
   menuIcon = 'menu';
   errorMessage: string = '';
@@ -51,4 +51,31 @@ export class BiographyComponent {
     Szukamy serca – bierzemy w rękę,
     nasłuchujemy: wygaśnie męka,
     ale zostanie kamień – tak – głaz.`
+
+    ngOnInit() {
+      const poemSections = document.querySelectorAll('.poemSection');
+      const biographyHeadings = document.querySelectorAll('h2');
+
+       const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5,
+      }
+
+       const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fadeInTop');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      poemSections.forEach(poemSection => {
+        observer.observe(poemSection);
+      });
+      biographyHeadings.forEach(biographyHeading => {
+        observer.observe(biographyHeading);
+      });
+    }
 }
