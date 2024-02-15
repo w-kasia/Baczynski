@@ -75,9 +75,6 @@
 }
 
 .fadeInTop {
-  -webkit-animation: fadeInTop 1.2s both;
-  -moz-animation: fadeInTop 1.2s both;
-  -o-animation: fadeInTop 1.2s both;
   animation: fadeInTop 1.2s both;
 }
 

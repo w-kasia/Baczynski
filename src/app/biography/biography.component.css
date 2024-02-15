@@ -121,9 +121,6 @@
 }
 
 .fadeInTop {
-  -webkit-animation: fadeInTop 1s both;
-  -moz-animation: fadeInTop 1s both;
-  -o-animation: fadeInTop 1s both;
   animation: fadeInTop 1s both;
 }
 
