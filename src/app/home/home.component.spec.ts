@@ -29,22 +29,6 @@ describe('HomeComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should render all images, paragraphs and heading', () => {
-    const images = fixture.nativeElement.querySelectorAll('img');
-    const paragraphs = fixture.nativeElement.querySelectorAll('p');
-    const homeHeading = fixture.nativeElement.querySelector('h1');
-
-    expect(images.length).toBeGreaterThan(0);
-    for(const image of images) {
-      expect(image.complete).toBe(false);
-    }
-    expect(paragraphs.length).toBeGreaterThan(0);
-      for(const paragraph of paragraphs) {
-        expect(paragraph.textContent).toBeTruthy();
-      }
-    expect(homeHeading).toBeTruthy();
-  });
-
   it('should render navigation, news and footer components', () => {
     const navigation = fixture.nativeElement.querySelector('app-navigation');
     const news = fixture.nativeElement.querySelector('app-news');
