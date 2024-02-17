@@ -1,9 +1,1 @@
-.confirmBtn {
-  max-width: 60px;
-  margin-right: 8px;
-}
-
-mat-dialog-content {
-  max-width: 200px;
-  min-height: 300px;
-}
+.confirmBtn{max-width:60px;margin-right:8px}mat-dialog-content{max-width:200px;min-height:300px}

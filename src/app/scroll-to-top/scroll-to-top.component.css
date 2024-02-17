@@ -1,14 +1,1 @@
-.scrollToTopBtn {
-  position: fixed;
-  right: 20px;
-  bottom: 20px;
-  max-width: 30px;
-  border: none;
-  overflow: hidden;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.scrollToTopIcon {
-  filter: invert(99%) sepia(1%) saturate(6494%) hue-rotate(251deg) brightness(131%) contrast(91%);
-}
+.scrollToTopBtn{position:fixed;right:20px;bottom:20px;max-width:30px;border:0;overflow:hidden;background-color:transparent;cursor:pointer}.scrollToTopIcon{filter:invert(99%) sepia(1%) saturate(6494%) hue-rotate(251deg) brightness(131%) contrast(91%)}
