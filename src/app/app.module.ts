@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ArticlesComponent } from './articles/articles.component';
@@ -21,6 +21,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 const firebaseConfig = {
   apiKey: "AIzaSyAR6Rqxxo7lvgHkL1ldNEturX8ZgJySKAg",
@@ -55,8 +56,10 @@ const firebaseConfig = {
     HttpClientModule,
     FlexLayoutModule,
     MaterialModule,
-    FormsModule
+    FormsModule,
+    NgxSpinnerModule
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [MenuService, WorksService, NewsService],
   bootstrap: [AppComponent]
 })
