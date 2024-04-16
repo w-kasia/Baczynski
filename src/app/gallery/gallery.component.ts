@@ -11,75 +11,75 @@ export class GalleryComponent {
 
   images = [
     {
-      filename: 'img-3.jpg',
+      filename: 'baczynski-dziecko.jpg',
       alt: 'Krzysztof, około 4 lata'
     },
     {
-      filename: 'img-2.jpg',
+      filename: 'baczynski-z-matka.jpg',
       alt: 'Krzysztof z matką, gdy miał rok'
     },
     {
-      filename: 'img-7.jpg',
+      filename: 'baczynski-portret.jpg',
       alt: 'Krzysztof, około 6 lat'
     },
     {
-      filename: 'img-9.jpg',
+      filename: 'dziecinstwo-baczynski.jpg',
       alt: 'Krzysztof, około 7 lat'
     },
     {
-      filename: 'img-8.jpg',
+      filename: 'dziecinstwo-baczynskiego.jpg',
       alt: 'Krzysztof, około 7 lat'
     },
     {
-      filename: 'img-11.jpg',
+      filename: 'baczynski-wczesne-lata.jpg',
       alt: 'Krzysztof z ojcem, gdy miał około 7 lat'
     },
     {
-      filename: 'img-22.jpg',
+      filename: 'matka-baczynski.jpg',
       alt: 'Krzysztof z matką, gdy miał około 10 lat'
     },
     {
-      filename: 'img-28.jpg',
+      filename: 'stefania-baczynska.jpg',
       alt: 'Krzysztof z matką, gdy miał około 10 lat'
     },
     {
-      filename: 'img-10.jpg',
+      filename: 'baczynski-z-ojcem.jpg',
       alt: 'Krzysztof, około 10 lat'
     },
     {
-      filename: 'img-16.jpg',
+      filename: 'dzieci.jpg',
       alt: 'Krzysztof, rok 1921'
     },
     {
-      filename: 'img-15.jpg',
+      filename: 'mlodosc-baczynski.jpg',
       alt: 'Krzysztof, około 10 lat'
     },
     {
-      filename: 'img-13.jpg',
+      filename: 'baczynski-nastolatek.jpg',
       alt: 'Krzysztof, około 10 lat'
     },
     {
-      filename: 'img-18.jpg',
+      filename: 'nastoletni-krzysztof.jpg',
       alt: 'Krzysztof, około 10 lat'
     },
     {
-      filename: 'img-21.jpg',
+      filename: 'baczynski-rodzice.jpg',
       alt: 'Krzysztof, około 12 lat'
     },
     {
-      filename: 'img-17.jpg',
+      filename: 'baczynski-w-mlodosci.jpg',
       alt: 'Krzysztof z rodzicami, około 12 lat'
     },
     {
-      filename: 'img-24.jpg',
+      filename: 'baczynski-doroslosc.jpg',
       alt: 'Krzysztof, około 19 lat'
     },
     {
-      filename: 'img-19.jpg',
+      filename: 'matka-syn.jpg',
       alt: 'Krzysztof z matką, około 16 lat'
     },
     {
-      filename: 'img-31.jpg',
+      filename: 'baczynski-wojna.jpg',
       alt: 'Krzysztof, około 20 lat'
     }
   ];
