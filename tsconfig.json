@@ -2,7 +2,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist/Baczynski",
+    "outDir": "./dist",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
